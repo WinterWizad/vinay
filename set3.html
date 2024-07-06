@@ -1,0 +1,2264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMAT 2024</title>
+    <link rel="stylesheet" href="bb.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a id="home" class="nv" href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="nv">Compare</a>
+                <ul class="dropdown-content">
+                    <li><a href="#comparison">BBA vs BIM</a></li>
+                    <li><a href="#">BIM vs BCA</a></li>
+                    <li><a href="#">BIM vs BScCSIT</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="nv">About Us</a></li>
+            <li><a href="#" class="nv">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+        <div class="timer">
+            Time Remaining:
+            <span id="time">
+                90:00
+                <!-- hide timer? -->
+            </span>
+        </div>
+        <script>
+            let dec = document.getElementById("time");
+            let m = 90;
+            let s = 0;
+            let intervalId = setInterval(() => {
+                if (s === 0) {
+                    if (m === 0) {
+                        clearInterval(intervalId);
+                        // alert("Time up");
+                        document.querySelector('.timer').style.display = 'none';
+                        submitQuiz();
+                    } else {
+                        m--;
+                        s = 59;
+                    }
+                } else {
+                    s--;
+                }
+                dec.innerHTML = m + ":" + (s < 10 ? "0" + s : s);
+            }, 1000);
+        </script>
+        
+        <form id="quizForm">
+            <main class="question">
+                <section class="English">
+                    <h1 id="section_title">Verbal Ability</h1>
+                    <p id="direction">Directions: In the following the questions choose the word which best expresses the meaning
+                        of the capitalized word.</p>
+                    
+                    
+                    <!-- Question 1 -->
+                    <p class="questions" id="1">1. Generic</p>
+                    <input type="radio" id="q1a" name="q1" value="a" required>
+                    <label for="q1a">a. Cheap </label><br>
+                    <input type="radio" id="q1b" name="q1" value="b">
+                    <label for="q1b">b. Fresh </label><br>
+                    <input type="radio" id="q1c" name="q1" value="c">
+                    <label for="q1c">c. Elderly </label><br>
+                    <input type="radio" id="q1d" name="q1" value="d">
+                    <label for="q1d">d. General </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 2 -->
+                    <p class="questions" id="2">2. August</p>
+                    <input type="radio" id="q2a" name="q2" value="a" required>
+                    <label for="q2a">a. Common </label><br>
+                    <input type="radio" id="q2b" name="q2" value="b">
+                    <label for="q2b">b. Ridiculous</label><br>
+                    <input type="radio" id="q2c" name="q2" value="c">
+                    <label for="q2c">c. Dignified </label><br>
+                    <input type="radio" id="q2d" name="q2" value="d">
+                    <label for="q2d">d. Pretty </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 3 -->
+                    <p class="questions" id="3">3. Kin</p>
+                    <input type="radio" id="q3a" name="q3" value="a" required>
+                    <label for="q3a">a. Exult </label><br>
+                    <input type="radio" id="q3b" name="q3" value="b">
+                    <label for="q3b">b. Relative </label><br>
+                    <input type="radio" id="q3c" name="q3" value="c">
+                    <label for="q3c">c. Friend </label><br>
+                    <input type="radio" id="q3d" name="q3" value="d">
+                    <label for="q3d">d. Twisted </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 4 -->
+                    <p class="questions" id="4">4. Hesitated</p>
+                    <input type="radio" id="q4a" name="q4" value="a" required>
+                    <label for="q4a">a. stopped </label><br>
+                    <input type="radio" id="q4b" name="q4" value="b">
+                    <label for="q4b">b. Paused </label><br>
+                    <input type="radio" id="q4c" name="q4" value="c">
+                    <label for="q4c">c. Slowed </label><br>
+                    <input type="radio" id="q4d" name="q4" value="d">
+                    <label for="q4d">d. Postponed </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 5 -->
+                    <p class="questions" id="5">5. Simulate</p>
+                    <input type="radio" id="q5a" name="q5" value="a" required>
+                    <label for="q5a">a. Imitate </label><br>
+                    <input type="radio" id="q5b" name="q5" value="b">
+                    <label for="q5b">b. Excite </label><br>
+                    <input type="radio" id="q5c" name="q5" value="c">
+                    <label for="q5c">c. Trick </label><br>
+                    <input type="radio" id="q5d" name="q5" value="d">
+                    <label for="q5d">d. Apelike </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    Directions: Select the word which is closest to the opposite in meaning of the word
+                    in capital letters.
+                    <!-- Question 6 -->
+                    <p class="questions" id="6">6. Enormous</p>
+                    <input type="radio" id="q6a" name="q6" value="a" required>
+                    <label for="q6a">a. Tiny </label><br>
+                    <input type="radio" id="q6b" name="q6" value="b">
+                    <label for="q6b">b. Soft </label><br>
+                    <input type="radio" id="q6c" name="q6" value="c">
+                    <label for="q6c">c. Average </label><br>
+                    <input type="radio" id="q6d" name="q6" value="d">
+                    <label for="q6d">d. Weak </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 7 -->
+                    <p class="questions" id="7">7. Luminous</p>
+                    <input type="radio" id="q7a" name="q7" value="a" required>
+                    <label for="q7a">a. Dim </label><br>
+                    <input type="radio" id="q7b" name="q7" value="b">
+                    <label for="q7b">b. Clear </label><br>
+                    <input type="radio" id="q7c" name="q7" value="c">
+                    <label for="q7c">c. Brittle </label><br>
+                    <input type="radio" id="q7d" name="q7" value="d">
+                    <label for="q7d">d. Clever </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 8 -->
+                    <p class="questions" id="8">8. Arrogant</p>
+                    <input type="radio" id="q8a" name="q8" value="a" required>
+                    <label for="q8a">a. Cowardly </label><br>
+                    <input type="radio" id="q8b" name="q8" value="b">
+                    <label for="q8b">b. Egoistic </label><br>
+                    <input type="radio" id="q8c" name="q8" value="c">
+                    <label for="q8c">c. Gentlemanly </label><br>
+                    <input type="radio" id="q8d" name="q8" value="d">
+                    <label for="q8d">d. Humble </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 9 -->
+                    <p class="questions" id="9">9. Expound</p>
+                    <input type="radio" id="q9a" name="q9" value="a" required>
+                    <label for="q9a">a. Besmirch </label><br>
+                    <input type="radio" id="q9b" name="q9" value="b">
+                    <label for="q9b">b. Confine </label><br>
+                    <input type="radio" id="q9c" name="q9" value="c">
+                    <label for="q9c">c. Confuse </label><br>
+                    <input type="radio" id="q9d" name="q9" value="d">
+                    <label for="q9d">d. Miserable </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 10 -->
+                    <p class="questions" id="10">10. Abridge</p>
+                    <input type="radio" id="q10a" name="q10" value="a" required>
+                    <label for="q10a">a. Shorten </label><br>
+                    <input type="radio" id="q10b" name="q10" value="b">
+                    <label for="q10b">b. Extend </label><br>
+                    <input type="radio" id="q10c" name="q10" value="c">
+                    <label for="q10c">c. Stress </label><br>
+                    <input type="radio" id="q10d" name="q10" value="d">
+                    <label for="q10d">d. Easy </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    Directions: Select the proper propositions to fill in the blanks in the
+                    following questions:
+                    <!-- Question 11 -->
+                    <p class="questions" id="11">11. He reminds me ...... his old history teacher.</p>
+                    <input type="radio" id="q11a" name="q11" value="a" required>
+                    <label for="q11a">a. for </label><br>
+                    <input type="radio" id="q11b" name="q11" value="b">
+                    <label for="q11b">b. to </label><br>
+                    <input type="radio" id="q11c" name="q11" value="c">
+                    <label for="q11c">c. of </label><br>
+                    <input type="radio" id="q11d" name="q11" value="d">
+                    <label for="q11d">d. about </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 12 -->
+                    <p class="questions" id="12">12. She always looks ...... herself in the mirror.</p>
+                    <input type="radio" id="q12a" name="q12" value="a" required>
+                    <label for="q12a">a. on </label><br>
+                    <input type="radio" id="q12b" name="q12" value="b">
+                    <label for="q12b">b. in </label><br>
+                    <input type="radio" id="q12c" name="q12" value="c">
+                    <label for="q12c">c. right </label><br>
+                    <input type="radio" id="q12d" name="q12" value="d">
+                    <label for="q12d">d. at </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 13 -->
+                    <p class="questions" id="13">13. Lalita was stopped by the police for driving ...... 55 mph.</p>
+                    <input type="radio" id="q13a" name="q13" value="a" required>
+                    <label for="q13a">a. at </label><br>
+                    <input type="radio" id="q13b" name="q13" value="b">
+                    <label for="q13b">b. for </label><br>
+                    <input type="radio" id="q13c" name="q13" value="c">
+                    <label for="q13c">c. to </label><br>
+                    <input type="radio" id="q13d" name="q13" value="d">
+                    <label for="q13d">d. on </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 14 -->
+                    <p class="questions" id="14">14. Go ....... these stairs until you reach the top floor.</p>
+                    <input type="radio" id="q14a" name="q14" value="a" required>
+                    <label for="q14a">a. through </label><br>
+                    <input type="radio" id="q14b" name="q14" value="b">
+                    <label for="q14b">b. in </label><br>
+                    <input type="radio" id="q14c" name="q14" value="c">
+                    <label for="q14c">c. up </label><br>
+                    <input type="radio" id="q14d" name="q14" value="d">
+                    <label for="q14d">d. on </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 15 -->
+                    <p class="questions" id="15">15. he's very good ...... telling jokes.</p>
+                    <input type="radio" id="q15a" name="q15" value="a" required>
+                    <label for="q15a">a.in </label><br>
+                    <input type="radio" id="q15b" name="q15" value="b">
+                    <label for="q15b">b. at </label><br>
+                    <input type="radio" id="q15c" name="q15" value="c">
+                    <label for="q15c">c. about </label><br>
+                    <input type="radio" id="q15d" name="q15" value="d">
+                    <label for="q15d">d. for </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <p id="direction">Directions: In questions given below out of four alternatives, choose the one which can be substitued
+                        for the given word/sentences.</p>
+                    <!-- Question 16 -->
+                    <p class="questions" id="16">16. Extreme old age when a man behaves like a fool.</p>
+                    <input type="radio" id="q16a" name="q16" value="a" required>
+                    <label for="q16a">a.Imbecility </label><br>
+                    <input type="radio" id="q16b" name="q16" value="b">
+                    <label for="q16b">b. Senility </label><br>
+                    <input type="radio" id="q16c" name="q16" value="c">
+                    <label for="q16c">c. Dotage </label><br>
+                    <input type="radio" id="q16d" name="q16" value="d">
+                    <label for="q16d">d. Superannuation </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 17 -->
+                    <p class="questions" id="17">17. That which cannot be seen</p>
+                    <input type="radio" id="q17a" name="q17" value="a" required>
+                    <label for="q17a">a.Invisible </label><br>
+                    <input type="radio" id="q17b" name="q17" value="b">
+                    <label for="q17b">b. intangible </label><br>
+                    <input type="radio" id="q17c" name="q17" value="c">
+                    <label for="q17c">c. Insensible </label><br>
+                    <input type="radio" id="q17d" name="q17" value="d">
+                    <label for="q17d">d. Unseen </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 18 -->
+                    <p class="questions" id="18">18. To accuston oneself to a foreign climate</p>
+                    <input type="radio" id="q18a" name="q18" value="a" required>
+                    <label for="q18a">a.Adopt </label><br>
+                    <input type="radio" id="q18b" name="q18" value="b">
+                    <label for="q18b">b. Adapt </label><br>
+                    <input type="radio" id="q18c" name="q18" value="c">
+                    <label for="q18c">c. Accustom </label><br>
+                    <input type="radio" id="q18d" name="q18" value="d">
+                    <label for="q18d">d. Acclimatize </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 19 -->
+                    <p class="questions" id="19">19. On who knows everything</p>
+                    <input type="radio" id="q19a" name="q19" value="a" required>
+                    <label for="q19a">a.Literate </label><br>
+                    <input type="radio" id="q19b" name="q19" value="b">
+                    <label for="q19b">b.Scholar </label><br>
+                    <input type="radio" id="q19c" name="q19" value="c">
+                    <label for="q19c">c.Omniscient </label><br>
+                    <input type="radio" id="q19d" name="q19" value="d">
+                    <label for="q19d">d.Omnipotent </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 20 -->
+                    <p class="questions" id="20">20. Detailed plan of journey</p>
+                    <input type="radio" id="q20a" name="q20" value="a" required>
+                    <label for="q20a">a. Schedule </label><br>
+                    <input type="radio" id="q20b" name="q20" value="b">
+                    <label for="q20b">b. Itinerary </label><br>
+                    <input type="radio" id="q20c" name="q20" value="c">
+                    <label for="q20c">c. Travelogue </label><br>
+                    <input type="radio" id="q20d" name="q20" value="d">
+                    <label for="q20d">d. Travel kit </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <p id="direction">Directions: Read the following passage and answer the questions
+                        that follow the passage, based on the options to each question.
+                    </p>
+                    <p id="passage">
+                        Courage is not only the basis of virtue, it is its expression.
+                        Faith, hope, charity and all the rest don't become virtues until it take courage to exercise them.
+                        There are roughly two types of courage. The first and emotional estate which urges a man to
+                        risk injury or death, is physical courage. the second more reasoning attitude which enables him to take coolly:
+                        his career, his happiness his whole future or his judgment of what he thinks either right or worthwhile,
+                        is moral courage.
+                    <p>
+                        I have known many men, Who had marked physical courage, but lacked moral courage. Some of them were in high places,
+                        But
+                        they failed to be great in themselves because they lacked moral courage. On the other hand, I have seen men who
+                        undoubtedly possessed moral courage but were very cautious about taking physical risks. But I have never met a man
+                        with
+                        moral courage who couldn't when it was reality necessary, Face a situation back boldly.
+                    </p>
+                    </p>
+                    <!-- Question 21 -->
+                    <p class="questions" id="21">21. A man of courage is </p>
+                    <input type="radio" id="q21a" name="q21" value="a" required>
+                    <label for="q21a">d. Cunning </label><br>
+                    <input type="radio" id="q21b" name="q21" value="b">
+                    <label for="q21b">c. Intelligent </label><br>
+                    <input type="radio" id="q21c" name="q21" value="c">
+                    <label for="q21c">b. Careful </label><br>
+                    <input type="radio" id="q21d" name="q21" value="d">
+                    <label for="q21d">a. Curious </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 22 -->
+                    <p class="questions" id="22">22. Physical courage is an expression of </p>
+                    <input type="radio" id="q22a" name="q22" value="a" required>
+                    <label for="q22a">a. Emotion </label><br>
+                    <input type="radio" id="q22b" name="q22" value="b">
+                    <label for="q22b">c. Deliberations </label><br>
+                    <input type="radio" id="q22c" name="q22" value="c">
+                    <label for="q22c">c. Uncertanity </label><br>
+                    <input type="radio" id="q22d" name="q22" value="d">
+                    <label for="q22d">d. Defiance </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 23 -->
+                    <p class="questions" id="23">23. A man with moral courage can </p>
+                    <input type="radio" id="q23a" name="q23" value="a" required>
+                    <label for="q23a">a. Defy his enimies </label><br>
+                    <input type="radio" id="q23b" name="q23" value="b">
+                    <label for="q23b">b. Overcome all difficulties </label><br>
+                    <input type="radio" id="q23c" name="q23" value="c">
+                    <label for="q23c">c. Be very pragmatic </label><br>
+                    <input type="radio" id="q23d" name="q23" value="d">
+                    <label for="q23d">d. Face a situation boldly </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 24 -->
+                    <p class="questions" id="24">24. All virtues becomes meaningful because of </p>
+                    <input type="radio" id="q24a" name="q24" value="a" required>
+                    <label for="q24a">a. Faith </label><br>
+                    <input type="radio" id="q24b" name="q24" value="b">
+                    <label for="q24b">b. Courage </label><br>
+                    <input type="radio" id="q24c" name="q24" value="c">
+                    <label for="q24c">c. Charity </label><br>
+                    <input type="radio" id="q24d" name="q24" value="d">
+                    <label for="q24d">d. Hope </label><br>
+                    <!-- Answer: [Correct answer] -->
+                    
+                    <!-- Question 25 -->
+                    <p class="questions" id="25">25. people with physical courage often lack</p>
+                    <input type="radio" id="q25a" name="q25" value="a" required>
+                    <label for="q25a">a. mental balance </label><br>
+                    <input type="radio" id="q25b" name="q25" value="b">
+                    <label for="q25b">b. capacity for reasoning </label><br>
+                    <input type="radio" id="q25c" name="q25" value="c">
+                    <label for="q25c">c. Emotional stability </label><br>
+                    <input type="radio" id="q25d" name="q25" value="d">
+                    <label for="q25d">d. will to fight </label><br>
+                    <!-- Answer: [Correct answer] -->
+    
+                </section>
+                <!-- <section class="Quantitative">
+                    <h1 id="section_title">Quantitative Abilility</h1>
+                    <p id="direction">Select the correct word from the given options.</p>
+    
+                    <p id="q26" class="questions">26. Which of the following is not a measure of dispersion?</p>
+                    <div class="options">
+                        <input type="radio" id="q26a" name="q26" value="a">
+                        <label for="q26a">a. Range</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q26b" name="q26" value="b">
+                        <label for="q26b">b. Standard deviation</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q26c" name="q26" value="c">
+                        <label for="q26c">c. Arithmetic mean</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q26d" name="q26" value="d">
+                        <label for="q26d">d. Variance</label><br>
+                    </div>
+    
+                    <p id="q27" class="questions">27. The sum of all deviations of the data from its mean is</p>
+                    <div class="options">
+                        <input type="radio" id="q27a" name="q27" value="a">
+                        <label for="q27a"> a. always positive</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q27b" name="q27" value="b">
+                        <label for="q27b"> b. always negative</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q27c" name="q27" value="c">
+                        <label for="q27c">c. zero</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q27d" name="q27" value="d">
+                        <label for="q27d">d. non-zero integer</label><br>
+                    </div>
+    
+                    <p id="q28" class="questions">28. Which of the following is incorrect?</p>
+                    <div class="options">
+                        <input type="radio" id="q28a" name="q28" value="a">
+                        <label for="q28a"> a. P(A) > 1</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q28b" name="q28" value="b">
+                        <label for="q28b"> b. 0 <= P(A) <=1</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q28c" name="q28" value="c">
+                        <label for="q28c"> c. P(A) = 0</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q28d" name="q28" value="d">
+                        <label for="q28d"> d. P(A) + P(~A) = 1</label><br>
+                    </div>
+    
+                    <p id="q29" class="questions">29. The probability a red marble selected at random from a jar containing p red, q blue,
+                        and r green marbles is</p>
+                    <div class="options">
+                        <input type="radio" id="q29a" name="q29" value="a">
+                        <label for="q29a"> a. q/(p+q+r)</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q29b" name="q29" value="b">
+                        <label for="q29b"> b. p/(p+q+r)</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q29c" name="q29" value="c">
+                        <label for="q29c">c. (p+q)/(p+q+r)</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q29d" name="q29" value="d">
+                        <label for="q29d">d. (p+r)/(p+q+r)</label><br>
+                    </div>
+    
+                    <p id="q30" class="questions">30. Henry went to play a lucky draw contest. 135 tickets of the lucky draw were sold. If
+                        the probability of Henry winning is 1/9, then the number of tickets bought by Henry is
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q30a" name="q30" value="a">
+                        <label for="q30a"> a. 5</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q30b" name="q30" value="b">
+                        <label for="q30b"> b. 10</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q30c" name="q30" value="c">
+                        <label for="q30c"> c. 15</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q30d" name="q30" value="d">
+                        <label for="q30d">d. 20</label><br>
+                    </div>
+    
+                    <p id="direction">Select the correct word from the given options.</p>
+    
+                    <p id="q31" class="questions">31. The objective of the transportation problem which is to be maximized is to
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q31a" name="q31" value="a">
+                        <label for="q31a"> a. maximize the total profit</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q31b" name="q31" value="b">
+                        <label for="q31b"> b. minimize the total loss</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q31c" name="q31" value="c">
+                        <label for="q31c"> c. neither maximize nor minimize</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q31d" name="q31" value="d">
+                        <label for="q31d"> d. optimal cost</label><br>
+                    </div>
+    
+                    <p id="q32" class="questions">32. Cramer's rule is also known as</p>
+                    <div class="options">
+                        <input type="radio" id="q32a" name="q32" value="a">
+                        <label for="q32a"> a. inverse matrix method</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q32b" name="q32" value="b">
+                        <label for="q32b"> b. matrix method</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q32c" name="q32" value="c">
+                        <label for="q32c">c. determinant method</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q32d" name="q32" value="d">
+                        <label for="q32d"> d. inverse method</label><br>
+                    </div>
+    
+                    <p id="q33" class="questions">33. The lenders are also known as</p>
+                    <div class="options">
+                        <input type="radio" id="q33a" name="q33" value="a">
+                        <label for="q33a"> a. creditors</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q33b" name="q33" value="b">
+                        <label for="q33b"> b. debtors</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q33c" name="q33" value="c">
+                        <label for="q33c">c. buyers</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q33d" name="q33" value="d">
+                        <label for="q33d"> d. none of the above</label><br>
+                    </div>
+    
+                    <p id="q34" class="questions">34. If any two rows and columns of a determinant are identical, the value of the
+                        determinant is</p>
+                    <div class="options">
+                        <input type="radio" id="q34a" name="q34" value="a">
+                        <label for="q34a"> a. 1</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q34b" name="q34" value="b">
+                        <label for="q34b"> b. 0</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q34c" name="q34" value="c">
+                        <label for="q34c">c. -1</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q34d" name="q34" value="d">
+                        <label for="q34d">d. unaltered</label><br>
+                    </div>
+    
+                    <p id="q35" class="questions">35. 51 - 46 + 3(5) =</p>
+                    <div class="options">
+                        <input type="radio" id="q35a" name="q35" value="a">
+                        <label for="q35a"> a. 40</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q35b" name="q35" value="b">
+                        <label for="q35b"> b. 20</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q35c" name="q35" value="c">
+                        <label for="q35c">c. 41</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q35d" name="q35" value="d">
+                        <label for="q35d">d. 52</label><br>
+                    </div>
+    
+                    <p id="q36" class="questions">36. What is the value of the following expression? log(9/14) - log(15/10) +
+                        log(35/24)
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q36a" name="q36" value="a">
+                        <label for="q36a"> a. -0.204</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q36b" name="q36" value="b">
+                        <label for="q36b"> b. 1</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q36c" name="q36" value="c">
+                        <label for="q36c">c. 2</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q36d" name="q36" value="d">
+                        <label for="q36d">d. 3</label><br>
+                    </div>
+    
+                    <p id="q37" class="questions">37. An association of 2 or more persons to carry on a business for the purpose
+                        of
+                        earning profit is known as</p>
+                    <div class="options">
+                        <input type="radio" id="q37a" name="q37" value="a">
+                        <label for="q37a"> a. partnership</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q37b" name="q37" value="b">
+                        <label for="q37b"> b. insurance</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q37c" name="q37" value="c">
+                        <label for="q37c">c. legal entity</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q37d" name="q37" value="d">
+                        <label for="q37d">d. none of the above</label><br>
+                    </div>
+    
+                    <p id="q38" class="questions">38. The factors of 4a^2 - 16 are</p>
+                    <div class="options">
+                        <input type="radio" id="q38a" name="q38" value="a">
+                        <label for="q38a"> a. 4(a-2)(a-2)</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q38b" name="q38" value="b">
+                        <label for="q38b"> b. 4(a-2)(a+2)</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q38c" name="q38" value="c">
+                        <label for="q38c"> c. (a-2)(a+2)</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q38d" name="q38" value="d">
+                        <label for="q38d"> d. 4(a+2)(a+2)</label><br>
+                    </div>
+    
+                    <p id="q39" class="questions">39. If the maximum value in a series is 25 and its range is 15, the minimum
+                        value of the
+                        series is</p>
+                    <div class="options">
+                        <input type="radio" id="q39a" name="q39" value="a">
+                        <label for="q39a"> a. 10</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q39b" name="q39" value="b">
+                        <label for="q39b"> b. 15</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q39c" name="q39" value="c">
+                        <label for="q39c">c. 25</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q39d" name="q39" value="d">
+                        <label for="q39d">d. 35</label><br>
+                    </div>
+    
+                    <p id="q40" class="questions">40. If the square of one side of a triangle is equal to the sum of the squares
+                        of the
+                        other two sides, then the triangle is</p>
+                    <div class="options">
+                        <input type="radio" id="q40a" name="q40" value="a">
+                        <label for="q40a"> a. isosceles triangle</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q40b" name="q40" value="b">
+                        <label for="q40b"> b. scalene triangle</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q40c" name="q40" value="c">
+                        <label for="q40c"> c. right angle triangle</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q40d" name="q40" value="d">
+                        <label for="q40d">d. reflective triangle</label><br>
+                    </div>
+    
+                    <p id="q41" class="questions">41. Unbounded solution in an LPP is</p>
+                    <div class="options">
+                        <input type="radio" id="q41a" name="q41" value="a">
+                        <label for="q41a"> a. where the objective function can be decreased indefinitely</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q41b" name="q41" value="b">
+                        <label for="q41b"> b. which maximizes the objective function</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q41c" name="q41" value="c">
+                        <label for="q41c"> c. where the objective function can be increased or decreased
+                            indefinitely</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q41d" name="q41" value="d">
+                        <label for="q41d"> d. where the objective function can be increased
+                            indefinitely</label><br>
+                    </div>
+    
+                    <p id="q42" class="questions">42. If log x - 5 log 3 = -2, then x equals</p>
+                    <div class="options">
+                        <input type="radio" id="q42a" name="q42" value="a">
+                        <label for="q42a"> a. 0.8</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q42b" name="q42" value="b">
+                        <label for="q42b"> b. 0.81</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q42c" name="q42" value="c">
+                        <label for="q42c">c. 1.23</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q42d" name="q42" value="d">
+                        <label for="q42d"> d. 2.43</label><br>
+                    </div>
+    
+                    <p id="q43" class="questions">43. Three partners A, B, and C start a business. B's capital is four times C's capital and
+                        twice A's capital is equal to thrice B's capital. If the total profit is Rs. 16,500 at the end of a
+                        year, find B's share in it.</p>
+                    <div class="options">
+                        <input type="radio" id="q43a" name="q43" value="a">
+                        <label for="q43a"> a. Rs. 4,000</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q43b" name="q43" value="b">
+                        <label for="q43b"> b. Rs. 5,000</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q43c" name="q43" value="c">
+                        <label for="q43c">c. Rs. 6,000</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q43d" name="q43" value="d">
+                        <label for="q43d"> d. Rs. 7,000</label><br>
+                    </div>
+    
+                    <p id="q44" class="questions">44. How many permutations of the letters of the word APPLE are there?</p>
+                    <div class="options">
+                        <input type="radio" id="q44a" name="q44" value="a">
+                        <label for="q44a"> a. 600</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q44b" name="q44" value="b">
+                        <label for="q44b"> b. 120</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q44c" name="q44" value="c">
+                        <label for="q44c">c. 240</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q44d" name="q44" value="d">
+                        <label for="q44d">d. 60</label><br>
+                    </div>
+    
+                    <p id="q45" class="questions">45. A man is positioned at the origin of the coordinate system. The man can take
+                        steps
+                        of unit measure in the direction North, East, West, or South. Find the number of ways he
+                        can
+                        reach the point (5, 6), covering the shortest possible distance.</p>
+                    <div class="options">
+                        <input type="radio" id="q45a" name="q45" value="a">
+                        <label for="q45a"> a. 252</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q45b" name="q45" value="b">
+                        <label for="q45b"> b. 432</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q45c" name="q45" value="c">
+                        <label for="q45c">c. 462</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q45d" name="q45" value="d">
+                        <label for="q45d">d. 504</label><br>
+                    </div>
+    
+                    <p id="q46" class="questions">46. In order to obtain an income of Rs. 650 from 10% stock at Rs. 8, one must
+                        make an
+                        investment of</p>
+                    <div class="options">
+                        <input type="radio" id="q46a" name="q46" value="a">
+                        <label for="q46a"> a. Rs. 3,100</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q46b" name="q46" value="b">
+                        <label for="q46b"> b. Rs. 6,240</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q46c" name="q46" value="c">
+                        <label for="q46c">c. Rs. 6,500</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q46d" name="q46" value="d">
+                        <label for="q46d">d. Rs. 9,600</label><br>
+                    </div>
+    
+                    <p id="q47" class="questions">47. The sum of ages of 5 children born at intervals of 3 years each is 50 years.
+                        What is
+                        the age of the youngest child?</p>
+                    <div class="options">
+                        <input type="radio" id="q47a" name="q47" value="a">
+                        <label for="q47a"> a. 4 years</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q47b" name="q47" value="b">
+                        <label for="q47b"> b. 8 years</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q47c" name="q47" value="c">
+                        <label for="q47c">c. 10 years</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q47d" name="q47" value="d">
+                        <label for="q47d">d. None of these</label><br>
+                    </div>
+    
+                    <p id="q48" class="questions">48. An accurate clock shows 8 o'clock in the morning. Through how many degrees
+                        will the
+                        hour hand rotate when the clock shows 2 o'clock in the afternoon?</p>
+                    <div class="options">
+                        <input type="radio" id="q48a" name="q48" value="a">
+                        <label for="q48a"> a. 144 degrees</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q48b" name="q48" value="b">
+                        <label for="q48b"> b. 150 degrees</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q48c" name="q48" value="c">
+                        <label for="q48c"> c. 168 degrees</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q48d" name="q48" value="d">
+                        <label for="q48d"> d. 180 degrees</label><br>
+                    </div>
+    
+                    <p id="q49" class="questions">49. How many times are the hour hand and the minute hand of a clock at a right
+                        angle
+                        during their motion from 1:00 PM to 10:00 PM?</p>
+                    <div class="options">
+                        <input type="radio" id="q49a" name="q49" value="a">
+                        <label for="q49a"> a. 9</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q49b" name="q49" value="b">
+                        <label for="q49b"> b. 10</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q49c" name="q49" value="c">
+                        <label for="q49c">c. 18</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q49d" name="q49" value="d">
+                        <label for="q49d">d. 20</label><br>
+                    </div>
+    
+                    <p id="q50" class="questions">50. By selling a bicycle for Rs. 2,850, a shopkeeper gains 14%. If the profit is
+                        reduced
+                        to 8%, then the selling price will be</p>
+                    <div class="options">
+                        <input type="radio" id="q50a" name="q50" value="a">
+                        <label for="q50a"> a. Rs. 2,600</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q50b" name="q50" value="b">
+                        <label for="q50b"> b. Rs. 2,700</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q50c" name="q50" value="c">
+                        <label for="q50c"> c. Rs. 2,800</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q50d" name="q50" value="d">
+                        <label for="q50d">d. Rs. 3,000</label><br>
+                    </div>
+                </section> -->
+    
+                <!-- <section class="Logical">
+    
+                    <h1 id="section_title">Logical Reasoning</h1>
+                    <p id="direction">Select the logically best answer</p>
+    
+                    <p id="q51" class="questions">51. If TOUR is written as 1234, CLEAR is written as 56784 and SPARE is written as 90847,
+                        find
+                        the code for CARE</p>
+                    <div class="options">
+                        <input type="radio" id="q51a" name="q51" value="a">
+                        <label for="q51a"> a. 1247</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q51b" name="q51" value="b">
+                        <label for="q51b"> b. 4847</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q51c" name="q51" value="c">
+                        <label for="q51c"> c. 5247</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q51d" name="q51" value="d">
+                        <label for="q51d"> d. 2847</label><br>
+                    </div>
+    
+                    <p id="q52" class="questions">52. In a code sign DRLAL is coded as 62014314. How CAMEL is coded?</p>
+                    <div class="options">
+                        <input type="radio" id="q52a" name="q52" value="a">
+                        <label for="q52a"> a. 5315714</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q52b" name="q52" value="b">
+                        <label for="q52b"> b. 35729310</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q52c" name="q52" value="c">
+                        <label for="q52c">c. 5313613</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q52d" name="q52" value="d">
+                        <label for="q52d"> d. None of these</label><br>
+                    </div>
+    
+                    <p id="q53" class="questions">53. E is the son of C. D is the husband of C. B and G is the only brother and daughter
+                        of D
+                        respectively. F is the maternal aunt of E and G. How is B related to E?</p>
+                    <div class="options">
+                        <input type="radio" id="q53a" name="q53" value="a">
+                        <label for="q53a"> a. Uncle</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q53b" name="q53" value="b">
+                        <label for="q53b"> b. Nephew</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q53c" name="q53" value="c">
+                        <label for="q53c">c. Niece</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q53d" name="q53" value="d">
+                        <label for="q53d"> d. Aunt</label><br>
+                    </div>
+    
+                    <p id="q54" class="questions">54. In a group of 5 person A, B, C, D and E. One plays tennis, one plays chase and one
+                        hockey. A
+                        and D are unmarried woman and play no game. There is a couple among them where E is husband of
+                        C. No
+                        women plays either Chess or Hockey. B is the brother of C and he neither plays Tennis nor Chess.
+                        Who
+                        plays Hockey here?</p>
+                    <div class="options">
+                        <input type="radio" id="q54a" name="q54" value="a">
+                        <label for="q54a"> a. A</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q54b" name="q54" value="b">
+                        <label for="q54b"> b. B</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q54c" name="q54" value="c">
+                        <label for="q54c">c. C</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q54d" name="q54" value="d">
+                        <label for="q54d">d. D</label><br>
+                    </div>
+    
+                    <p id="q55" class="questions">55. A, B and C are intelligent. A, D and E are laborious and D, C and E are honest and
+                        A, B and
+                        E are ambitious. Who is neither laborious nor honest?</p>
+                    <div class="options">
+                        <input type="radio" id="q55a" name="q55" value="a">
+                        <label for="q55a"> a. A and D</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q55b" name="q55" value="b">
+                        <label for="q55b"> b. B only</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q55c" name="q55" value="c">
+                        <label for="q55c">c. E only</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q55d" name="q55" value="d">
+                        <label for="q55d">d. C only</label><br>
+                    </div>
+    
+                    <p id="direction">In each of the following questions two statements are given followed by an
+                        inference. Mark
+                        the correct inference.</p>
+    
+                    <p id="q56" class="questions">56. a) My son is not old enough to vote.<br>
+                        b) My son has handsome personality.<br>
+                        Inference: My son is a boy under 18 years of age.</p>
+                    <div class="options">
+                        <input type="radio" id="q56a" name="q56" value="a">
+                        <label for="q56a"> a. The inference is definitely true.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q56b" name="q56" value="b">
+                        <label for="q56b"> b. The inference is definitely false</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q56c" name="q56" value="c">
+                        <label for="q56c">The inference is neither true nor false.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q56d" name="q56" value="d">
+                        <label for="q56d">d. Inference cannot be drawn.</label><br>
+                    </div>
+    
+                    <p id="q57" class="questions">57. a) I know a professor of a university.<br>
+                        b) He has beard.<br>
+                        Inference: All the professors of the university have beard.</p>
+                    <div class="options">
+                        <input type="radio" id="q57a" name="q57" value="a">
+                        <label for="q57a"> a. The inference is definitely true.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q57b" name="q57" value="b">
+                        <label for="q57b"> b. The inference is definitely false</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q57c" name="q57" value="c">
+                        <label for="q57c">The inference is neither true nor false.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q57d" name="q57" value="d">
+                        <label for="q57d">d. Inference cannot be drawn.</label><br>
+                    </div>
+    
+                    <p id="q58" class="questions">58. a) Cats like rats.<br>
+                        b) Rats like bread.<br>
+                        Inference: Bread is liked by cats.</p>
+                    <div class="options">
+                        <input type="radio" id="q58a" name="q58" value="a">
+                        <label for="q58a"> a. The inference is definitely true.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q58b" name="q58" value="b">
+                        <label for="q58b"> b. The inference is definitely false</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q58c" name="q58" value="c">
+                        <label for="q58c"> c. The inference is neither true nor false.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q58d" name="q58" value="d">
+                        <label for="q58d"> d. Inference cannot be drawn.</label><br>
+                    </div>
+    
+                    <p id="direction">Following questions include a set of statements out of which one supports the
+                        conclusion
+                        of the argument. Identify to correlate the conclusion.</p>
+    
+                    <p id="q59" class="questions">59. One of the warmest winters on record has put consumers in the mood to spend money.
+                        The
+                        consumer intent of spending is seen to be the strongest in 13 years. During the month of
+                        January, sales
+                        of existing single-family homes hit an annual record rate of 5.70 mn. This paragraph best
+                        supports the
+                        statement that:</p>
+                    <div class="options">
+                        <input type="radio" id="q59a" name="q59" value="a">
+                        <label for="q59a"> a. During the winter months, the prices of single-family homes the
+                            lowest.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q59b" name="q59" value="b">
+                        <label for="q59b"> b. Warm winter weather is likely to affect the rate of home
+                            sales.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q59c" name="q59" value="c">
+                        <label for="q59c">c. Consumer spending will be higher thirteen years from now than it is
+                            today</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q59d" name="q59" value="d">
+                        <label for="q59d">d. There were about 5 million homes for sale during the month of
+                            January.</label><br>
+                    </div>
+    
+                    <p id="q60" class="questions">60. Mathematics allows us to expand our consciousness and tells us about the growth of
+                        populations, economic trends and the patterns of disease. Mathematics is good at exposing the
+                        truth, but
+                        it can also perpetuate misunderstandings and untruths. Figures have the power to mislead people.
+                        This
+                        paragraph best supports the statement that:</p>
+                    <div class="options">
+                        <input type="radio" id="q60a" name="q60" value="a">
+                        <label for="q60a"> a. Figures are sometimes used to deceive people.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q60b" name="q60" value="b">
+                        <label for="q60b"> b. The study of mathematics is dangerous.</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q60c" name="q60" value="c">
+                        <label for="q60c"> c.The power of numbers is that they cannot lie</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q60d" name="q60" value="d">
+                        <label for="q60d">d. Words are more truthful than figures.</label><br>
+                    </div>
+    
+                    <p id="direction" id>Select the logically best answer</p>
+                    <p class="questions" id="q61">61.Soldier: Gun :: Blacksmith: ?</p>
+                    <div class="options">
+                        <input type="radio" id="q61a" name="q61" value="a">
+                        <label for="q61a">a. Wood</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q61b" name="q61" value="b">
+                        <label for="q61b">b. Sword</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q61c" name="q61" value="c">
+                        <label for="q61c">c. Iron</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q61d" name="q61" value="d">
+                        <label for="q61d">d. Hammer</label><br>
+                    </div>
+    
+                    <p class="questions" id="q62">62.Petal: Flower </p>
+                    <div class="options">
+                        <input type="radio" id="q62a" name="q62" value="a">
+                        <label for="q62a">a. Salt: pepper </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q62b" name="q62" value="b">
+                        <label for="q62b">b. Tire: bicycle</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q62c" name="q62" value="c">
+                        <label for="q62c">c. Base: ball</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q62d" name="q62" value="d">
+                        <label for="q62d">d. Sandals: shoes</label><br>
+                    </div>
+    
+                    <p class="questions" id="q63">63. Odometer: distance</p>
+                    <div class="options">
+                        <input type="radio" id="q63a" name="q63" value="a">
+                        <label for="q63a">a. Scale: weight</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q63b" name="q63" value="b">
+                        <label for="q63">b. Length: width</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q63c" name="q63" value="c">
+                        <label for="q63c">c. Inch: foot</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q63d" name="q63" value="d">
+                        <label for="q63d">d. Mileage: speed</label><br>
+                    </div>
+    
+                    <p class="questions" id="q64">64.Fish: School </p>
+                    <div class="options">
+                        <input type="radio" id="q64a" name="q64" value="a">
+                        <label for="q64a">a. Wolf: pack </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q64b" name="q64" value="b">
+                        <label for="q64b">b. Cow: farm</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q64c" name="q64" value="c">
+                        <label for="q64c">c. Herd: peacock</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q64d" name="q64" value="d">
+                        <label for="q64d">d. Elephant: jungle</label><br>
+                    </div>
+    
+                    <p class="questions" id="q65">65. Sound: cacophony</p>
+                    <div class="options">
+                        <input type="radio" id="q65a" name="q65" value="a">
+                        <label for="q65a">a. Speech: oration</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q65b" name="q65" value="b">
+                        <label for="q65b">b. Touch: massage</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q65c" name="q65" value="c">
+                        <label for="q65c">c. Smell: stench</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q65d" name="q65" value="d">
+                        <label for="q65d">d. Taste: style</label><br>
+                    </div>
+                    <p id="direction">In each of the following questions a statement is given followed by two arguments.
+                        Mark
+                        the appropriate option.</p>
+                    <p class="questions" id="q66">66. Statement: Should education be given by the government free of
+                        charge?<br>
+                        Argument I: Yes, it will help in the universalization of education in the country.<br>
+                        Argument II: No, there will be budgetary deficit creating some new problems.
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q66a" name="q66" value="a">
+                        <label for="q66a">a. I is strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q66b" name="q66" value="b">
+                        <label for="q66b">b. Only argument II is strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q66c" name="q66" value="c">
+                        <label for="q66c">c. Both arguments are strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q66d" name="q66" value="d">
+                        <label for="q66d">d. Neither I nor II is strong</label><br>
+                    </div>
+    
+                    <p class="questions" id="q67">67. Statement: Should students study in early hours of morning?<br>
+                        Argument l: Yes. mind fresh and alert at that time.<br>
+                        Argument II: No. early risers feel sleepy throughout the day
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q67a" name="q67" value="a">
+                        <label for="q67a">a. I is strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q67b" name="q67" value="b">
+                        <label for="q67b">b. only argument II IS strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q67c" name="q67" value="c">
+                        <label for="q67c">c. both the arguments are strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q67d" name="q67" value="d">
+                        <label for="q67d">d. neither I nor II IS strong</label><br>
+                    </div>
+    
+                    <p class="questions" id="q68">68.Statement: Should all workers be allowed to participate in the
+                        management of
+                        factories in Nepal?<br>
+                        Argument I: Yes, it is the present management theory.<br>
+                        Argument II: No, many workers are illiterate and their contribution will not be of value.
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q68a" name="q68" value="a">
+                        <label for="q68a">a. I IS strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q68b" name="q68" value="b">
+                        <label for="q68b">b. only argument II IS strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q68c" name="q68" value="c">
+                        <label for="q68c">c. both the arguments are strong</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q68d" name="q68" value="d">
+                        <label for="q68d">d. neither I nor II IS strong</label><br>
+                    </div>
+                    <p id="direction">Select logically best answer.</p>
+                    <p class="questions" id="q69">69.In the following question, select the odd word from the given
+                        alternatives
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q69a" name="q69" value="a">
+                        <label for="q69a">a. Herb </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q69b" name="q69" value="b">
+                        <label for="q69b">b. Flower</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q69c" name="q69" value="c">
+                        <label for="q69c">c. Tree</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q69d" name="q69" value="d">
+                        <label for="q69d">d. Shrub</label><br>
+                    </div>
+    
+                    <p class="questions" id="q70">70. In the following question, select the odd word pair from the given
+                        alternatives. </p>
+                    <div class="options">
+                        <input type="radio" id="q70a" name="q70" value="a">
+                        <label for="q70a">a. Pen</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q70b" name="q70" value="b">
+                        <label for="q70b">b. Paper</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q70c" name="q70" value="c">
+                        <label for="q70c">c. Marker</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q70d" name="q70" value="d">
+                        <label for="q70d">d. Highlighter</label><br>
+                    </div>
+    
+                    <p class="questions" id="q71">71. Three of the following four are alike in a certain way and so form
+                        a group.
+                        Which is the one that
+                        doesn’t belong to that group? </p>
+                    <div class="options">
+                        <input type="radio" id="q71a" name="q71" value="a">
+                        <label for="q71a">a. 125</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q71b" name="q71" value="b">
+                        <label for="q71b">b. 130</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q71c" name="q71" value="c">
+                        <label for="q71c">c. 131</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q71d" name="q71" value="d">
+                        <label for="q71d">d.138</label><br>
+                    </div>
+    
+                    <p class="questions" id="q72">72.In the following question, select the odd word pair from the given
+                        alternatives. </p>
+                    <div class="options">
+                        <input type="radio" id="q72a" name="q72" value="a">
+                        <label for="q72a">a. Petrol-car</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q72b" name="q72" value="b">
+                        <label for="q72b">b. Oil-lamp</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q72c" name="q72" value="c">
+                        <label for="q72c">c. Coal-engine</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q72d" name="q72" value="d">
+                        <label for="q72d">d. Smoke-fire</label><br>
+                    </div>
+                    <p id="direction">Direction: In the questions different symbols have different meanings as follows:
+                        $ means ‘neither greater not equal to’, # means ‘neither smaller nor equal to’
+                        % means ‘neither smaller nor equal to’
+                    </p>
+                    <p class="questions" id="q73">73.Statements: T % I, I # L, L % U<br>
+                        Conclusions: i. T $
+                        L<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        ii. U $ T
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q73a" name="q73" value="a">
+                        <label for="q73a">a. Only I is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q73b" name="q73" value="b">
+                        <label for="q73b">b. Only II is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q73c" name="q73" value="c">
+                        <label for="q73c">c. Either I or II is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q73d" name="q73" value="d">
+                        <label for="q73d">d. Neither I nor II is true</label><br>
+                    </div>
+    
+                    <p class="questions" id="q74">74. Statements: M # K, K % P, P $ R<br>Conclusions: i. R $
+                        M<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        ii. P % M </p>
+                    <div class="options">
+                        <input type="radio" id="q74a" name="q74" value="a">
+                        <label for="q74a">a. Only I is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q74b" name="q74" value="b">
+                        <label for="q74b">b. Only II is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q74c" name="q74" value="c">
+                        <label for="q74c">c. Either I or II is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q74d" name="q74" value="d">
+                        <label for="q74d">d. Neither I nor II is true</label><br>
+                    </div>
+    
+                    <p class="questions" id="q75">75. Statements; N $ B, B # D, D % C<br>Conclusions: i. D $
+                        N<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        ii. B % C </p>
+                    <div class="options">
+                        <input type="radio" id="q75a" name="q75" value="a">
+                        <label for="q75a">a. Only I is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q75b" name="q75" value="b">
+                        <label for="q75b">b. Only II is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q75c" name="q75" value="c">
+                        <label for="q75c">c. Either I or II is true</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q75d" name="q75" value="d">
+                        <label for="q75d">d. Neither I nor II is true</label><br>
+                    </div>
+                </section>
+                <section class="GK">
+                    <h1 id="section_title">General Awareness</h1>
+                    <p id="direction">Select the correct option from the given options.</p>
+                    <p id="q76" class="questions">76. A light sensitive device that converts drawing, printed text or other images into
+                        digital
+                        form is</p>
+                    <div class="options">
+                        <input type="radio" id="q76a" name="q76" value="a">
+                        <label for="q76a">a. Keyboard</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q76b" name="q76" value="b">
+                        <label for="q76b">b.Scanner</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q76c" name="q76" value="c">
+                        <label for="q76c">c. OMR</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q76d" name="q76" value="d">
+                        <label for="q76d">d. None of these</label><br>
+                    </div>
+    
+                    <p id="q77" class="questions">77. The basic architecture of computer was developed by<!--add question</p>
+                    <div class="options">
+                        <input type="radio" id="q77a" name="q77" value="a">
+                        <label for="q77a">a. John Von Neumann</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q77b" name="q77" value="b">
+                        <label for="q77b">b. Charles Babbage</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q77c" name="q77" value="c">
+                        <label for="q77c">c. Blaise Pascal</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q77d" name="q77" value="d">
+                        <label for="q77d">d. Garden Moore </label><br>
+                    </div>
+    
+                    <p id="q78" class="questions">78. Former Australian captain Mark Taylor has had several nicknames over his playing
+                        career.
+                        Which of the following was not one of them?<!--add question-</p>
+                    <div class="options">
+                        <input type="radio" id="q78a" name="q78" value="a">
+                        <label for="q78a"> a. Tubby </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q78b" name="q78" value="b">
+                        <label for="q78b"> b. Stodge</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q78c" name="q78" value="c">
+                        <label for="q78c"> c. Helium Bat</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q78d" name="q78" value="d">
+                        <label for="q78d"> d. Stumpy</label><br>
+                    </div>
+    
+                    <p id="q79" class="questions">79. How many players are consisted in each team of basketball?<!--add question-></p>
+                    <div class="options">
+                        <input type="radio" id="q79a" name="q79" value="a">
+                        <label for="q79a">a. 6</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q79b" name="q79" value="b">
+                        <label for="q79b">b. 7</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q79c" name="q79" value="c">
+                        <label for="q79c">c. 4</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q79d" name="q79" value="d">
+                        <label for="q79d">d. 5</label><br>
+                    </div>
+    
+                    <p id="q80" class="questions">80. When is the international Worker's day?<!-add question-></p>
+                    <div class="options">
+                        <input type="radio" id="q80a" name="q80" value="a">
+                        <label for="q80a"> a. 15<sup>th</sup> April</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q80b" name="q80" value="b">
+                        <label for="q80b"> b. 12<sup>th</sup>December </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q80c" name="q80" value="c">
+                        <label for="q80c"> c. 1<sup>st</sup> May</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q80d" name="q80" value="d">
+                        <label for="q80d">d. 1<sup>st</sup> August</label><br>
+                    </div>
+    
+                    <p id="q81" class="questions">81. 4<sup>th</sup> Feb is celebrated as<!--add question-></p>
+                    <div class="options">
+                        <input type="radio" id="q81a" name="q81" value="a">
+                        <label for="q81."> a. Thinking Day</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q81b" name="q81" value="b">
+                        <label for="q81."> b. World Radio Day</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q81c" name="q81" value="c">
+                        <label for="q81."> c. World Cancer Day</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q81d" name="q81" value="d">
+                        <label for="q81d"> d. World Wild Life Day</label><br>
+                    </div>
+    
+                    <p id="q82" class="questions">82. 'OS' computer abbreviation usually means?</p>
+                    <div class="options">
+                        <input type="radio" id="q82a" name="q82" value="a">
+                        <label for="q82a">a. Order of Significance</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q82b" name="q82" value="b">
+                        <label for="q82b">b. Open Software</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q82c" name="q82" value="c">
+                        <label for="q82c">c. Operating System</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q82d" name="q82" value="d">
+                        <label for="q82d"> d. Optical Sensor</label><br>
+                    </div>
+    
+                    <p id="q83" class="questions">83. Entomology is the science that studies</p>
+                    <div class="options">
+                        <input type="radio" id="q83a" name="q83" value="a">
+                        <label for="q83a">a.The origin and history of technical and scientific terms </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q83b" name="q83" value="b">
+                        <label for="q83b">b. Behavior of human beings</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q83c" name="q83" value="c">
+                        <label for="q83c">c. Insects</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q83d" name="q83" value="d">
+                        <label for="q83d"> d. Formation of Rocks</label><br>
+                    </div>
+    
+                    <p id="q84" class="questions">84. Free market is a</p>
+                    <div class="options">
+                        <input type="radio" id="q84a" name="q84" value="a">
+                        <label for="q84a">a. A condition jn the International
+                            market where nations do not impose
+                            customs duty or other taxes on
+                            import of goods </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q84b" name="q84" value="b">
+                        <label for="q84b">b. Market where the price ot a
+                            commodity determined by free
+                            play of the forces of supply and
+                            demand</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q84c" name="q84" value="c">
+                        <label for="q84c">c.Ports that are exempted from
+                            payment of customs duty on articles
+                            of commerce. pnmanly to encourage
+                            tourism </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q84d" name="q84" value="d">
+                        <label for="q84d">d. None of these </label><br>
+                    </div>
+    
+                    <p id="q85" class="questions">85.
+                        Yokohama and Kobe are the main
+                        centers of ship building Industry in:</p>
+                    <div class="options">
+                        <input type="radio" id="q85a" name="q85" value="a">
+                        <label for="q85a">a. Japan</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q85b" name="q85" value="b">
+                        <label for="q85b">b. South Korea</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q85c" name="q85" value="c">
+                        <label for="q85c">c. North Korea</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q85d" name="q85" value="d">
+                        <label for="q85d">d. China</label><br>
+                    </div>
+    
+                    <p id="q86" class="questions">86.
+                        The process that creates a sub layer.
+                        which is white to gray in colour and
+                        composes of Silica sand in the A
+                        horizon is called</p>
+                    <div class="options">
+                        <input type="radio" id="q86a" name="q86" value="a">
+                        <label for="q86a">a. Podsolosation </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q86b" name="q86" value="b">
+                        <label for="q86b">b. Calcification</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q86c" name="q86" value="c">
+                        <label for="q86c">c. Laterisation</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q86d" name="q86" value="d">
+                        <label for="q86d">d. Gleisation</label><br>
+                    </div>
+    
+                    <p id="q87" class="questions">87.
+                        Which of the followng is not
+                        associated with the UNO?</p>
+                    <div class="options">
+                        <input type="radio" id="q87a" name="q87" value="a">
+                        <label for="q87a">a. ILO</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q87b" name="q87" value="b">
+                        <label for="q87b">b. WHO</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q87c" name="q87" value="c">
+                        <label for="q87c">c.ASEAN</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q87d" name="q87" value="d">
+                        <label for="q87d">d. All of the above</label><br>
+                    </div>
+    
+                    <p id="q88" class="questions">88.
+                        The transformer that develops the high
+                        voltage in a home television is
+                        commonly called as:</p>
+                    <div class="options">
+                        <input type="radio" id="q88a" name="q88" value="a">
+                        <label for="q88a"> a. Tesla Coil</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q88b" name="q88" value="b">
+                        <label for="q88b"> b. Fly back</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q88c" name="q88" value="c">
+                        <label for="q88c"> c. Yoke</label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q88d" name="q88" value="d">
+                        <label for="q88d"> d. Van de Graaf </label><br>
+                    </div>
+    
+                    <p id="q89">
+                        89.
+                        Permanent Secretariat to coordinate
+                        the implementation of SAARC
+                        programme is located
+                        
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q89a" name="q89" value="a">
+                        <label for="q89a">a.
+                            Dhaka
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q89b" name="q89" value="b">
+                        <label for="q89b">b.
+                            Delhi
+    
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q89c" name="q89" value="c">
+                        <label for="q89c">c.
+                            Colombo
+    
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q89d" name="q89" value="d">
+                        <label for="q89d">d.
+                            Kathmandu
+    
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q90" class="questions"> 90.
+                        "Bulls and Bears" is a term associated
+                        with
+                        
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q90a" name="q90" value="a">
+                        <label for="q90a"> a.
+    
+                            Parliamentary affairs
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q90b" name="q90" value="b">
+                        <label for="q90b"> b.
+                            Bullfights
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q90c" name="q90" value="c">
+                        <label for="q90c"> c.
+    
+                            Racing
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q90d" name="q90" value="d">
+                        <label for="q90d">d.
+                            Stock exchange
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q91" class="questions">
+                        91.
+                        Who invented the ballpoint pen?
+    
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q91a" name="q91" value="a">
+                        <label for="q91a"> a..
+    
+                            Biro brothers
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q91b" name="q91" value="b">
+                        <label for="q91b"> b.
+                            Waterman brothers
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q91c" name="q91" value="c">
+                        <label for="q91c"> c.
+                            BICC brothers
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q91d" name="q91" value="d">
+                        <label for="q91d"> d.
+    
+                            Write brothers
+                        </label><br>
+                    </div>
+    
+                    <p id="q92" class="questions">
+    
+                        92.The hardest metal of the human body
+                        is
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q92a" name="q92" value="a">
+                        <label for="q92a">a.
+                            Bones
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q92b" name="q92" value="b">
+                        <label for="q92b">b.
+                            Enamel
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q92c" name="q92" value="c">
+                        <label for="q92c">c.
+                            Nails
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q92d" name="q92" value="d">
+                        <label for="q92d"> d.
+                            Head
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q93" class="questions">
+                        93.
+    
+                        Which is the coldest planet?
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q93a" name="q93" value="a">
+                        <label for="q93a">a.
+                            Jupiter
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q93b" name="q93" value="b">
+                        <label for="q93b">b.
+                            Mercury
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q93c" name="q93" value="c">
+                        <label for="q93c">c.
+                            Neptune
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q93d" name="q93" value="d">
+                        <label for="q93d"> d.
+                            Earth
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q94" class="questions">
+                        94. Which scientist discovered
+                        radioactive element radium?
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q94a" name="q94" value="a">
+                        <label for="q94a">a.
+                            Isaac Newton
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q94b" name="q94" value="b">
+                        <label for="q94b">b.
+                            Albert Einstein
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q94c" name="q94" value="c">
+                        <label for="q94c">c.
+                            Benjamjn Franklin
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q94d" name="q94" value="d">
+                        <label for="q94d">d.
+    
+                            Marie Cune
+                        </label><br>
+                    </div>
+    
+                    <p id="q95" class="questions">
+    
+                        Who is the first president of NepaP
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q95a" name="q95" value="a">
+                        <label for="q95a">a.
+    
+                            Mrs Vidya Bhandan
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q95b" name="q95" value="b">
+                        <label for="q95b">b.
+                            Ram Raja Prasad Singh
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q95c" name="q95" value="c">
+                        <label for="q95c">c.
+                            Dr Rambaran Yadav
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q95d" name="q95" value="d">
+                        <label for="q95d">d.
+    
+                            Ram Pritt Pawan
+                        </label><br>
+                    </div>
+    
+                    <p id="q96" class="questions">
+                        96.
+                        Which of the followtng things is known
+                        by its chemical name sodium chloride?
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q96a" name="q96" value="a">
+                        <label for="q96a">a.
+                            Washing soda
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q96b" name="q96" value="b">
+                        <label for="q96b">b.
+                            Baking soda
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q96c" name="q96" value="c">
+                        <label for="q96c">c.
+                            Salt used in kitchen
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q96d" name="q96" value="d">
+                        <label for="q96d">d.
+                            Chilli powder used in the kitchen
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q97" class="questions">
+                        97. Women are better teacher at pnmary
+                        level because
+    
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q97a" name="q97" value="a">
+                        <label for="q97a">a.
+                            They behave more patiently With
+                            children
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q97b" name="q97" value="b">
+                        <label for="q97b">b.
+                            They are ready to work With low
+                            salary
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q97c" name="q97" value="c">
+                        <label for="q97c">c.
+                            Higher qualifications not needed In
+                            this professton
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q97d" name="q97" value="d">
+                        <label for="q97d">d.
+                            They have less chances in other
+                            profession
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q98" class="questions">
+                        98.
+                        What now ubiquitous devtce was
+                        invented by Zenith engineer Eugene
+                        Polley in 1955?
+    
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q98a" name="q98" value="a">
+                        <label for="q98a"> a.
+                            Microwave oven
+    
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q98b" name="q98" value="b">
+                        <label for="q98b"> b.
+    
+                            Remote control
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q98c" name="q98" value="c">
+                        <label for="q98c"> c.
+                            VCR
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q98d" name="q98" value="d">
+                        <label for="q98d"> d.
+                            Calculator
+    
+                        </label><br>
+                    </div>
+    
+                    <p id="q99" class="questions">
+                        99.
+                        The longest river in Nepal is
+                        
+    
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q99a" name="q99" value="a">
+                        <label for="q99a">a.
+                            ' Karnali
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q99b" name="q99" value="b">
+                        <label for="q99b">b.
+                            Koshi
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q99c" name="q99" value="c">
+                        <label for="q99c">c.
+                            Arun
+    
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q99d" name="q99" value="d">
+                        <label for="q99d">d.
+                            Trishuli
+    
+                        </label><br>
+                    </div>
+                    <p id="q100" class="questions">
+                        100.
+                        "Lingonberry" iS a kind of
+                        
+                    </p>
+                    <div class="options">
+                        <input type="radio" id="q100a" name="q100" value="a">
+                        <label for="q100a"> a.
+                            Grain
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q100b" name="q100" value="b">
+                        <label for="q100b"> b.
+                            Animal
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q100c" name="q100" value="c">
+                        <label for="q100c"> c.
+                            Game
+                        </label><br>
+                    </div>
+                    <div class="options">
+                        <input type="radio" id="q100d" name="q100" value="d">
+                        <label for="q100d">d.
+                            Fruit
+                        </label><br>
+                    </div>
+    
+                </section> -->
+    
+            </main>
+            <div id="container" style="display: none;">
+                <p id="instructions">
+                    <mark> 
+                        Green highlights indicate correct answers, and red highlights indicate incorrect answers.
+                    </mark>
+                </p>
+                <p id="score"></p>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+            <button type="button" onclick="window.location.href = 'index.html'">Restart</button>
+            
+        </form>
+    
+    
+        </section>
+        
+        <script>
+            const answers = {
+                q1: 'a',
+                q2: 'b',
+                q3: 'c',
+                q4: 'c',
+                q5: 'c',
+                q6: 'b',
+                q7: 'a',
+                q8: 'a',
+                q9: 'a',
+                q10: 'c',
+                q11: 'b',
+                q12: 'a',
+                q13: 'b',
+                q14: 'd',
+                q15: 'b',
+                q16: 'b',
+                q17: 'd',
+                q18: 'a',
+                q19: 'b',
+                q20: 'b',
+                q21: 'd',
+                q22: 'c',
+                q23: 'c',
+                q24: 'd',
+                q25: 'a',
+                // q26: 'c',
+                // q27: 'c',
+                // q28: 'a',
+                // q29: 'b',
+                // q30: 'c',
+                // q31: 'a',
+                // q32: 'c',
+                // q33: 'a',
+                // q34: 'b',
+                // q35: 'b',
+                // q36: 'a',
+                // q37: 'a',
+                // q38: 'b',
+                // q39: 'a',
+                // q40: 'c',
+                // q41: 'd',
+                // q42: 'd',
+                // q43: 'c',
+                // q44: 'd',
+                // q45: 'c',
+                // q46: 'b',
+                // q47: 'a',
+                // q48: 'd',
+                // q49: 'c',
+                // q50: 'b',
+                // q51: 'd',
+                // q52: 'a',
+                // q53: 'a',
+                // q54: 'b',
+                // q55: 'b',
+                // q56: 'c',
+                // q57: 'b',
+                // q58: 'b',
+                // q59: 'b',
+                // q60: 'a',
+                // q61: 'd',
+                // q62: 'b',
+                // q63: 'a',
+                // q64: 'a',
+                // q65: 'c',
+                // q66: 'c',
+                // q67: 'a',
+                // q68: 'b',
+                // q69: 'b',
+                // q70: 'b',
+                // q71: 'c',
+                // q72: 'd',
+                // q73: 'b',
+                // q74: 'd',
+                // q75: 'b',
+                // q76: 'b',
+                // q77: 'a',
+                // q78: 'c',
+                // q79: 'd',
+                // q80: 'c',
+                // q81: 'c',
+                // q82: 'c',
+                // q83: 'c',
+                // q84: 'b',
+                // q85: 'a',
+                // q86: 'a',
+                // q87: 'c',
+                // q88: 'b',
+                // q89: 'd',
+                // q90: 'd',
+                // q91: 'a',
+                // q92: 'b',
+                // q93: 'c',
+                // q94: 'd',
+                // q95: 'c',
+                // q96: 'c',
+                // q97: 'a',
+                // q98: 'b',
+                // q99: 'a',
+                // q100: 'd',
+            };
+    
+            function submitQuiz() {
+                let score = 0;
+                let totalQuestions = 100;
+                document.querySelectorAll('input[type="radio"]').forEach(radio => radio.disabled = true);
+                for (let question in answers) {
+                    const selected = document.querySelector(`input[name="${question}"]:checked`);
+                    const correctAnswer = answers[question];
+    
+                    const correctLabel = document.querySelector(`label[for="${question}${correctAnswer}"]`); 
+    
+                    if (selected) {
+                        const selectedLabel = document.querySelector(`label[for="${selected.id}"]`);
+                        if (selected.value === correctAnswer) {
+                            score++;
+                            if (selectedLabel) { e
+                                selectedLabel.classList.add('correct');
+                            }
+                        } else {
+                            if (selectedLabel) {
+                                selectedLabel.classList.add('incorrect');
+                            }
+                            if (correctLabel) { 
+                                correctLabel.classList.add('correct');
+                            }
+                        }
+                    } else {
+                        if (correctLabel) { 
+                            correctLabel.classList.add('correct');
+                        }
+                    }
+                }
+    
+                document.getElementById('score').textContent = `Your score is ${score} out of ${totalQuestions}.`;
+                document.getElementById('container').style.display = 'block';
+            }
+        </script>
+    
+    <footer>
+        <p>&copy; 2024 CMAT Prep. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

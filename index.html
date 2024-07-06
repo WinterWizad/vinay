@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMAT 2024</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+<!-- maathi ko navigation links -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Compare</a>
+                <ul class="dropdown-content">
+                    <li><a href="#comparison">BBA vs BIM</a></li>
+                    <li><a href="#">BIM vs BCA</a></li>
+                    <li><a href="#">BIM vs BScCSIT</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- main contents  -->
+    <main>
+<!--  -->
+        <section>
+            <h2>Generate Random Questions for CMAT</h2>
+            <button onclick="//add whatever you want">Generate Questions</button>
+        </section>
+
+        <section>
+            <h2>Practice Past Questions</h2>
+            <button onclick="past();">Practice Now</button>
+        </section>
+
+        <section id="comparison">
+            <h2>Comparison between BBA and BIM</h2>
+            <table>
+                <tr>
+                    <th>Aspect</th>
+                    <th>BBA</th>
+                    <th>BIM</th>
+                </tr>
+                <tr>
+                    <td>Focus</td>
+                    <td>Management and business skills</td>
+                    <td>Information technology and management</td>
+                </tr>
+                <tr>
+                    <td>Duration</td>
+                    <td>4 years</td>
+                    <td>4 years</td>
+                </tr>
+                <tr>
+                    <td>Career Opportunities</td>
+                    <td>Management positions in various sectors</td>
+                    <td>IT management, software development</td>
+                </tr>
+                <tr>
+                    <td>Key Subjects</td>
+                    <td>Marketing, Finance, HR</td>
+                    <td>Programming, Database Management, IT Strategy</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 CMAT Prep. All rights reserved.</p>
+    </footer>
+<script>
+    function past() {
+        var random = Math.floor(Math.random() * 4) + 1;//random number generate garne
+        //open set+random.html
+        alert("set" + random + ".html");//chalyo chalena check garna use gareko last ma delete garne ho
+        window.open(("set" + random + ".html"),'_self');//euta random past set open garne
+    }
+</script>
+</body>
+</html>

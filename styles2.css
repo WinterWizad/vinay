@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 0
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around
+}
+
+nav ul li {
+    position: relative
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    min-width: 200px
+}
+
+nav ul li ul li {
+    border-bottom: 1px solid #555
+}
+
+nav ul li:hover ul {
+    display: block
+}
+
+nav ul li:hover>a {
+    background-color: #444
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+}
+
+main section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center
+}
+
+main section h2 {
+    margin-top: 0
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+button:hover {
+    background-color: #444
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left
+}
+
+td:nth-child(1),
+th:nth-child(1) {
+    background-color: #878484
+}
+
+td:nth-child(2),
+th:nth-child(2) {
+    background-color: #c6c1c1
+}
+
+th:last-child,
+td:last-child {
+    background-color: #95acb1
+}
+
+th {
+    background-color: #f2f2f2
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative
+}
+
+@media screen and (max-width:768px) {
+    nav ul {
+        flex-direction: column
+    }
+
+    nav ul li ul {
+        position: static;
+        width: 100%
+    }
+
+    main section {
+        width: 95%
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch
+    }
+
+    table th,
+    table td {
+        display: block;
+        width: 100%
+    }
+
+    table th {
+        font-weight: bold
+    }
+
+    table td {
+        text-align: left;
+        padding:5px 0px;
+        border-bottom: none
+    }
+}
