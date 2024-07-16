@@ -3,14 +3,27 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    background-color: aliceblue;
+    min-height: 100vh;
+}
+
 
 #random-generation {
-    width: 7vw;
-    height: 5vh;
+    /* width: 10vw; */
+    height: 4.7vh;
     font-size: 2vh;
     border-radius: 5px;
-    color: red;
-    background-color: #191030;
+    padding:5px;
+    /* color: red;
+    background-color: #191030; */
+    background-color:#5c48ee;
+    color: white;
 }
 
 .result {
@@ -98,7 +111,8 @@ input {
 }
 
 /* From here are MEDIA QUERIRES */
-@media all and (max-width:600px) {
+@media all and (max-width:500px) {
+
     .result {
         font-size: 1.7em;
     }
@@ -126,28 +140,32 @@ input {
         box-sizing: border-box;
         overflow: scroll;
     }
-
+    
     .verbal-questions {
-        border: 1px red solid;
+        border: 1.5px blue solid;
+        border-right: none;
     }
-
+    
     .quantitative-questions {
-        border: 1px cornflowerblue solid;
+        border: 1.5px rgb(17, 17, 116) solid;
+        border-right: none;
     }
-
+    
     .logical-questions {
-        border: 1px greenyellow solid;
+        border: 1.5px blue solid;
+        border-right: none;
     }
-
+    
     .gk-questions {
-        border: 1px palevioletred solid;
+        border: 1.5px rgb(2, 2, 49) solid;
+        border-right: none;
     }
 
 
 
     .btn {
         position: absolute;
-        visibility: hidden;
+        visibility: visible;
         top: 50%;
         transform: translateY(-50%);
         background: transparent;

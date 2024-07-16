@@ -5,20 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CMAT 2024</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="pj.css">
     <link rel="stylesheet" href="bb.css">
+    <link rel="stylesheet" href="nav.css">
     <script src="swiping.js" defer></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a id="home" class="nv" href="index.html">Home</a></li>
-            <li><a href="About_page.html" class="nv">About Us</a></li>
-            <li><a href="contact.html" class="nv">Contact</a></li>
-        </ul>
-    </nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">Prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+</nav>
 
     <!-- Main Content -->
     <div class="timer">
@@ -51,7 +59,10 @@
     </script>
 
     <main class="question">
-        <button class="btn prev"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button><!--Yaha class add xa   -->
+        <button class="btn prev">
+            <i class="fa fa-chevron-circle-left" aria-hidden="true"></i>
+
+        </button><!--Yaha class add xa   -->
         <div class="main-container2"><!--Yaha class add xa   -->
             <div class="slider">
                 <section class="section English">
@@ -104,25 +115,33 @@
 
                     </p>
                     <input type="radio" id="q1a" name="q1" value="a" required>
+                    <div class="label-container">
                     <label for="q1a">a.
                         Physics
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q1b" name="q1" value="b">
+                    <div class="label-container">
                     <label for="q1b">b.
                         Mathematics
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q1c" name="q1" value="c">
+                    <div class="label-container">
                     <label for="q1c">c.
                         Logic
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q1d" name="q1" value="d">
+                    <div class="label-container">
                     <label for="q1d">d.
                         Knowledge
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 2 -->
@@ -134,25 +153,33 @@
 
                     </p>
                     <input type="radio" id="q2a" name="q2" value="a" required>
+                    <div class="label-container">
                     <label for="q2a">a.
                         Numbers
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q2b" name="q2" value="b">
+                    <div class="label-container">
                     <label for="q2b">b.
                         Language
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q2c" name="q2" value="c">
+                    <div class="label-container">
                     <label for="q2c">c.
                         Formulas
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q2d" name="q2" value="d">
+                    <div class="label-container">
                     <label for="q2d">d.
                         Difficult to solve
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 3 -->
@@ -165,25 +192,33 @@
 
                     </p>
                     <input type="radio" id="q3a" name="q3" value="a" required>
+                    <div class="label-container">
                     <label for="q3a">a.
                         Real
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q3b" name="q3" value="b">
+                    <div class="label-container">
                     <label for="q3b">b.
                         Group of numbers
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q3c" name="q3" value="c">
+                    <div class="label-container">
                     <label for="q3c">c.
 
                         Very difficult to understand
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q3d" name="q3" value="d">
+                    <div class="label-container">
                     <label for="q3d">d.
 
                         Artificial
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 4 -->
@@ -196,25 +231,33 @@
 
                     </p>
                     <input type="radio" id="q4a" name="q4" value="a" required>
+                    <div class="label-container">
                     <label for="q4a">a.
                         A professor
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q4b" name="q4" value="b">
+                    <div class="label-container">
                     <label for="q4b">b.
 
                         Expert in science of language
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q4c" name="q4" value="c">
+                    <div class="label-container">
                     <label for="q4c">c.
                         Expert in mathematics
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q4d" name="q4" value="d">
+                    <div class="label-container">
                     <label for="q4d">d.
                         One who knows several language
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 5 -->
@@ -226,26 +269,34 @@
 
                     </p>
                     <input type="radio" id="q5a" name="q5" value="a" required>
+                    <div class="label-container">
                     <label for="q5a">a.
 
                         Weakness of language
-                    </label><br>
+                    </label>
+</div><br>
 
                     <input type="radio" id="q5b" name="q5" value="b">
+                    <div class="label-container">
                     <label for="q5b">b.
                         Weakness of mathematics
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q5c" name="q5" value="c">
+                    <div class="label-container">
                     <label for="q5c">c.
                         Relationship of language
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q5d" name="q5" value="d">
+                    <div class="label-container">
                     <label for="q5d">d.
                         Language and mathematics
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: Select the word/words which is/are closest to the meaning of the word:
                     </p>
@@ -259,25 +310,33 @@
 
                     </p>
                     <input type="radio" id="q6a" name="q6" value="a" required>
+                    <div class="label-container">
                     <label for="q6a">a.
 
                         Quotation
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q6b" name="q6" value="b">
+                    <div class="label-container">
                     <label for="q6b">b.
                         Quote
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q6c" name="q6" value="c">
+                    <div class="label-container">
                     <label for="q6c">c.
                         Limited number
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q6d" name="q6" value="d">
+                    <div class="label-container">
                     <label for="q6d">d.
                         Unlimited quantity
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 7 -->
@@ -290,25 +349,33 @@
 
                     </p>
                     <input type="radio" id="q7a" name="q7" value="a" required>
+                    <div class="label-container">
                     <label for="q7a">a.
                         Thin
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q7b" name="q7" value="b">
+                    <div class="label-container">
                     <label for="q7b">b.
 
                         Fat
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q7c" name="q7" value="c">
+                    <div class="label-container">
                     <label for="q7c">c.
                         Chubby
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q7d" name="q7" value="d">
+                    <div class="label-container">
                     <label for="q7d">d.
                         Plumber
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 8 -->
@@ -321,25 +388,33 @@
 
                     </p>
                     <input type="radio" id="q8a" name="q8" value="a" required>
+                    <div class="label-container">
                     <label for="q8a">a.
                         To see future
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q8b" name="q8" value="b">
+                    <div class="label-container">
                     <label for="q8b">b.
                         Vision
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q8c" name="q8" value="c">
+                    <div class="label-container">
                     <label for="q8c">c.
                         Void
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q8d" name="q8" value="d">
+                    <div class="label-container">
                     <label for="q8d">d.
                         Vector
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 9 -->
@@ -352,25 +427,33 @@
 
                     </p>
                     <input type="radio" id="q9a" name="q9" value="a" required>
+                    <div class="label-container">
                     <label for="q9a">a.
                         Comparison
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q9b" name="q9" value="b">
+                    <div class="label-container">
                     <label for="q9b">b.
                         Cost
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q9c" name="q9" value="c">
+                    <div class="label-container">
                     <label for="q9c">c.
                         Love
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q9d" name="q9" value="d">
+                    <div class="label-container">
                     <label for="q9d">d.
                         Hate
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 10 -->
@@ -383,25 +466,33 @@
 
                     </p>
                     <input type="radio" id="q10a" name="q10" value="a" required>
+                    <div class="label-container">
                     <label for="q10a">a.
                         Union
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q10b" name="q10" value="b">
+                    <div class="label-container">
                     <label for="q10b">b.
 
                         Complete
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q10c" name="q10" value="c">
+                    <div class="label-container">
                     <label for="q10c">c.
                         Care
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q10d" name="q10" value="d">
+                    <div class="label-container">
                     <label for="q10d">d.
                         Universal
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 11 -->
@@ -415,25 +506,33 @@
 
                     </p>
                     <input type="radio" id="q11a" name="q11" value="a" required>
+                    <div class="label-container">
                     <label for="q11a">a.
                         Mica
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q11b" name="q11" value="b">
+                    <div class="label-container">
                     <label for="q11b">b.
                         Gravel
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q11c" name="q11" value="c">
+                    <div class="label-container">
                     <label for="q11c">c.
                         Sand
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q11d" name="q11" value="d">
+                    <div class="label-container">
                     <label for="q11d">d.
                         Lay soil
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 12 -->
@@ -446,25 +545,33 @@
 
                     </p>
                     <input type="radio" id="q12a" name="q12" value="a" required>
+                    <div class="label-container">
                     <label for="q12a">a.
 
                         Forgot
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q12b" name="q12" value="b">
+                    <div class="label-container">
                     <label for="q12b">b.
                         Tried
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q12c" name="q12" value="c">
+                    <div class="label-container">
                     <label for="q12c">c.
 
                         Delivered on
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q12d" name="q12" value="d">
+                    <div class="label-container">
                     <label for="q12d">d.
 
                         Relied upon
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 13 -->
@@ -477,28 +584,36 @@
 
                     </p>
                     <input type="radio" id="q13a" name="q13" value="a" required>
+                    <div class="label-container">
                     <label for="q13a">a.
 
                         Harden
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q13b" name="q13" value="b">
+                    <div class="label-container">
                     <label for="q13b">b.
 
                         Stagnate
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q13c" name="q13" value="c">
+                    <div class="label-container">
                     <label for="q13c">c.
 
                         Decay
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q13d" name="q13" value="d">
+                    <div class="label-container">
                     <label for="q13d">d.
 
                         Decompose
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 14 -->
@@ -512,28 +627,36 @@
 
                     </p>
                     <input type="radio" id="q14a" name="q14" value="a" required>
+                    <div class="label-container">
                     <label for="q14a">a.
                         Drunk
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q14b" name="q14" value="b">
+                    <div class="label-container">
                     <label for="q14b">b.
 
                         Driving
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q14c" name="q14" value="c">
+                    <div class="label-container">
                     <label for="q14c">c.
                         Amazed
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q14d" name="q14" value="d">
+                    <div class="label-container">
                     <label for="q14d">d.
                         Lofty
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 15 -->
@@ -547,26 +670,34 @@
 
                     </p>
                     <input type="radio" id="q15a" name="q15" value="a" required>
+                    <div class="label-container">
                     <label for="q15a">a.
                         short
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q15b" name="q15" value="b">
+                    <div class="label-container">
                     <label for="q15b">b.
                         Longest
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q15c" name="q15" value="c">
+                    <div class="label-container">
                     <label for="q15c">c.
                         Alternative
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q15d" name="q15" value="d">
+                    <div class="label-container">
                     <label for="q15d">d.
                         High speed
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: Each question below consists of an idiom or phrase followed by four
                         lettered expression.
@@ -582,29 +713,37 @@
 
                     </p>
                     <input type="radio" id="q16a" name="q16" value="a" required>
+                    <div class="label-container">
                     <label for="q16a">a.
 
                         Leave the party
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q16b" name="q16" value="b">
+                    <div class="label-container">
                     <label for="q16b">b.
                         Celebrate
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q16c" name="q16" value="c">
+                    <div class="label-container">
                     <label for="q16c">c.
                         Throw food in the party
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q16d" name="q16" value="d">
+                    <div class="label-container">
                     <label for="q16d">d.
                         Start conflict in the party
 
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 17 -->
@@ -618,29 +757,37 @@
 
                     </p>
                     <input type="radio" id="q17a" name="q17" value="a" required>
+                    <div class="label-container">
                     <label for="q17a">a.
                         History takes rest
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q17b" name="q17" value="b">
+                    <div class="label-container">
                     <label for="q17b">b.
                         Known to everyone
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q17c" name="q17" value="c">
+                    <div class="label-container">
                     <label for="q17c">c.
 
                         To avoid historical facts
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q17d" name="q17" value="d">
+                    <div class="label-container">
                     <label for="q17d">d.
                         History repeats itself
 
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 18 -->
@@ -654,29 +801,37 @@
 
                     </p>
                     <input type="radio" id="q18a" name="q18" value="a" required>
+                    <div class="label-container">
                     <label for="q18a">a.
                         Live a very high quality life
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q18b" name="q18" value="b">
+                    <div class="label-container">
                     <label for="q18b">b.
 
                         Live like king of Nepal
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q18c" name="q18" value="c">
+                    <div class="label-container">
                     <label for="q18c">c.
 
                         Live the life of a saint
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q18d" name="q18" value="d">
+                    <div class="label-container">
                     <label for="q18d">d.
 
                         Live like Indra, the king of Heaven
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 19 -->
@@ -690,29 +845,37 @@
 
                     </p>
                     <input type="radio" id="q19a" name="q19" value="a" required>
+                    <div class="label-container">
                     <label for="q19a">a.
                         Very hot
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q19b" name="q19" value="b">
+                    <div class="label-container">
                     <label for="q19b">b.
 
                         Very fresh
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q19c" name="q19" value="c">
+                    <div class="label-container">
                     <label for="q19c">c.
                         Lukewarm
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q19d" name="q19" value="d">
+                    <div class="label-container">
                     <label for="q19d">d.
                         Cold
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 20 -->
@@ -726,28 +889,36 @@
 
                     </p>
                     <input type="radio" id="q20a" name="q20" value="a" required>
+                    <div class="label-container">
                     <label for="q20a">a.
                         To overcome difficulty
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q20b" name="q20" value="b">
+                    <div class="label-container">
                     <label for="q20b">b.
 
                         To come out in the storm
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q20c" name="q20" value="c">
+                    <div class="label-container">
                     <label for="q20c">c.
 
                         To play in the storm
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q20d" name="q20" value="d">
+                    <div class="label-container">
                     <label for="q20d">d.
                         Ride a horse
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: The following paragraph has a number of blanks marked 21-25 followed
                         by a set of options.
@@ -773,29 +944,37 @@
 
                     </p>
                     <input type="radio" id="q21a" name="q21" value="a" required>
+                    <div class="label-container">
                     <label for="q21a">a.
 
                         Situation
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q21b" name="q21" value="b">
+                    <div class="label-container">
                     <label for="q21b">b.
 
                         State
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q21c" name="q21" value="c">
+                    <div class="label-container">
                     <label for="q21c">c.
                         Time
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q21d" name="q21" value="d">
+                    <div class="label-container">
                     <label for="q21d">d.
                         Opportunity
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 22 -->
@@ -808,29 +987,37 @@
 
                     </p>
                     <input type="radio" id="q22a" name="q22" value="a" required>
+                    <div class="label-container">
                     <label for="q22a">a.
 
                         Wrong
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q22b" name="q22" value="b">
+                    <div class="label-container">
                     <label for="q22b">b.
 
                         Correct
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q22c" name="q22" value="c">
+                    <div class="label-container">
                     <label for="q22c">c.
 
                         Inaccurate
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q22d" name="q22" value="d">
+                    <div class="label-container">
                     <label for="q22d">d.
                         Approximate
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 23 -->
@@ -844,29 +1031,37 @@
 
                     </p>
                     <input type="radio" id="q23a" name="q23" value="a" required>
+                    <div class="label-container">
                     <label for="q23a">a.
                         Taking
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q23b" name="q23" value="b">
+                    <div class="label-container">
                     <label for="q23b">b.
                         Assuming
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q23c" name="q23" value="c">
+                    <div class="label-container">
                     <label for="q23c">c.
 
 
                         Repeating
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q23d" name="q23" value="d">
+                    <div class="label-container">
                     <label for="q23d">d.
 
                         Reading
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 24 -->
@@ -880,29 +1075,37 @@
 
                     </p>
                     <input type="radio" id="q24a" name="q24" value="a" required>
+                    <div class="label-container">
                     <label for="q24a">a.
                         Leads
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q24b" name="q24" value="b">
+                    <div class="label-container">
                     <label for="q24b">b.
 
                         Backs
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q24c" name="q24" value="c">
+                    <div class="label-container">
                     <label for="q24c">c.
 
                         Begins
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q24d" name="q24" value="d">
+                    <div class="label-container">
                     <label for="q24d">d.
 
                         Ends
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 25 -->
@@ -916,28 +1119,36 @@
 
                     </p>
                     <input type="radio" id="q25a" name="q25" value="a" required>
+                    <div class="label-container">
                     <label for="q25a">a.
                         Decision
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q25b" name="q25" value="b">
+                    <div class="label-container">
                     <label for="q25b">b.
                         Dream
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q25c" name="q25" value="c">
+                    <div class="label-container">
                     <label for="q25c">c.
                         City
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q25d" name="q25" value="d">
+                    <div class="label-container">
                     <label for="q25d">d.
                         Story
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                 </section>
 
@@ -958,25 +1169,33 @@
 
                     </p>
                     <input type="radio" id="q26a" name="q26" value="a" required>
+                    <div class="label-container">
                     <label for="q26a">a.
                         140
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q26b" name="q26" value="b">
+                    <div class="label-container">
                     <label for="q26b">b.
                         150
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q26c" name="q26" value="c">
+                    <div class="label-container">
                     <label for="q26c">c.
                         160
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q26d" name="q26" value="d">
+                    <div class="label-container">
                     <label for="q26d">d.
                         165
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 27 -->
@@ -990,25 +1209,33 @@
 
                     </p>
                     <input type="radio" id="q27a" name="q27" value="a" required>
+                    <div class="label-container">
                     <label for="q27a">a.
                         120
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q27b" name="q27" value="b">
+                    <div class="label-container">
                     <label for="q27b">b.
                         144.45
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q27c" name="q27" value="c">
+                    <div class="label-container">
                     <label for="q27c">c.
                         166.66
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q27d" name="q27" value="d">
+                    <div class="label-container">
                     <label for="q27d">d.
                         175.67
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 28 -->
@@ -1023,25 +1250,33 @@
 
                     </p>
                     <input type="radio" id="q28a" name="q28" value="a" required>
+                    <div class="label-container">
                     <label for="q28a">a.
                         23.07%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q28b" name="q28" value="b">
+                    <div class="label-container">
                     <label for="q28b">b.
                         25.5%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q28c" name="q28" value="c">
+                    <div class="label-container">
                     <label for="q28c">c.
                         26%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q28d" name="q28" value="d">
+                    <div class="label-container">
                     <label for="q28d">d.
                         33.33%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 29 -->
@@ -1058,22 +1293,30 @@
 
                     </p>
                     <input type="radio" id="q29a" name="q29" value="a" required>
+                    <div class="label-container">
                     <label for="q29a">a.
                         5%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q29b" name="q29" value="b">
+                    <div class="label-container">
                     <label for="q29b">b.
                         8%
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q29c" name="q29" value="c">
+                    <div class="label-container">
                     <label for="q29c">c.
                         9%
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q29d" name="q29" value="d">
+                    <div class="label-container">
                     <label for="q29d">d.
                         10%
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 30 -->
@@ -1088,25 +1331,33 @@
 
                     </p>
                     <input type="radio" id="q30a" name="q30" value="a" required>
+                    <div class="label-container">
                     <label for="q30a">a.
                         20.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q30b" name="q30" value="b">
+                    <div class="label-container">
                     <label for="q30b">b.
                         22.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q30c" name="q30" value="c">
+                    <div class="label-container">
                     <label for="q30c">c.
                         25.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q30d" name="q30" value="d">
+                    <div class="label-container">
                     <label for="q30d">d.
                         28,000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 31 -->
@@ -1122,25 +1373,33 @@
 
                     </p>
                     <input type="radio" id="q31a" name="q31" value="a" required>
+                    <div class="label-container">
                     <label for="q31a">a.
                         285.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q31b" name="q31" value="b">
+                    <div class="label-container">
                     <label for="q31b">b.
                         250.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q31c" name="q31" value="c">
+                    <div class="label-container">
                     <label for="q31c">c.
                         244.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q31d" name="q31" value="d">
+                    <div class="label-container">
                     <label for="q31d">d.
                         200.000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 32 -->
@@ -1158,21 +1417,29 @@
 
                     </p>
                     <input type="radio" id="q32a" name="q32" value="a" required>
+                    <div class="label-container">
                     <label for="q32a">a.5%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q32b" name="q32" value="b">
+                    <div class="label-container">
                     <label for="q32b">b.3%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q32c" name="q32" value="c">
+                    <div class="label-container">
                     <label for="q32c">c.2%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q32d" name="q32" value="d">
+                    <div class="label-container">
                     <label for="q32d">d.1%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 33 -->
@@ -1189,25 +1456,33 @@
 
                     </p>
                     <input type="radio" id="q33a" name="q33" value="a" required>
+                    <div class="label-container">
                     <label for="q33a">a.
                         112.5
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q33b" name="q33" value="b">
+                    <div class="label-container">
                     <label for="q33b">b.
                         115
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q33c" name="q33" value="c">
+                    <div class="label-container">
                     <label for="q33c">c.
                         120
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q33d" name="q33" value="d">
+                    <div class="label-container">
                     <label for="q33d">d.
                         125.25
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 34 -->
@@ -1232,25 +1507,33 @@
 
                     </p>
                     <input type="radio" id="q34a" name="q34" value="a" required>
+                    <div class="label-container">
                     <label for="q34a">a.
 
                         5
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q34b" name="q34" value="b">
+                    <div class="label-container">
                     <label for="q34b">b.
                         10
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q34c" name="q34" value="c">
+                    <div class="label-container">
                     <label for="q34c">c.
                         9
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q34d" name="q34" value="d">
+                    <div class="label-container">
                     <label for="q34d">d.
                         15
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 35 -->
@@ -1265,25 +1548,33 @@
 
                     </p>
                     <input type="radio" id="q35a" name="q35" value="a" required>
+                    <div class="label-container">
                     <label for="q35a">a.
                         19
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q35b" name="q35" value="b">
+                    <div class="label-container">
                     <label for="q35b">b.
                         17
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q35c" name="q35" value="c">
+                    <div class="label-container">
                     <label for="q35c">c.
                         16
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q35d" name="q35" value="d">
+                    <div class="label-container">
                     <label for="q35d">d.
                         18
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 36 -->
@@ -1305,26 +1596,34 @@
 
                     </p>
                     <input type="radio" id="q36a" name="q36" value="a" required>
+                    <div class="label-container">
                     <label for="q36a">a.
                         Over Rupees 4 but less than Rupees 5
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q36b" name="q36" value="b">
+                    <div class="label-container">
                     <label for="q36b">b.
                         Over Rupees 13 but less than
                         Rupees 14
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q36c" name="q36" value="c">
+                    <div class="label-container">
                     <label for="q36c">c.
                         Over Rupees 7 but less than Rupees 8
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q36d" name="q36" value="d">
+                    <div class="label-container">
                     <label for="q36d">d.
 
                         Over Rupees 18 but less than Rupees 19
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 37 -->
@@ -1346,25 +1645,33 @@
 
                     </p>
                     <input type="radio" id="q37a" name="q37" value="a" required>
+                    <div class="label-container">
                     <label for="q37a">a.
                         24 years
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q37b" name="q37" value="b">
+                    <div class="label-container">
                     <label for="q37b">b.
                         23 years
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q37c" name="q37" value="c">
+                    <div class="label-container">
                     <label for="q37c">c.
                         22 years
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q37d" name="q37" value="d">
+                    <div class="label-container">
                     <label for="q37d">d.
                         21 years
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <!-- Question 38 -->
                     <p class="questions" id="38">38.
@@ -1382,25 +1689,33 @@
 
                     </p>
                     <input type="radio" id="q38a" name="q38" value="a" required>
+                    <div class="label-container">
                     <label for="q38a">a.
                         38
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q38b" name="q38" value="b">
+                    <div class="label-container">
                     <label for="q38b">b.
                         56
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q38c" name="q38" value="c">
+                    <div class="label-container">
                     <label for="q38c">c.
                         54
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q38d" name="q38" value="d">
+                    <div class="label-container">
                     <label for="q38d">d.
                         None Of the above
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 39 -->
@@ -1416,21 +1731,29 @@
 
                     </p>
                     <input type="radio" id="q39a" name="q39" value="a" required>
+                    <div class="label-container">
                     <label for="q39a">a.
                         25,000
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q39b" name="q39" value="b">
+                    <div class="label-container">
                     <label for="q39b">b.
                         33,000
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q39c" name="q39" value="c">
+                    <div class="label-container">
                     <label for="q39c">c.
                         35,000
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q39d" name="q39" value="d">
+                    <div class="label-container">
                     <label for="q39d">d.
                         40,000
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 40 -->
@@ -1450,21 +1773,29 @@
 
                     </p>
                     <input type="radio" id="q40a" name="q40" value="a" required>
+                    <div class="label-container">
                     <label for="q40a">a.Rs. 15,600
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q40b" name="q40" value="b">
+                    <div class="label-container">
                     <label for="q40b">b.Rs. 16,500
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q40c" name="q40" value="c">
+                    <div class="label-container">
                     <label for="q40c">c.
                         Rs. 17,280
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q40d" name="q40" value="d">
+                    <div class="label-container">
                     <label for="q40d">d.
                         None of these
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
 
@@ -1484,25 +1815,33 @@
 
                     </p>
                     <input type="radio" id="q41a" name="q41" value="a" required>
+                    <div class="label-container">
                     <label for="q41a">a.
                         6:40 pm
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q41b" name="q41" value="b">
+                    <div class="label-container">
                     <label for="q41b">b.
 
                         7:00 pm
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q41c" name="q41" value="c">
+                    <div class="label-container">
                     <label for="q41c">c.
 
                         7:20 pm
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q41d" name="q41" value="d">
+                    <div class="label-container">
                     <label for="q41d">d.
                         8:00 pm
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 42 -->
@@ -1527,25 +1866,33 @@
 
                     </p>
                     <input type="radio" id="q42a" name="q42" value="a" required>
+                    <div class="label-container">
                     <label for="q42a">a.
                         20mins
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q42b" name="q42" value="b">
+                    <div class="label-container">
                     <label for="q42b">b.
                         15mins
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q42c" name="q42" value="c">
+                    <div class="label-container">
                     <label for="q42c">c.
                         10 mins
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q42d" name="q42" value="d">
+                    <div class="label-container">
                     <label for="q42d">d.
 
                         5 mins
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 43 -->
@@ -1561,25 +1908,33 @@
 
                     </p>
                     <input type="radio" id="q43a" name="q43" value="a" required>
+                    <div class="label-container">
                     <label for="q43a">a.
                         8 seconds
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q43b" name="q43" value="b">
+                    <div class="label-container">
                     <label for="q43b">b.
                         1 minute
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q43c" name="q43" value="c">
+                    <div class="label-container">
                     <label for="q43c">c.
                         52 seconds
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q43d" name="q43" value="d">
+                    <div class="label-container">
                     <label for="q43d">d.
                         20 seconds
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 44 -->
@@ -1596,22 +1951,30 @@
 
                     </p>
                     <input type="radio" id="q44a" name="q44" value="a" required>
+                    <div class="label-container">
                     <label for="q44a">a.
                         5
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q44b" name="q44" value="b">
+                    <div class="label-container">
                     <label for="q44b">b. 7
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q44c" name="q44" value="c">
+                    <div class="label-container">
                     <label for="q44c">c. 9
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q44d" name="q44" value="d">
+                    <div class="label-container">
                     <label for="q44d">d. 11
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 45 -->
@@ -1633,25 +1996,33 @@
 
                     </p>
                     <input type="radio" id="q45a" name="q45" value="a" required>
+                    <div class="label-container">
                     <label for="q45a">a.
 
                         Rs. 400,000
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q45b" name="q45" value="b">
+                    <div class="label-container">
                     <label for="q45b">b.
                         Rs. 500,000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q45c" name="q45" value="c">
+                    <div class="label-container">
                     <label for="q45c">c.
                         Rs. 528,000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q45d" name="q45" value="d">
+                    <div class="label-container">
                     <label for="q45d">d.
                         Rs. 365,000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 46 -->
@@ -1668,25 +2039,33 @@
 
                     </p>
                     <input type="radio" id="q46a" name="q46" value="a" required>
+                    <div class="label-container">
                     <label for="q46a">a.
                         39
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q46b" name="q46" value="b">
+                    <div class="label-container">
                     <label for="q46b">b.
                         38.5
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q46c" name="q46" value="c">
+                    <div class="label-container">
                     <label for="q46c">c.
                         38
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q46d" name="q46" value="d">
+                    <div class="label-container">
                     <label for="q46d">d.
                         39.5
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 47 -->
@@ -1702,25 +2081,33 @@
 
                     </p>
                     <input type="radio" id="q47a" name="q47" value="a" required>
+                    <div class="label-container">
                     <label for="q47a">a.
                         20
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q47b" name="q47" value="b">
+                    <div class="label-container">
                     <label for="q47b">b.
                         21
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q47c" name="q47" value="c">
+                    <div class="label-container">
                     <label for="q47c">c.
 
                         23
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q47d" name="q47" value="d">
+                    <div class="label-container">
                     <label for="q47d">d.
 
                         25
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 48 -->
@@ -1738,25 +2125,33 @@
 
                     </p>
                     <input type="radio" id="q48a" name="q48" value="a" required>
+                    <div class="label-container">
                     <label for="q48a">a.
                         Rs. 16,800
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q48b" name="q48" value="b">
+                    <div class="label-container">
                     <label for="q48b">b.
                         Rs 18,900
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q48c" name="q48" value="c">
+                    <div class="label-container">
                     <label for="q48c">c.
                         Rs 21,000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q48d" name="q48" value="d">
+                    <div class="label-container">
                     <label for="q48d">d.
                         None of these
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 49 -->
@@ -1772,24 +2167,32 @@
 
                     </p>
                     <input type="radio" id="q49a" name="q49" value="a" required>
+                    <div class="label-container">
                     <label for="q49a">a.
                         7:12
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q49b" name="q49" value="b">
+                    <div class="label-container">
                     <label for="q49b">b. 5:12
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q49c" name="q49" value="c">
+                    <div class="label-container">
                     <label for="q49c">c.
                         38: 43
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q49d" name="q49" value="d">
+                    <div class="label-container">
                     <label for="q49d">d.
                         42: 47
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 50 -->
@@ -1806,25 +2209,33 @@
 
                     </p>
                     <input type="radio" id="q50a" name="q50" value="a" required>
+                    <div class="label-container">
                     <label for="q50a">a.
                         Rs. 7.500
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q50b" name="q50" value="b">
+                    <div class="label-container">
                     <label for="q50b">b.
 
                         Rs. 8,000
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q50c" name="q50" value="c">
+                    <div class="label-container">
                     <label for="q50c">c.
                         Rs. 8.500
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q50d" name="q50" value="d">
+                    <div class="label-container">
                     <label for="q50d">d.
                         Rs. 9,000
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                 </section>
 
@@ -1845,31 +2256,39 @@
 
                     </p>
                     <input type="radio" id="q51a" name="q51" value="a" required>
+                    <div class="label-container">
                     <label for="q51a">a.
 
                         Some peace-loving countries do not manufacture nuclear bomb.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q51b" name="q51" value="b">
+                    <div class="label-container">
                     <label for="q51b">b.
 
                         No peace-loving country will manufacture a nuclear bomb.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q51c" name="q51" value="c">
+                    <div class="label-container">
                     <label for="q51c">c.
 
                         All peace-loving countries manufacture nuclear bomb.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q51d" name="q51" value="d">
+                    <div class="label-container">
                     <label for="q51d">d.
 
                         Nuclear bomb is manufactured for peaceful purposes.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 52 -->
@@ -1882,32 +2301,40 @@
 
                     </p>
                     <input type="radio" id="q52a" name="q52" value="a" required>
+                    <div class="label-container">
                     <label for="q52a">a.
 
 
                         All sad books are bad
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q52b" name="q52" value="b">
+                    <div class="label-container">
                     <label for="q52b">b.
 
                         Some people do not like to read sad books.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q52c" name="q52" value="c">
+                    <div class="label-container">
                     <label for="q52c">c.
 
                         Bad books are all sad
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q52d" name="q52" value="d">
+                    <div class="label-container">
                     <label for="q52d">d.
 
                         Sad books have sad endings.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 53 -->
@@ -1922,30 +2349,38 @@
 
                     </p>
                     <input type="radio" id="q53a" name="q53" value="a" required>
+                    <div class="label-container">
                     <label for="q53a">a.
                         All hard things are brittle.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q53b" name="q53" value="b">
+                    <div class="label-container">
                     <label for="q53b">b.
                         Some hard things break easily.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q53c" name="q53" value="c">
+                    <div class="label-container">
                     <label for="q53c">c.
 
                         Some hard things are brittle and can be broken.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q53d" name="q53" value="d">
+                    <div class="label-container">
                     <label for="q53d">d.
                         Steel is unbreakable because it is very hard.
 
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 54 -->
@@ -1959,30 +2394,38 @@
 
                     </p>
                     <input type="radio" id="q54a" name="q54" value="a" required>
+                    <div class="label-container">
                     <label for="q54a">a.
                         All hard working employees get bonus.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q54b" name="q54" value="b">
+                    <div class="label-container">
                     <label for="q54b">b.
 
                         Some employees who are hard working get bonus
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q54c" name="q54" value="c">
+                    <div class="label-container">
                     <label for="q54c">c.
 
                         None of the hard working employees get bonus.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q54d" name="q54" value="d">
+                    <div class="label-container">
                     <label for="q54d">d.
 
                         All employees get bonus.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <!-- Make website responsive? -->
                     <!-- Question 55 -->
@@ -1997,27 +2440,35 @@
 
                     </p>
                     <input type="radio" id="q55a" name="q55" value="a" required>
+                    <div class="label-container">
                     <label for="q55a">a.
                         Sick people take medicines.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q55b" name="q55" value="b">
+                    <div class="label-container">
                     <label for="q55b">b.
                         Medicines cure sickness.
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q55c" name="q55" value="c">
+                    <div class="label-container">
                     <label for="q55c">c.
 
                         All people take medicines
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q55d" name="q55" value="d">
+                    <div class="label-container">
                     <label for="q55d">d.
                         All medicines make people sick.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: Two statements are followed by two possible inferences. You are
                         required to identify the
@@ -2049,21 +2500,29 @@
 
                     </p>
                     <input type="radio" id="q56a" name="q56" value="a" required>
+                    <div class="label-container">
                     <label for="q56a">a.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q56b" name="q56" value="b">
+                    <div class="label-container">
                     <label for="q56b">b.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q56c" name="q56" value="c">
+                    <div class="label-container">
                     <label for="q56c">c.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q56d" name="q56" value="d">
+                    <div class="label-container">
                     <label for="q56d">d.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 57 -->
@@ -2078,21 +2537,29 @@
 
                     </p>
                     <input type="radio" id="q57a" name="q57" value="a" required>
+                    <div class="label-container">
                     <label for="q57a">a.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q57b" name="q57" value="b">
+                    <div class="label-container">
                     <label for="q57b">b.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q57c" name="q57" value="c">
+                    <div class="label-container">
                     <label for="q57c">c.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q57d" name="q57" value="d">
+                    <div class="label-container">
                     <label for="q57d">d.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 58 -->
@@ -2108,21 +2575,29 @@
 
                     </p>
                     <input type="radio" id="q58a" name="q58" value="a" required>
+                    <div class="label-container">
                     <label for="q58a">a.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q58b" name="q58" value="b">
+                    <div class="label-container">
                     <label for="q58b">b.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q58c" name="q58" value="c">
+                    <div class="label-container">
                     <label for="q58c">c.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q58d" name="q58" value="d">
+                    <div class="label-container">
                     <label for="q58d">d.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 59 -->
@@ -2136,21 +2611,29 @@
 
                     </p>
                     <input type="radio" id="q59a" name="q59" value="a" required>
+                    <div class="label-container">
                     <label for="q59a">a.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q59b" name="q59" value="b">
+                    <div class="label-container">
                     <label for="q59b">b.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q59c" name="q59" value="c">
+                    <div class="label-container">
                     <label for="q59c">c.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q59d" name="q59" value="d">
+                    <div class="label-container">
                     <label for="q59d">d.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 60 -->
@@ -2166,21 +2649,29 @@
 
                     </p>
                     <input type="radio" id="q60a" name="q60" value="a" required>
+                    <div class="label-container">
                     <label for="q60a">a.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q60b" name="q60" value="b">
+                    <div class="label-container">
                     <label for="q60b">b.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q60c" name="q60" value="c">
+                    <div class="label-container">
                     <label for="q60c">c.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q60d" name="q60" value="d">
+                    <div class="label-container">
                     <label for="q60d">d.
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: Find the odd-one out.</p>
                     <!-- Question 61 -->
@@ -2195,27 +2686,35 @@
 
                     </p>
                     <input type="radio" id="q61a" name="q61" value="a" required>
+                    <div class="label-container">
                     <label for="q61a">a.
                         Monitor
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q61b" name="q61" value="b">
+                    <div class="label-container">
                     <label for="q61b">b.
 
                         Printer
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q61c" name="q61" value="c">
+                    <div class="label-container">
                     <label for="q61c">c.
 
                         Zip-driver
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q61d" name="q61" value="d">
+                    <div class="label-container">
                     <label for="q61d">d.
 
                         Steering
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 62 -->
@@ -2227,30 +2726,38 @@
 
                     </p>
                     <input type="radio" id="q62a" name="q62" value="a" required>
+                    <div class="label-container">
                     <label for="q62a">a.
 
                         Aunt
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q62b" name="q62" value="b">
+                    <div class="label-container">
                     <label for="q62b">b.
                         Mother
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q62c" name="q62" value="c">
+                    <div class="label-container">
                     <label for="q62c">c.
                         Brother
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q62d" name="q62" value="d">
+                    <div class="label-container">
                     <label for="q62d">d.
                         Sister
 
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 63 -->
@@ -2262,29 +2769,37 @@
 
                     </p>
                     <input type="radio" id="q63a" name="q63" value="a" required>
+                    <div class="label-container">
                     <label for="q63a">a.
                         Piano
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q63b" name="q63" value="b">
+                    <div class="label-container">
                     <label for="q63b">b.
 
                         Guitar
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q63c" name="q63" value="c">
+                    <div class="label-container">
                     <label for="q63c">c.
                         Banjo
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q63d" name="q63" value="d">
+                    <div class="label-container">
                     <label for="q63d">d.
                         Harmonium
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 64 -->
@@ -2296,29 +2811,37 @@
 
                     </p>
                     <input type="radio" id="q64a" name="q64" value="a" required>
+                    <div class="label-container">
                     <label for="q64a">a.
 
                         Train
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q64b" name="q64" value="b">
+                    <div class="label-container">
                     <label for="q64b">b.
 
                         Truck
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q64c" name="q64" value="c">
+                    <div class="label-container">
                     <label for="q64c">c.
 
                         Car
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q64d" name="q64" value="d">
+                    <div class="label-container">
                     <label for="q64d">d.
                         Cart
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 65 -->
@@ -2330,28 +2853,36 @@
 
                     </p>
                     <input type="radio" id="q65a" name="q65" value="a" required>
+                    <div class="label-container">
                     <label for="q65a">a.
                         Nylon
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q65b" name="q65" value="b">
+                    <div class="label-container">
                     <label for="q65b">b.
 
                         Fur
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q65c" name="q65" value="c">
+                    <div class="label-container">
                     <label for="q65c">c.
 
                         Wool
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q65d" name="q65" value="d">
+                    <div class="label-container">
                     <label for="q65d">d.
 
                         Cotton
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: Two words on the left side of the sign (:) bears the same
                         relationships. The same
@@ -2367,29 +2898,37 @@
 
                     </p>
                     <input type="radio" id="q66a" name="q66" value="a" required>
+                    <div class="label-container">
                     <label for="q66a">a.
                         Cry
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q66b" name="q66" value="b">
+                    <div class="label-container">
                     <label for="q66b">b.
 
                         Call
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q66c" name="q66" value="c">
+                    <div class="label-container">
                     <label for="q66c">c.
                         Whisper
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q66d" name="q66" value="d">
+                    <div class="label-container">
                     <label for="q66d">d.
                         Scream
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 67 -->
@@ -2402,29 +2941,37 @@
 
                     </p>
                     <input type="radio" id="q67a" name="q67" value="a" required>
+                    <div class="label-container">
                     <label for="q67a">a.
                         Status
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q67b" name="q67" value="b">
+                    <div class="label-container">
                     <label for="q67b">b.
 
                         Ignorance
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q67c" name="q67" value="c">
+                    <div class="label-container">
                     <label for="q67c">c.
                         Job
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q67d" name="q67" value="d">
+                    <div class="label-container">
                     <label for="q67d">d.
 
                         Genius
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 68 -->
@@ -2437,29 +2984,37 @@
 
                     </p>
                     <input type="radio" id="q68a" name="q68" value="a" required>
+                    <div class="label-container">
                     <label for="q68a">a.
                         Intelligence
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q68b" name="q68" value="b">
+                    <div class="label-container">
                     <label for="q68b">b.
                         Achieved
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q68c" name="q68" value="c">
+                    <div class="label-container">
                     <label for="q68c">c.
                         Learning
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q68d" name="q68" value="d">
+                    <div class="label-container">
                     <label for="q68d">d.
                         Employment
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 69 -->
@@ -2472,29 +3027,37 @@
 
                     </p>
                     <input type="radio" id="q69a" name="q69" value="a" required>
+                    <div class="label-container">
                     <label for="q69a">a.
 
                         Moronic
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q69b" name="q69" value="b">
+                    <div class="label-container">
                     <label for="q69b">b.
 
                         Intelligent
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q69c" name="q69" value="c">
+                    <div class="label-container">
                     <label for="q69c">c.
 
                         Fast
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q69d" name="q69" value="d">
+                    <div class="label-container">
                     <label for="q69d">d.
 
                         Worry
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 70 -->
@@ -2507,28 +3070,36 @@
 
                     </p>
                     <input type="radio" id="q70a" name="q70" value="a" required>
+                    <div class="label-container">
                     <label for="q70a">a.
                         Plan
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q70b" name="q70" value="b">
+                    <div class="label-container">
                     <label for="q70b">b.
 
                         Instrument
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q70c" name="q70" value="c">
+                    <div class="label-container">
                     <label for="q70c">c.
                         Transport
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q70d" name="q70" value="d">
+                    <div class="label-container">
                     <label for="q70d">d.
                         Motor
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <p id="direction"> Direction: Questions 71-75 are based
                         on visual analogy. There are two sets
@@ -2549,26 +3120,34 @@
 
                     </p>
                     <input type="radio" id="q71a" name="q71" value="a" required>
+                    <div class="label-container">
                     <label for="q71a">a.
                         <img src="pictures/q71_ans_a.webp" alt="" id="q71a" class="images">
 
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q71b" name="q71" value="b">
+                    <div class="label-container">
                     <label for="q71b">b.
                         <img src="pictures/q71_ans_b.webp" alt="" id="q71b" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q71c" name="q71" value="c">
+                    <div class="label-container">
                     <label for="q71c">c.
                         <img src="pictures/q71_ans_c.webp" alt="" id="q71c" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q71d" name="q71" value="d">
+                    <div class="label-container">
                     <label for="q71d">d.
                         <img src="pictures/q71_ans_d.webp" alt="" id="q71d" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 72 -->
@@ -2581,25 +3160,33 @@
 
                     </p>
                     <input type="radio" id="q72a" name="q72" value="a" required>
+                    <div class="label-container">
                     <label for="q72a">a.
                         <img src="pictures/q72_ans_a.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q72b" name="q72" value="b">
+                    <div class="label-container">
                     <label for="q72b">b.
                         <img src="pictures/q72_ans_b.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q72c" name="q72" value="c">
+                    <div class="label-container">
                     <label for="q72c">c.
                         <img src="pictures/q72_ans_c.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q72d" name="q72" value="d">
+                    <div class="label-container">
                     <label for="q72d">d.
                         <img src="pictures/q72_ans_d.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 73 -->
@@ -2613,25 +3200,33 @@
 
                     </p>
                     <input type="radio" id="q73a" name="q73" value="a" required>
+                    <div class="label-container">
                     <label for="q73a">a.
                         <img src="pictures/q73_ans_a.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q73b" name="q73" value="b">
+                    <div class="label-container">
                     <label for="q73b">b.
                         <img src="pictures/q73_ans_b.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q73c" name="q73" value="c">
+                    <div class="label-container">
                     <label for="q73c">c.
                         <img src="pictures/q73_ans_c.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q73d" name="q73" value="d">
+                    <div class="label-container">
                     <label for="q73d">d.
                         <img src="pictures/q73_ans_d.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 74 -->
@@ -2645,25 +3240,33 @@
 
                     </p>
                     <input type="radio" id="q74a" name="q74" value="a" required>
+                    <div class="label-container">
                     <label for="q74a">a.
                         <img src="pictures/q74_ans_a.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q74b" name="q74" value="b">
+                    <div class="label-container">
                     <label for="q74b">b.
                         <img src="pictures/q74_ans_b.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q74c" name="q74" value="c">
+                    <div class="label-container">
                     <label for="q74c">c.
                         <img src="pictures/q74_ans_c.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q74d" name="q74" value="d">
+                    <div class="label-container">
                     <label for="q74d">d.
                         <img src="pictures/q74_ans_d.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 75 -->
@@ -2677,25 +3280,33 @@
 
                     </p>
                     <input type="radio" id="q75a" name="q75" value="a" required>
+                    <div class="label-container">
                     <label for="q75a">a.
                         <img src="pictures/q75_ans_a.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q75b" name="q75" value="b">
+                    <div class="label-container">
                     <label for="q75b">b.
                         <img src="pictures/q75_ans_b.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q75c" name="q75" value="c">
+                    <div class="label-container">
                     <label for="q75c">c.
                         <img src="pictures/q75_ans_c.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q75d" name="q75" value="d">
+                    <div class="label-container">
                     <label for="q75d">d.
                         <img src="pictures/q75_ans_d.webp" alt="" id="q71a" class="images">
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                 </section>
@@ -2713,23 +3324,31 @@
 
                     </p>
                     <input type="radio" id="q76a" name="q76" value="a" required>
+                    <div class="label-container">
                     <label for="q76a">a.The largest industrial democracies
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q76b" name="q76" value="b">
+                    <div class="label-container">
                     <label for="q76b">b.The nations having atomic power
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q76c" name="q76" value="c">
+                    <div class="label-container">
                     <label for="q76c">c.
                         the developed nations of Europe
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q76d" name="q76" value="d">
+                    <div class="label-container">
                     <label for="q76d">d.
                         Countries With Veto power in the UNO
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 77 -->
@@ -2746,25 +3365,33 @@
 
                     </p>
                     <input type="radio" id="q77a" name="q77" value="a" required>
+                    <div class="label-container">
                     <label for="q77a">a.
                         Departmentat store
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q77b" name="q77" value="b">
+                    <div class="label-container">
                     <label for="q77b">b.
                         Super market
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q77c" name="q77" value="c">
+                    <div class="label-container">
                     <label for="q77c">c.
                         Shopping mall
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q77d" name="q77" value="d">
+                    <div class="label-container">
                     <label for="q77d">d.
                         Chain store
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 78 -->
@@ -2777,25 +3404,33 @@
 
                     </p>
                     <input type="radio" id="q78a" name="q78" value="a" required>
+                    <div class="label-container">
                     <label for="q78a">a.
                         Foot ball
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q78b" name="q78" value="b">
+                    <div class="label-container">
                     <label for="q78b">b.
                         Hockey
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q78c" name="q78" value="c">
+                    <div class="label-container">
                     <label for="q78c">c.
                         Basket ball
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q78d" name="q78" value="d">
+                    <div class="label-container">
                     <label for="q78d">d.
                         Volley ball
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 79 -->
@@ -2810,25 +3445,33 @@
 
                     </p>
                     <input type="radio" id="q79a" name="q79" value="a" required>
+                    <div class="label-container">
                     <label for="q79a">a.
                         O winner
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q79b" name="q79" value="b">
+                    <div class="label-container">
                     <label for="q79b">b.
                         Second position
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q79c" name="q79" value="c">
+                    <div class="label-container">
                     <label for="q79c">c.
                         Third position
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q79d" name="q79" value="d">
+                    <div class="label-container">
                     <label for="q79d">d.
                         Fourth position
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 80 -->
@@ -2841,25 +3484,33 @@
 
                     </p>
                     <input type="radio" id="q80a" name="q80" value="a" required>
+                    <div class="label-container">
                     <label for="q80a">a.
                         India
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q80b" name="q80" value="b">
+                    <div class="label-container">
                     <label for="q80b">b.
                         Australia
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q80c" name="q80" value="c">
+                    <div class="label-container">
                     <label for="q80c">c.
                         Great Britain
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q80d" name="q80" value="d">
+                    <div class="label-container">
                     <label for="q80d">d.
 
                         .Sri-Lanka
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 81 -->
@@ -2872,24 +3523,32 @@
 
                     </p>
                     <input type="radio" id="q81a" name="q81" value="a" required>
+                    <div class="label-container">
                     <label for="q81a">a.
                         Gross Domestic Product
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q81b" name="q81" value="b">
+                    <div class="label-container">
                     <label for="q81b">b.
                         Gross National Product
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q81c" name="q81" value="c">
+                    <div class="label-container">
                     <label for="q81c">c.
                         Gross Disposable income
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q81d" name="q81" value="d">
+                    <div class="label-container">
                     <label for="q81d">d.
                         None of the above
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 82 -->
@@ -2902,25 +3561,33 @@
 
                     </p>
                     <input type="radio" id="q82a" name="q82" value="a" required>
+                    <div class="label-container">
                     <label for="q82a">a.
                         4.3%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q82b" name="q82" value="b">
+                    <div class="label-container">
                     <label for="q82b">b.
                         460/0
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q82c" name="q82" value="c">
+                    <div class="label-container">
                     <label for="q82c">c.
                         49/0
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q82d" name="q82" value="d">
+                    <div class="label-container">
                     <label for="q82d">d.
                         -46%
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 83 -->
@@ -2933,25 +3600,33 @@
 
                     </p>
                     <input type="radio" id="q83a" name="q83" value="a" required>
+                    <div class="label-container">
                     <label for="q83a">a.
                         Offering of shares value
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q83b" name="q83" value="b">
+                    <div class="label-container">
                     <label for="q83b">b.
                         Offering at book value
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q83c" name="q83" value="c">
+                    <div class="label-container">
                     <label for="q83c">c.
                         Offenng at market value
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q83d" name="q83" value="d">
+                    <div class="label-container">
                     <label for="q83d">d.
                         Offering at prices higher than the
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 84 -->
@@ -2964,25 +3639,33 @@
 
                     </p>
                     <input type="radio" id="q84a" name="q84" value="a" required>
+                    <div class="label-container">
                     <label for="q84a">a.
                         Small domestic actmtjes
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q84b" name="q84" value="b">
+                    <div class="label-container">
                     <label for="q84b">b.
                         Cottage Industries
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q84c" name="q84" value="c">
+                    <div class="label-container">
                     <label for="q84c">c.
                         Industries employing one or two persons With Rs. 100,000 or less investment
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q84d" name="q84" value="d">
+                    <div class="label-container">
                     <label for="q84d">d.
                         Enterpnses employing less than to persons With up to Rs. 200,000 investment
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 85 -->
@@ -2994,25 +3677,33 @@
 
                     </p>
                     <input type="radio" id="q85a" name="q85" value="a" required>
+                    <div class="label-container">
                     <label for="q85a">a.
                         India
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q85b" name="q85" value="b">
+                    <div class="label-container">
                     <label for="q85b">b.
                         China
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q85c" name="q85" value="c">
+                    <div class="label-container">
                     <label for="q85c">c.
                         USA
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q85d" name="q85" value="d">
+                    <div class="label-container">
                     <label for="q85d">d.
                         Germany
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 86 -->
@@ -3025,25 +3716,33 @@
 
                     </p>
                     <input type="radio" id="q86a" name="q86" value="a" required>
+                    <div class="label-container">
                     <label for="q86a">a.
                         Exchange of goods with money
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q86b" name="q86" value="b">
+                    <div class="label-container">
                     <label for="q86b">b.
                         Exchange of goods with services
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q86c" name="q86" value="c">
+                    <div class="label-container">
                     <label for="q86c">c.
                         Exchange of goods With goods
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q86d" name="q86" value="d">
+                    <div class="label-container">
                     <label for="q86d">d.
                         Exchange of goods in ancient times
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 87 -->
@@ -3055,25 +3754,33 @@
 
                     </p>
                     <input type="radio" id="q87a" name="q87" value="a" required>
+                    <div class="label-container">
                     <label for="q87a">a.
                         Laos
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q87b" name="q87" value="b">
+                    <div class="label-container">
                     <label for="q87b">b.
                         Cambodia
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q87c" name="q87" value="c">
+                    <div class="label-container">
                     <label for="q87c">c.
                         Myanmar
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q87d" name="q87" value="d">
+                    <div class="label-container">
                     <label for="q87d">d.
                         Bhutan
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 88 -->
@@ -3086,25 +3793,33 @@
 
                     </p>
                     <input type="radio" id="q88a" name="q88" value="a" required>
+                    <div class="label-container">
                     <label for="q88a">a.
                         Income tax
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q88b" name="q88" value="b">
+                    <div class="label-container">
                     <label for="q88b">b.
                         Excise duty
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q88c" name="q88" value="c">
+                    <div class="label-container">
                     <label for="q88c">c.
 
                         Tariff
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q88d" name="q88" value="d">
+                    <div class="label-container">
                     <label for="q88d">d.
                         Value added tax
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 89 -->
@@ -3116,25 +3831,33 @@
 
                     </p>
                     <input type="radio" id="q89a" name="q89" value="a" required>
+                    <div class="label-container">
                     <label for="q89a">a.
                         Dollar
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q89b" name="q89" value="b">
+                    <div class="label-container">
                     <label for="q89b">b.
                         Pound
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q89c" name="q89" value="c">
+                    <div class="label-container">
                     <label for="q89c">c.
                         Dirham
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q89d" name="q89" value="d">
+                    <div class="label-container">
                     <label for="q89d">d.
                         Rupiyah,
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <!-- Question 90 -->
                     <p class="questions" id="90">90.
@@ -3146,28 +3869,36 @@
                         SBI Bank Nepal is
                     </p>
                     <input type="radio" id="q90a" name="q90" value="a" required>
+                    <div class="label-container">
                     <label for="q90a">a.
 
                         A subsidiary unit of State Bank of
                         India
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q90b" name="q90" value="b">
+                    <div class="label-container">
                     <label for="q90b">b.
                         A branch of State Bank of India
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q90c" name="q90" value="c">
+                    <div class="label-container">
                     <label for="q90c">c.
                         A joint venture bank with State Bank
                         of India
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q90d" name="q90" value="d">
+                    <div class="label-container">
                     <label for="q90d">d.
                         A bank with no relationship with
                         State Bank of India
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 91 -->
@@ -3178,25 +3909,33 @@
 
                     </p>
                     <input type="radio" id="q91a" name="q91" value="a" required>
+                    <div class="label-container">
                     <label for="q91a">a.
                         (a) Human Rights
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q91b" name="q91" value="b">
+                    <div class="label-container">
                     <label for="q91b">b.
                         (b) Peace Promotion
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q91c" name="q91" value="c">
+                    <div class="label-container">
                     <label for="q91c">c.
                         (c) Environmental protection
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q91d" name="q91" value="d">
+                    <div class="label-container">
                     <label for="q91d">d.
 
                         (d) Successful entrepreneurs
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 92 -->
@@ -3210,25 +3949,33 @@
 
                     </p>
                     <input type="radio" id="q92a" name="q92" value="a" required>
+                    <div class="label-container">
                     <label for="q92a">a.
                         Lesotho
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q92b" name="q92" value="b">
+                    <div class="label-container">
                     <label for="q92b">b.
                         Vatican
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q92c" name="q92" value="c">
+                    <div class="label-container">
                     <label for="q92c">c.
                         San Manon
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q92d" name="q92" value="d">
+                    <div class="label-container">
                     <label for="q92d">d.
                         Andorra
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 93 -->
@@ -3240,25 +3987,33 @@
 
                     </p>
                     <input type="radio" id="q93a" name="q93" value="a" required>
+                    <div class="label-container">
                     <label for="q93a">a.
                         Asta and Europe
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q93b" name="q93" value="b">
+                    <div class="label-container">
                     <label for="q93b">b.
                         China and Iran
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q93c" name="q93" value="c">
+                    <div class="label-container">
                     <label for="q93c">c.
                         Mongolia and Hungary
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q93d" name="q93" value="d">
+                    <div class="label-container">
                     <label for="q93d">d.
                         China and Turkey
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 94 -->
@@ -3271,25 +4026,33 @@
 
                     </p>
                     <input type="radio" id="q94a" name="q94" value="a" required>
+                    <div class="label-container">
                     <label for="q94a">a.
                         Sankhuwasabha
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q94b" name="q94" value="b">
+                    <div class="label-container">
                     <label for="q94b">b.
                         Solukhumbu
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q94c" name="q94" value="c">
+                    <div class="label-container">
                     <label for="q94c">c.
                         Taplejung
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q94d" name="q94" value="d">
+                    <div class="label-container">
                     <label for="q94d">d.
                         Gorkha
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 95 -->
@@ -3301,25 +4064,33 @@
 
                     </p>
                     <input type="radio" id="q95a" name="q95" value="a" required>
+                    <div class="label-container">
                     <label for="q95a">a.
                         Singapore
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q95b" name="q95" value="b">
+                    <div class="label-container">
                     <label for="q95b">b.
                         Hong Kong
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q95c" name="q95" value="c">
+                    <div class="label-container">
                     <label for="q95c">c.
 
                         Taiwan
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q95d" name="q95" value="d">
+                    <div class="label-container">
                     <label for="q95d">d.
 
                         Japan
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 96 -->
@@ -3331,21 +4102,29 @@
 
                     </p>
                     <input type="radio" id="q96a" name="q96" value="a" required>
+                    <div class="label-container">
                     <label for="q96a">a.
                         Madhav Ghimire
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q96b" name="q96" value="b">
+                    <div class="label-container">
                     <label for="q96b">b.Shanker Koirala
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q96c" name="q96" value="c">
+                    <div class="label-container">
                     <label for="q96c">c.Leeta Mani Poudel
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q96d" name="q96" value="d">
+                    <div class="label-container">
                     <label for="q96d">d.
                         Yubraj Bhusal
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 97 -->
@@ -3359,25 +4138,33 @@
 
                     </p>
                     <input type="radio" id="q97a" name="q97" value="a" required>
+                    <div class="label-container">
                     <label for="q97a">a.
                         Vatican Palace
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q97b" name="q97" value="b">
+                    <div class="label-container">
                     <label for="q97b">b.
                         Temple of Rhode Island
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q97c" name="q97" value="c">
+                    <div class="label-container">
                     <label for="q97c">c.
 
                         Sun Francisco Bndge
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q97d" name="q97" value="d">
+                    <div class="label-container">
                     <label for="q97d">d.
 
                         the Great wall of China
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 98 -->
@@ -3390,25 +4177,33 @@
 
                     </p>
                     <input type="radio" id="q98a" name="q98" value="a" required>
+                    <div class="label-container">
                     <label for="q98a">a.
                         UAE
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q98b" name="q98" value="b">
+                    <div class="label-container">
                     <label for="q98b">b.
                         USA
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q98c" name="q98" value="c">
+                    <div class="label-container">
                     <label for="q98c">c.
                         Malaysia
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q98d" name="q98" value="d">
+                    <div class="label-container">
                     <label for="q98d">d.
                         Taiwan
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 99 -->
@@ -3422,25 +4217,33 @@
 
                     </p>
                     <input type="radio" id="q99a" name="q99" value="a" required>
+                    <div class="label-container">
                     <label for="q99a">a.
                         Nepal
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q99b" name="q99" value="b">
+                    <div class="label-container">
                     <label for="q99b">b.
                         India
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q99c" name="q99" value="c">
+                    <div class="label-container">
                     <label for="q99c">c.
                         Maldives
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q99d" name="q99" value="d">
+                    <div class="label-container">
                     <label for="q99d">d.
                         Sri-Lanka
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
 
                     <!-- Question 100 -->
@@ -3453,32 +4256,45 @@
 
                     </p>
                     <input type="radio" id="q100a" name="q100" value="a" required>
+                    <div class="label-container">
                     <label for="q100a">a.
                         Basic Education
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q100b" name="q100" value="b">
+                    <div class="label-container">
                     <label for="q100b">b.
                         Primary education
 
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q100c" name="q100" value="c">
+                    <div class="label-container">
                     <label for="q100c">c.
 
                         Secondary Education
-                    </label><br>
+                    </label>
+</div><br>
                     <input type="radio" id="q100d" name="q100" value="d">
+                    <div class="label-container">
                     <label for="q100d">d.
                         - Higher Education
 
-                    </label><br>
+                    </label>
+</div><br>
                     <!-- Answer: [Correct answer] -->
                     <!-- Repeat for 24 more questions -->
 
+                    <div class="buttons">
+                    <button type="button" onclick="submitQuiz()">Submit</button>
+                    <button type="button" onclick="window.location.href = 'past-questions.html'">Restart</button>
+                </div>
                 </section>
                 </div>
                 </div>
-                <button class="btn next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button>
+                <button class="btn next"><i class="fa fa-chevron-circle-right"
+                    aria-hidden="true"></i></button>
     </main>
     <div id="container" style="display: none;">
         <p id="instructions">
@@ -3488,112 +4304,109 @@
         </p>
         <p id="score"></p>
     </div>
-    <button type="button" onclick="submitQuiz()">Submit</button>
-    <button type="button" onclick="window.location.href = 'index.html'">Restart</button>
-
 
     </section>
 
     <script>
         const answers = {
-            q1: 'a',
+            q1: 'c',
             q2: 'b',
-            q3: 'c',
-            q4: 'c',
-            q5: 'c',
-            q6: 'b',
-            q7: 'a',
-            q8: 'a',
-            q9: 'a',
-            q10: 'c',
-            q11: 'b',
-            q12: 'a',
-            q13: 'b',
-            q14: 'd',
+            q3: 'd',
+            q4: 'd',
+            q5: 'd',
+            q6: 'c',
+            q7: 'd',
+            q8: 'd',
+            q9: 'c',
+            q10: 'a',
+            q11: 'c',
+            q12: 'c',
+            q13: 'a',
+            q14: 'a',
             q15: 'b',
-            q16: 'b',
-            q17: 'd',
+            q16: 'a',
+            q17: 'b',
             q18: 'a',
-            q19: 'b',
-            q20: 'b',
-            q21: 'd',
-            q22: 'c',
-            q23: 'c',
-            q24: 'd',
+            q19: 'a',
+            q20: 'a',
+            q21: 'a',
+            q22: 'b',
+            q23: 'b',
+            q24: 'a',
             q25: 'a',
-            q26: 'c',
+            q26: 'b',
             q27: 'c',
             q28: 'a',
-            q29: 'b',
-            q30: 'c',
+            q29: 'a',
+            q30: 'd',
             q31: 'a',
-            q32: 'c',
+            q32: 'd',
             q33: 'a',
-            q34: 'b',
-            q35: 'b',
-            q36: 'a',
+            q34: 'c',
+            q35: 'c',
+            q36: 'd',
             q37: 'a',
-            q38: 'b',
+            q38: 'c',
             q39: 'a',
-            q40: 'c',
+            q40: 'a',
             q41: 'd',
-            q42: 'd',
+            q42: 'c',
             q43: 'c',
-            q44: 'd',
+            q44: 'c',
             q45: 'c',
-            q46: 'b',
-            q47: 'a',
-            q48: 'd',
-            q49: 'c',
-            q50: 'b',
-            q51: 'd',
-            q52: 'a',
-            q53: 'a',
-            q54: 'b',
-            q55: 'b',
-            q56: 'c',
-            q57: 'b',
-            q58: 'b',
-            q59: 'b',
-            q60: 'a',
-            q61: 'd',
-            q62: 'b',
-            q63: 'a',
-            q64: 'a',
-            q65: 'c',
+            q46: 'a',
+            q47: 'b',
+            q48: 'c',
+            q49: 'b',
+            q50: 'd',
+            q51: 'a',
+            q52: 'b',
+            q53: 'b',
+            q54: 'a',
+            q55: 'a',
+            q56: 'b',
+            q57: 'c',
+            q58: 'c',
+            q59: 'd',
+            q60: 'd',
+            q61: 'a',
+            q62: 'c',
+            q63: 'd',
+            q64: 'd',
+            q65: 'a',
             q66: 'c',
-            q67: 'a',
+            q67: 'c',
             q68: 'b',
-            q69: 'b',
-            q70: 'b',
-            q71: 'c',
+            q69: 'a',
+            q70: 'd',
+            q71: 'a',
             q72: 'd',
-            q73: 'b',
-            q74: 'd',
-            q75: 'b',
-            q76: 'b',
-            q77: 'a',
-            q78: 'c',
-            q79: 'd',
-            q80: 'c',
-            q81: 'c',
+            q73: 'd',
+            q74: 'c',
+            q75: 'c',
+            q76: 'a',
+            q77: 'b',
+            q78: 'b',
+            q79: 'b',
+            q80: 'd',
+            q81: 'b',
             q82: 'c',
-            q83: 'c',
-            q84: 'b',
+            q83: 'd',
+            q84: 'c',
             q85: 'a',
-            q86: 'a',
-            q87: 'c',
+            q86: 'c',
+            q87: 'd',
             q88: 'b',
             q89: 'd',
-            q90: 'd',
-            q91: 'a',
+            q90: 'c',
+            q91: 'c',
             q92: 'b',
-            q93: 'c',
-            q94: 'd',
-            q95: 'c',
+            q93: 'b',
+            q94: 'b',
+            q95: 'b',
             q96: 'c',
-            q97: 'a',
-            q98: 'b',
+            q97: 'd',
+            q98: 'a',
             q99: 'a',
             q100: 'd',
         };

@@ -7,13 +7,17 @@ const screenWidth = window.screen.width;
 let resultDisplay = document.querySelector(".result");
 let selectedAnswer = [];
 let radioInputs;
-let correctVerbalAnswersCounter = 0;
+
+submitButton0.addEventListener('click', () => {
+    //marks counters
+    let correctVerbalAnswersCounter = 0;
 let correctQuantitativeAnswersCounter = 0;
 let correctLogicalAnswersCounter = 0;
 let correctGkAnswersCounter = 0;
 let totalMarks;
 
-submitButton0.addEventListener('click', () => {
+    button.style.display = "";
+    button.innerHTML="Restart";
     let VerbalDisplay = document.querySelector(".verbal-ques-type-shower");
     let QuantitativeDisplay = document.querySelector(".quantitative-ques-type-shower");
     let LogicalDisplay = document.querySelector(".logical-ques-type-shower");
@@ -168,6 +172,10 @@ submitButton0.addEventListener('click', () => {
         GkDisplay.style.color = "green";
     else
         GkDisplay.style.color = "red";
+        VerbalDisplay.innerHTML="Verbal";
+        QuantitativeDisplay.innerHTML="Quantitative";
+        LogicalDisplay.innerHTML="Logical";
+        GkDisplay.innerHTML="GK"
     VerbalDisplay.innerHTML += `: ${correctVerbalAnswersCounter}/25`;
     QuantitativeDisplay.innerHTML += `: ${correctQuantitativeAnswersCounter}/25`;
     LogicalDisplay.innerHTML += `: ${correctLogicalAnswersCounter}/25`;
@@ -187,6 +195,7 @@ submitButton0.addEventListener('click', () => {
 })
 //to display next & prev buttons on random button click
 button0.addEventListener('click', () => {
+    resultDisplay.innerHTML = ``;
     if (screenWidth < 600) {
         swipeButton0[0].style.visibility = "visible";
         swipeButton0[1].style.visibility = "visible";

@@ -4,29 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>CMAT 2024</title>
     <link rel="stylesheet" href="pj.css">
     <link rel="stylesheet" href="bb.css">
     <script src="swiping.js" defer></script>
+    <link rel="stylesheet" href="nav.css">
 </head>
 
 <body>
     <nav>
-        <ul>
-            <li><a id="home" class="nv" href="index.html">Home</a></li>
-            <li class="dropdown">
-                <a href="#" class="nv">Compare</a>
-                <ul class="dropdown-content">
-                    <li><a href="#comparison">BBA vs BIM</a></li>
-                    <li><a href="#">BIM vs BCA</a></li>
-                    <li><a href="#">BIM vs BScCSIT</a></li>
-                </ul>
-            </li>
-            <li><a href="#" class="nv">About Us</a></li>
-            <li><a href="#" class="nv">Contact</a></li>
-        </ul>
-    </nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">Prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
+
+
+</nav>
 
     <!-- Main Content -->
     <div class="timer">
@@ -59,7 +58,8 @@
         }, 1000);
     </script>
     <main class="question">
-        <button class="btn prev"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></button><!--Yaha class add xa   -->
+        <button class="btn prev"><i class="fa fa-chevron-circle-left"
+                aria-hidden="true"></i></button><!--Yaha class add xa   -->
         <div class="main-container2">
             <div class="slider">
                 <section class="section English">
@@ -101,7 +101,9 @@
 
                     <div class="line">
                         <input type="radio" id="q1a" name="q1" value="a">
-                        <label for="q1a"> a. A tourist attraction</label>
+                        <div class="label-container">
+                            <label for="q1a"> a. A tourist attraction </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -109,7 +111,9 @@
 
                     <div class="line">
                         <input type="radio" id="q1b" name="q1" value="b">
-                        <label for="q1b"> b. A source of timber</label>
+                        <div class="label-container">
+                            <label for="q1b"> b. A source of timber </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -117,14 +121,18 @@
 
                     <div class="line">
                         <input type="radio" id="q1c" name="q1" value="c">
-                        <label for="q1c"> c. A crucial regulator of the global climate</label>
+                        <div class="label-container">
+                            <label for="q1c"> c. A crucial regulator of the global climate </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q1d" name="q1" value="d">
-                        <label for="q1d"> d. A mining area</label>
+                        <div class="label-container">
+                            <label for="q1d"> d. A mining area </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -134,28 +142,36 @@
 
                     <div class="line">
                         <input type="radio" id="q2a" name="q2" value="a">
-                        <label for="q2a">a. Tourism and urban development</label>
+                        <div class="label-container">
+                            <label for="q2a">a. Tourism and urban development </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q2b" name="q2" value="b">
-                        <label for="q2b">b. Logging, agriculture, and mining</label>
+                        <div class="label-container">
+                            <label for="q2b">b. Logging, agriculture, and mining </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q2c" name="q2" value="c">
-                        <label for="q2c">c. Fishing and hunting</label>
+                        <div class="label-container">
+                            <label for="q2c">c. Fishing and hunting </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q2d" name="q2" value="d">
-                        <label for="q2d"> d. Natural disasters</label>
+                        <div class="label-container">
+                            <label for="q2d"> d. Natural disasters </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -166,28 +182,36 @@
 
                     <div class="line">
                         <input type="radio" id="q3a" name="q3" value="a">
-                        <label for="q3a">a. By producing fossil fuels</label>
+                        <div class="label-container">
+                            <label for="q3a">a. By producing fossil fuels </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q3b" name="q3" value="b">
-                        <label for="q3b">b. By absorbing oxygen and producing carbon dioxide</label>
+                        <div class="label-container">
+                            <label for="q3b">b. By absorbing oxygen and producing carbon dioxide </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q3c" name="q3" value="c">
-                        <label for="q3c">c. By absorbing carbon dioxide and producing oxygen</label>
+                        <div class="label-container">
+                            <label for="q3c">c. By absorbing carbon dioxide and producing oxygen </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q3d" name="q3" value="d">
-                        <label for="q3d"> d. By providing fresh water</label>
+                        <div class="label-container">
+                            <label for="q3d"> d. By providing fresh water </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -196,29 +220,37 @@
 
                     <div class="line">
                         <input type="radio" id="q4a" name="q4" value="a">
-                        <label for="q4a">a. Increasing tourism</label>
+                        <div class="label-container">
+                            <label for="q4a">a. Increasing tourism </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q4b" name="q4" value="b">
-                        <label for="q4b">b. Promoting unsustainable practices</label>
+                        <div class="label-container">
+                            <label for="q4b">b. Promoting unsustainable practices </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q4c" name="q4" value="c">
-                        <label for="q4c">c. Establishing protected areas and supporting indigenous
-                            communities</label>
+                        <div class="label-container">
+                            <label for="q4c">c. Establishing protected areas and supporting indigenous
+                                communities </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q4d" name="q4" value="d">
-                        <label for="q4d">d. Expanding logging and mining activities</label>
+                        <div class="label-container">
+                            <label for="q4d">d. Expanding logging and mining activities </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -227,28 +259,36 @@
 
                     <div class="line">
                         <input type="radio" id="q5a" name="q5" value="a">
-                        <label for="q5a">a. The heart of South America</label>
+                        <div class="label-container">
+                            <label for="q5a">a. The heart of South America </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q5b" name="q5" value="b">
-                        <label for="q5b">b. The green paradise</label>
+                        <div class="label-container">
+                            <label for="q5b">b. The green paradise </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q5c" name="q5" value="c">
-                        <label for="q5c">c. The lungs of the Earth</label>
+                        <div class="label-container">
+                            <label for="q5c">c. The lungs of the Earth </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q5d" name="q5" value="d">
-                        <label for="q5d">d. The biodiversity hotspot</label>
+                        <div class="label-container">
+                            <label for="q5d">d. The biodiversity hotspot </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -261,28 +301,36 @@
 
                     <div class="line">
                         <input type="radio" id="q6a" name="q6" value="a">
-                        <label for="q6a">a. preface</label>
+                        <div class="label-container">
+                            <label for="q6a">a. preface </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q6b" name="q6" value="b">
-                        <label for="q6b">b. climax</label>
+                        <div class="label-container">
+                            <label for="q6b">b. climax </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q6c" name="q6" value="c">
-                        <label for="q6c">c. index</label>
+                        <div class="label-container">
+                            <label for="q6c">c. index </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q6d" name="q6" value="d">
-                        <label for="q6d">d. appendix</label>
+                        <div class="label-container">
+                            <label for="q6d">d. appendix </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -294,28 +342,36 @@
 
                     <div class="line">
                         <input type="radio" id="q7a" name="q7" value="a">
-                        <label for="q7a">a. collection</label>
+                        <div class="label-container">
+                            <label for="q7a">a. collection </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q7b" name="q7" value="b">
-                        <label for="q7b"> b. compilation</label>
+                        <div class="label-container">
+                            <label for="q7b"> b. compilation </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q7c" name="q7" value="c">
-                        <label for="q7c">c. directory</label>
+                        <div class="label-container">
+                            <label for="q7c">c. directory </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q7d" name="q7" value="d">
-                        <label for="q7d">d. glossary</label>
+                        <div class="label-container">
+                            <label for="q7d">d. glossary </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -326,28 +382,36 @@
 
                     <div class="line">
                         <input type="radio" id="q8a" name="q8" value="a">
-                        <label for="q8a"> a. assortment</label>
+                        <div class="label-container">
+                            <label for="q8a"> a. assortment </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q8b" name="q8" value="b">
-                        <label for="q8b"> b. anthology</label>
+                        <div class="label-container">
+                            <label for="q8b"> b. anthology </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q8c" name="q8" value="c">
-                        <label for="q8c"> c. bibliography</label>
+                        <div class="label-container">
+                            <label for="q8c"> c. bibliography </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q8d" name="q8" value="d">
-                        <label for="q8d"> d. syllabus</label>
+                        <div class="label-container">
+                            <label for="q8d"> d. syllabus </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -359,28 +423,36 @@
 
                     <div class="line">
                         <input type="radio" id="q9a" name="q9" value="a">
-                        <label for="q9a">a. chord</label>
+                        <div class="label-container">
+                            <label for="q9a">a. chord </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q9b" name="q9" value="b">
-                        <label for="q9b"> b. melody</label>
+                        <div class="label-container">
+                            <label for="q9b"> b. melody </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q9c" name="q9" value="c">
-                        <label for="q9c">c. refrain</label>
+                        <div class="label-container">
+                            <label for="q9c">c. refrain </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q9d" name="q9" value="d">
-                        <label for="q9d">d. stanza</label>
+                        <div class="label-container">
+                            <label for="q9d">d. stanza </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -391,28 +463,36 @@
 
                     <div class="line">
                         <input type="radio" id="q10a" name="q10" value="a">
-                        <label for="q10a"> a. dissertation</label>
+                        <div class="label-container">
+                            <label for="q10a"> a. dissertation </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q10b" name="q10" value="b">
-                        <label for="q10b"> b. narrative</label>
+                        <div class="label-container">
+                            <label for="q10b"> b. narrative </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q10c" name="q10" value="c">
-                        <label for="q10c"> c. description</label>
+                        <div class="label-container">
+                            <label for="q10c"> c. description </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q10d" name="q10" value="d">
-                        <label for="q10d">d. exposition</label>
+                        <div class="label-container">
+                            <label for="q10d">d. exposition </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -421,28 +501,36 @@
 
                     <div class="line">
                         <input type="radio" id="q11a" name="q11" value="a">
-                        <label for="q11a"> a. asked him to sit idle</label>
+                        <div class="label-container">
+                            <label for="q11a"> a. asked him to sit idle </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q11b" name="q11" value="b">
-                        <label for="q11b"> b. tried to cheat him</label>
+                        <div class="label-container">
+                            <label for="q11b"> b. tried to cheat him </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q11c" name="q11" value="c">
-                        <label for="q11c"> c. made him feel guilty</label>
+                        <div class="label-container">
+                            <label for="q11c"> c. made him feel guilty </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q11d" name="q11" value="d">
-                        <label for="q11d"> d. flattered him</label>
+                        <div class="label-container">
+                            <label for="q11d"> d. flattered him </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -450,28 +538,36 @@
 
                     <div class="line">
                         <input type="radio" id="q12a" name="q12" value="a">
-                        <label for="q12a">a. disappoints</label>
+                        <div class="label-container">
+                            <label for="q12a">a. disappoints </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q12b" name="q12" value="b">
-                        <label for="q12b"> b. get worried</label>
+                        <div class="label-container">
+                            <label for="q12b"> b. get worried </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
-                        <input type="radio" id="q11c" name="q12" value="c">
-                        <label for="q12c">c.made him feel guilty</label>
+                        <input type="radio" id="q12c" name="q12" value="c">
+                        <div class="label-container">
+                            <label for="q12c">c.made him feel guilty </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
-                        <input type="radio" id="q11d" name="q12" value="d">
-                        <label for="q12d"> d. flattered him</label>
+                        <input type="radio" id="q12d" name="q12" value="d">
+                        <div class="label-container">
+                            <label for="q12d"> d. flattered him </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -479,28 +575,36 @@
 
                     <div class="line">
                         <input type="radio" id="q13a" name="q13" value="a">
-                        <label for="q13a">a. Quickly</label>
+                        <div class="label-container">
+                            <label for="q13a">a. Quickly </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q13b" name="q13" value="b">
-                        <label for="q13b"> b. Caught in the act</label>
+                        <div class="label-container">
+                            <label for="q13b"> b. Caught in the act </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q13c" name="q13" value="c">
-                        <label for="q13c">c. Caught with dirty hands</label>
+                        <div class="label-container">
+                            <label for="q13c">c. Caught with dirty hands </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q13d" name="q13" value="d">
-                        <label for="q13d"> d. Caught with his hands tied</label>
+                        <div class="label-container">
+                            <label for="q13d"> d. Caught with his hands tied </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -510,28 +614,36 @@
 
                     <div class="line">
                         <input type="radio" id="q14a" name="q14" value="a">
-                        <label for="q14a">a. Dishonestly</label>
+                        <div class="label-container">
+                            <label for="q14a">a. Dishonestly </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q14b" name="q14" value="b">
-                        <label for="q14b"> b. Lazily</label>
+                        <div class="label-container">
+                            <label for="q14b"> b. Lazily </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q14c" name="q14" value="c">
-                        <label for="q14c">c. Casually</label>
+                        <div class="label-container">
+                            <label for="q14c">c. Casually </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q14d" name="q14" value="d">
-                        <label for="q14d">d. Sincerity</label>
+                        <div class="label-container">
+                            <label for="q14d">d. Sincerity </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -541,28 +653,36 @@
 
                     <div class="line">
                         <input type="radio" id="q15a" name="q15" value="a">
-                        <label for="q15a"> a. A bad smell</label>
+                        <div class="label-container">
+                            <label for="q15a"> a. A bad smell </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q15b" name="q15" value="b">
-                        <label for="q15b"> b. To suspect</label>
+                        <div class="label-container">
+                            <label for="q15b"> b. To suspect </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q15c" name="q15" value="c">
-                        <label for="q15c">c. To misunderstand</label>
+                        <div class="label-container">
+                            <label for="q15c">c. To misunderstand </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q15d" name="q15" value="d">
-                        <label for="q15d">d. To hide</label>
+                        <div class="label-container">
+                            <label for="q15d">d. To hide </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -574,28 +694,36 @@
 
                     <div class="line">
                         <input type="radio" id="q16a" name="q16" value="a">
-                        <label for="q16a"> a. to</label>
+                        <div class="label-container">
+                            <label for="q16a"> a. to </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q16b" name="q16" value="b">
-                        <label for="q16b"> b. on</label>
+                        <div class="label-container">
+                            <label for="q16b"> b. on </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q16c" name="q16" value="c">
-                        <label for="q16c">c. with</label>
+                        <div class="label-container">
+                            <label for="q16c">c. with </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q16d" name="q16" value="d">
-                        <label for="q16d">d. by</label>
+                        <div class="label-container">
+                            <label for="q16d">d. by </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -605,28 +733,36 @@
 
                     <div class="line">
                         <input type="radio" id="q17a" name="q17" value="a">
-                        <label for="q17a"> a. down</label>
+                        <div class="label-container">
+                            <label for="q17a"> a. down </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q17b" name="q17" value="b">
-                        <label for="q17b"> b. at</label>
+                        <div class="label-container">
+                            <label for="q17b"> b. at </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q17c" name="q17" value="c">
-                        <label for="q17c">c. of</label>
+                        <div class="label-container">
+                            <label for="q17c">c. of </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q17d" name="q17" value="d">
-                        <label for="q17d">d. after</label>
+                        <div class="label-container">
+                            <label for="q17d">d. after </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -636,28 +772,36 @@
 
                     <div class="line">
                         <input type="radio" id="q18a" name="q18" value="a">
-                        <label for="q18a"> a. for</label>
+                        <div class="label-container">
+                            <label for="q18a"> a. for </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q18b" name="q18" value="b">
-                        <label for="q18b"> b. with</label>
+                        <div class="label-container">
+                            <label for="q18b"> b. with </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q18c" name="q18" value="c">
-                        <label for="q18c"> c. against</label>
+                        <div class="label-container">
+                            <label for="q18c"> c. against </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q18d" name="q18" value="d">
-                        <label for="q18d"> d. by</label>
+                        <div class="label-container">
+                            <label for="q18d"> d. by </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -667,28 +811,36 @@
 
                     <div class="line">
                         <input type="radio" id="q19a" name="q19" value="a">
-                        <label for="q19a"> a. to</label>
+                        <div class="label-container">
+                            <label for="q19a"> a. to </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q19b" name="q19" value="b">
-                        <label for="q19b"> b. at</label>
+                        <div class="label-container">
+                            <label for="q19b"> b. at </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q19c" name="q19" value="c">
-                        <label for="q19c">c. with</label>
+                        <div class="label-container">
+                            <label for="q19c">c. with </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q19d" name="q19" value="d">
-                        <label for="q19d">d. by</label>
+                        <div class="label-container">
+                            <label for="q19d">d. by </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -698,28 +850,36 @@
 
                     <div class="line">
                         <input type="radio" id="q20a" name="q20" value="a">
-                        <label for="q20a"> a. to</label>
+                        <div class="label-container">
+                            <label for="q20a"> a. to </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q20b" name="q20" value="b">
-                        <label for="q20b"> b. of</label>
+                        <div class="label-container">
+                            <label for="q20b"> b. of </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q20c" name="q20" value="c">
-                        <label for="q20c"> c. for</label>
+                        <div class="label-container">
+                            <label for="q20c"> c. for </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q20d" name="q20" value="d">
-                        <label for="q20d">d. with</label>
+                        <div class="label-container">
+                            <label for="q20d">d. with </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -731,28 +891,36 @@
 
                     <div class="line">
                         <input type="radio" id="q21a" name="q21" value="a">
-                        <label for="q21."> a. did he</label>
+                        <div class="label-container">
+                            <label for="q21."> a. did he </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q21b" name="q21" value="b">
-                        <label for="q21."> b. can't he</label>
+                        <div class="label-container">
+                            <label for="q21."> b. can't he </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q21c" name="q21" value="c">
-                        <label for="q21."> c. didn't he</label>
+                        <div class="label-container">
+                            <label for="q21."> c. didn't he </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q21d" name="q21" value="d">
-                        <label for="q21d"> d. doesn't he</label>
+                        <div class="label-container">
+                            <label for="q21d"> d. doesn't he </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -762,28 +930,36 @@
 
                     <div class="line">
                         <input type="radio" id="q22a" name="q22" value="a">
-                        <label for="q22a"> a. can you</label>
+                        <div class="label-container">
+                            <label for="q22a"> a. can you </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q22b" name="q22" value="b">
-                        <label for="q22b"> b. will you</label>
+                        <div class="label-container">
+                            <label for="q22b"> b. will you </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q22c" name="q22" value="c">
-                        <label for="q22c">c. shall we</label>
+                        <div class="label-container">
+                            <label for="q22c">c. shall we </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q22d" name="q22" value="d">
-                        <label for="q22d"> d. haven't we</label>
+                        <div class="label-container">
+                            <label for="q22d"> d. haven't we </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -793,28 +969,36 @@
 
                     <div class="line">
                         <input type="radio" id="q23a" name="q23" value="a">
-                        <label for="q23a"> a. did he</label>
+                        <div class="label-container">
+                            <label for="q23a"> a. did he </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q23b" name="q23" value="b">
-                        <label for="q23b"> b. can't he</label>
+                        <div class="label-container">
+                            <label for="q23b"> b. can't he </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q23c" name="q23" value="c">
-                        <label for="q23c">c. didn't he</label>
+                        <div class="label-container">
+                            <label for="q23c">c. didn't he </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q23d" name="q23" value="d">
-                        <label for="q23d"> d. doesn't he</label>
+                        <div class="label-container">
+                            <label for="q23d"> d. doesn't he </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -824,28 +1008,36 @@
 
                     <div class="line">
                         <input type="radio" id="q24a" name="q24" value="a">
-                        <label for="q24a"> a. weren't they</label>
+                        <div class="label-container">
+                            <label for="q24a"> a. weren't they </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q24b" name="q24" value="b">
-                        <label for="q24b"> b. are they</label>
+                        <div class="label-container">
+                            <label for="q24b"> b. are they </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q24c" name="q24" value="c">
-                        <label for="q24c">c. wasn't they</label>
+                        <div class="label-container">
+                            <label for="q24c">c. wasn't they </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q24d" name="q24" value="d">
-                        <label for="q24d">d. were they</label>
+                        <div class="label-container">
+                            <label for="q24d">d. were they </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -855,28 +1047,36 @@
 
                     <div class="line">
                         <input type="radio" id="q25a" name="q25" value="a">
-                        <label for="q25a"> a. aren't they</label>
+                        <div class="label-container">
+                            <label for="q25a"> a. aren't they </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q25b" name="q25" value="b">
-                        <label for="q25b"> b. is it</label>
+                        <div class="label-container">
+                            <label for="q25b"> b. is it </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q25c" name="q25" value="c">
-                        <label for="q25c">c. are there</label>
+                        <div class="label-container">
+                            <label for="q25c">c. are there </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q25d" name="q25" value="d">
-                        <label for="q25d">d. wasn't there</label>
+                        <div class="label-container">
+                            <label for="q25d">d. wasn't there </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -891,28 +1091,36 @@
 
                     <div class="line">
                         <input type="radio" id="q26a" name="q26" value="a">
-                        <label for="q26a">a. Range</label>
+                        <div class="label-container">
+                            <label for="q26a">a. Range </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q26b" name="q26" value="b">
-                        <label for="q26b">b. Standard deviation</label>
+                        <div class="label-container">
+                            <label for="q26b">b. Standard deviation </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q26c" name="q26" value="c">
-                        <label for="q26c">c. Arithmetic mean</label>
+                        <div class="label-container">
+                            <label for="q26c">c. Arithmetic mean </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q26d" name="q26" value="d">
-                        <label for="q26d">d. Variance</label>
+                        <div class="label-container">
+                            <label for="q26d">d. Variance </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -921,28 +1129,36 @@
 
                     <div class="line">
                         <input type="radio" id="q27a" name="q27" value="a">
-                        <label for="q27a"> a. always positive</label>
+                        <div class="label-container">
+                            <label for="q27a"> a. always positive </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q27b" name="q27" value="b">
-                        <label for="q27b"> b. always negative</label>
+                        <div class="label-container">
+                            <label for="q27b"> b. always negative </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q27c" name="q27" value="c">
-                        <label for="q27c">c. zero</label>
+                        <div class="label-container">
+                            <label for="q27c">c. zero </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q27d" name="q27" value="d">
-                        <label for="q27d">d. non-zero integer</label>
+                        <div class="label-container">
+                            <label for="q27d">d. non-zero integer </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -951,28 +1167,36 @@
 
                     <div class="line">
                         <input type="radio" id="q28a" name="q28" value="a">
-                        <label for="q28a"> a. P(A) > 1</label>
+                        <div class="label-container">
+                            <label for="q28a"> a. P(A) > 1 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q28b" name="q28" value="b">
-                        <label for="q28b"> b. 0 <= P(A) <=1</label>
-                                <hr>
+                        <div class="label-container">
+                            <label for="q28b"> b. 0 <= P(A) <=1 </label>
+                        </div>
+                        <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q28c" name="q28" value="c">
-                        <label for="q28c"> c. P(A) = 0</label>
+                        <div class="label-container">
+                            <label for="q28c"> c. P(A) = 0 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q28d" name="q28" value="d">
-                        <label for="q28d"> d. P(A) + P(~A) = 1</label>
+                        <div class="label-container">
+                            <label for="q28d"> d. P(A) + P(~A) = 1 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -983,28 +1207,36 @@
 
                     <div class="line">
                         <input type="radio" id="q29a" name="q29" value="a">
-                        <label for="q29a"> a. q/(p+q+r)</label>
+                        <div class="label-container">
+                            <label for="q29a"> a. q/(p+q+r) </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q29b" name="q29" value="b">
-                        <label for="q29b"> b. p/(p+q+r)</label>
+                        <div class="label-container">
+                            <label for="q29b"> b. p/(p+q+r) </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q29c" name="q29" value="c">
-                        <label for="q29c">c. (p+q)/(p+q+r)</label>
+                        <div class="label-container">
+                            <label for="q29c">c. (p+q)/(p+q+r) </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q29d" name="q29" value="d">
-                        <label for="q29d">d. (p+r)/(p+q+r)</label>
+                        <div class="label-container">
+                            <label for="q29d">d. (p+r)/(p+q+r) </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1016,28 +1248,36 @@
 
                     <div class="line">
                         <input type="radio" id="q30a" name="q30" value="a">
-                        <label for="q30a"> a. 5</label>
+                        <div class="label-container">
+                            <label for="q30a"> a. 5 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q30b" name="q30" value="b">
-                        <label for="q30b"> b. 10</label>
+                        <div class="label-container">
+                            <label for="q30b"> b. 10 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q30c" name="q30" value="c">
-                        <label for="q30c"> c. 15</label>
+                        <div class="label-container">
+                            <label for="q30c"> c. 15 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q30d" name="q30" value="d">
-                        <label for="q30d">d. 20</label>
+                        <div class="label-container">
+                            <label for="q30d">d. 20 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1050,28 +1290,36 @@
 
                     <div class="line">
                         <input type="radio" id="q31a" name="q31" value="a">
-                        <label for="q31a"> a. maximize the total profit</label>
+                        <div class="label-container">
+                            <label for="q31a"> a. maximize the total profit </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q31b" name="q31" value="b">
-                        <label for="q31b"> b. minimize the total loss</label>
+                        <div class="label-container">
+                            <label for="q31b"> b. minimize the total loss </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q31c" name="q31" value="c">
-                        <label for="q31c"> c. neither maximize nor minimize</label>
+                        <div class="label-container">
+                            <label for="q31c"> c. neither maximize nor minimize </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q31d" name="q31" value="d">
-                        <label for="q31d"> d. optimal cost</label>
+                        <div class="label-container">
+                            <label for="q31d"> d. optimal cost </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1080,28 +1328,36 @@
 
                     <div class="line">
                         <input type="radio" id="q32a" name="q32" value="a">
-                        <label for="q32a"> a. inverse matrix method</label>
+                        <div class="label-container">
+                            <label for="q32a"> a. inverse matrix method </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q32b" name="q32" value="b">
-                        <label for="q32b"> b. matrix method</label>
+                        <div class="label-container">
+                            <label for="q32b"> b. matrix method </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q32c" name="q32" value="c">
-                        <label for="q32c">c. determinant method</label>
+                        <div class="label-container">
+                            <label for="q32c">c. determinant method </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q32d" name="q32" value="d">
-                        <label for="q32d"> d. inverse method</label>
+                        <div class="label-container">
+                            <label for="q32d"> d. inverse method </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1110,28 +1366,36 @@
 
                     <div class="line">
                         <input type="radio" id="q33a" name="q33" value="a">
-                        <label for="q33a"> a. creditors</label>
+                        <div class="label-container">
+                            <label for="q33a"> a. creditors </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q33b" name="q33" value="b">
-                        <label for="q33b"> b. debtors</label>
+                        <div class="label-container">
+                            <label for="q33b"> b. debtors </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q33c" name="q33" value="c">
-                        <label for="q33c">c. buyers</label>
+                        <div class="label-container">
+                            <label for="q33c">c. buyers </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q33d" name="q33" value="d">
-                        <label for="q33d"> d. none of the above</label>
+                        <div class="label-container">
+                            <label for="q33d"> d. none of the above </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1142,28 +1406,36 @@
 
                     <div class="line">
                         <input type="radio" id="q34a" name="q34" value="a">
-                        <label for="q34a"> a. 1</label>
+                        <div class="label-container">
+                            <label for="q34a"> a. 1 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q34b" name="q34" value="b">
-                        <label for="q34b"> b. 0</label>
+                        <div class="label-container">
+                            <label for="q34b"> b. 0 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q34c" name="q34" value="c">
-                        <label for="q34c">c. -1</label>
+                        <div class="label-container">
+                            <label for="q34c">c. -1 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q34d" name="q34" value="d">
-                        <label for="q34d">d. unaltered</label>
+                        <div class="label-container">
+                            <label for="q34d">d. unaltered </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1172,28 +1444,36 @@
 
                     <div class="line">
                         <input type="radio" id="q35a" name="q35" value="a">
-                        <label for="q35a"> a. 40</label>
+                        <div class="label-container">
+                            <label for="q35a"> a. 40 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q35b" name="q35" value="b">
-                        <label for="q35b"> b. 20</label>
+                        <div class="label-container">
+                            <label for="q35b"> b. 20 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q35c" name="q35" value="c">
-                        <label for="q35c">c. 41</label>
+                        <div class="label-container">
+                            <label for="q35c">c. 41 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q35d" name="q35" value="d">
-                        <label for="q35d">d. 52</label>
+                        <div class="label-container">
+                            <label for="q35d">d. 52 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1205,28 +1485,36 @@
 
                     <div class="line">
                         <input type="radio" id="q36a" name="q36" value="a">
-                        <label for="q36a"> a. -0.204</label>
+                        <div class="label-container">
+                            <label for="q36a"> a. -0.204 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q36b" name="q36" value="b">
-                        <label for="q36b"> b. 1</label>
+                        <div class="label-container">
+                            <label for="q36b"> b. 1 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q36c" name="q36" value="c">
-                        <label for="q36c">c. 2</label>
+                        <div class="label-container">
+                            <label for="q36c">c. 2 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q36d" name="q36" value="d">
-                        <label for="q36d">d. 3</label>
+                        <div class="label-container">
+                            <label for="q36d">d. 3 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1238,28 +1526,36 @@
 
                     <div class="line">
                         <input type="radio" id="q37a" name="q37" value="a">
-                        <label for="q37a"> a. partnership</label>
+                        <div class="label-container">
+                            <label for="q37a"> a. partnership </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q37b" name="q37" value="b">
-                        <label for="q37b"> b. insurance</label>
+                        <div class="label-container">
+                            <label for="q37b"> b. insurance </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q37c" name="q37" value="c">
-                        <label for="q37c">c. legal entity</label>
+                        <div class="label-container">
+                            <label for="q37c">c. legal entity </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q37d" name="q37" value="d">
-                        <label for="q37d">d. none of the above</label>
+                        <div class="label-container">
+                            <label for="q37d">d. none of the above </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1268,28 +1564,36 @@
 
                     <div class="line">
                         <input type="radio" id="q38a" name="q38" value="a">
-                        <label for="q38a"> a. 4(a-2)(a-2)</label>
+                        <div class="label-container">
+                            <label for="q38a"> a. 4(a-2)(a-2) </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q38b" name="q38" value="b">
-                        <label for="q38b"> b. 4(a-2)(a+2)</label>
+                        <div class="label-container">
+                            <label for="q38b"> b. 4(a-2)(a+2) </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q38c" name="q38" value="c">
-                        <label for="q38c"> c. (a-2)(a+2)</label>
+                        <div class="label-container">
+                            <label for="q38c"> c. (a-2)(a+2) </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q38d" name="q38" value="d">
-                        <label for="q38d"> d. 4(a+2)(a+2)</label>
+                        <div class="label-container">
+                            <label for="q38d"> d. 4(a+2)(a+2) </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1301,28 +1605,36 @@
 
                     <div class="line">
                         <input type="radio" id="q39a" name="q39" value="a">
-                        <label for="q39a"> a. 10</label>
+                        <div class="label-container">
+                            <label for="q39a"> a. 10 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q39b" name="q39" value="b">
-                        <label for="q39b"> b. 15</label>
+                        <div class="label-container">
+                            <label for="q39b"> b. 15 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q39c" name="q39" value="c">
-                        <label for="q39c">c. 25</label>
+                        <div class="label-container">
+                            <label for="q39c">c. 25 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q39d" name="q39" value="d">
-                        <label for="q39d">d. 35</label>
+                        <div class="label-container">
+                            <label for="q39d">d. 35 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1334,28 +1646,36 @@
 
                     <div class="line">
                         <input type="radio" id="q40a" name="q40" value="a">
-                        <label for="q40a"> a. isosceles triangle</label>
+                        <div class="label-container">
+                            <label for="q40a"> a. isosceles triangle </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q40b" name="q40" value="b">
-                        <label for="q40b"> b. scalene triangle</label>
+                        <div class="label-container">
+                            <label for="q40b"> b. scalene triangle </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q40c" name="q40" value="c">
-                        <label for="q40c"> c. right angle triangle</label>
+                        <div class="label-container">
+                            <label for="q40c"> c. right angle triangle </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q40d" name="q40" value="d">
-                        <label for="q40d">d. reflective triangle</label>
+                        <div class="label-container">
+                            <label for="q40d">d. reflective triangle </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1364,30 +1684,38 @@
 
                     <div class="line">
                         <input type="radio" id="q41a" name="q41" value="a">
-                        <label for="q41a"> a. where the objective function can be decreased indefinitely</label>
+                        <div class="label-container">
+                            <label for="q41a"> a. where the objective function can be decreased indefinitely </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q41b" name="q41" value="b">
-                        <label for="q41b"> b. which maximizes the objective function</label>
+                        <div class="label-container">
+                            <label for="q41b"> b. which maximizes the objective function </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q41c" name="q41" value="c">
-                        <label for="q41c"> c. where the objective function can be increased or decreased
-                            indefinitely</label>
+                        <div class="label-container">
+                            <label for="q41c"> c. where the objective function can be increased or decreased
+                                indefinitely </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q41d" name="q41" value="d">
-                        <label for="q41d"> d. where the objective function can be increased
-                            indefinitely</label>
+                        <div class="label-container">
+                            <label for="q41d"> d. where the objective function can be increased
+                                indefinitely </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1396,28 +1724,36 @@
 
                     <div class="line">
                         <input type="radio" id="q42a" name="q42" value="a">
-                        <label for="q42a"> a. 0.8</label>
+                        <div class="label-container">
+                            <label for="q42a"> a. 0.8 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q42b" name="q42" value="b">
-                        <label for="q42b"> b. 0.81</label>
+                        <div class="label-container">
+                            <label for="q42b"> b. 0.81 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q42c" name="q42" value="c">
-                        <label for="q42c">c. 1.23</label>
+                        <div class="label-container">
+                            <label for="q42c">c. 1.23 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q42d" name="q42" value="d">
-                        <label for="q42d"> d. 2.43</label>
+                        <div class="label-container">
+                            <label for="q42d"> d. 2.43 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1430,28 +1766,36 @@
 
                     <div class="line">
                         <input type="radio" id="q43a" name="q43" value="a">
-                        <label for="q43a"> a. Rs. 4,000</label>
+                        <div class="label-container">
+                            <label for="q43a"> a. Rs. 4,000 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q43b" name="q43" value="b">
-                        <label for="q43b"> b. Rs. 5,000</label>
+                        <div class="label-container">
+                            <label for="q43b"> b. Rs. 5,000 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q43c" name="q43" value="c">
-                        <label for="q43c">c. Rs. 6,000</label>
+                        <div class="label-container">
+                            <label for="q43c">c. Rs. 6,000 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q43d" name="q43" value="d">
-                        <label for="q43d"> d. Rs. 7,000</label>
+                        <div class="label-container">
+                            <label for="q43d"> d. Rs. 7,000 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1461,28 +1805,36 @@
 
                     <div class="line">
                         <input type="radio" id="q44a" name="q44" value="a">
-                        <label for="q44a"> a. 600</label>
+                        <div class="label-container">
+                            <label for="q44a"> a. 600 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q44b" name="q44" value="b">
-                        <label for="q44b"> b. 120</label>
+                        <div class="label-container">
+                            <label for="q44b"> b. 120 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q44c" name="q44" value="c">
-                        <label for="q44c">c. 240</label>
+                        <div class="label-container">
+                            <label for="q44c">c. 240 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q44d" name="q44" value="d">
-                        <label for="q44d">d. 60</label>
+                        <div class="label-container">
+                            <label for="q44d">d. 60 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1496,28 +1848,36 @@
 
                     <div class="line">
                         <input type="radio" id="q45a" name="q45" value="a">
-                        <label for="q45a"> a. 252</label>
+                        <div class="label-container">
+                            <label for="q45a"> a. 252 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q45b" name="q45" value="b">
-                        <label for="q45b"> b. 432</label>
+                        <div class="label-container">
+                            <label for="q45b"> b. 432 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q45c" name="q45" value="c">
-                        <label for="q45c">c. 462</label>
+                        <div class="label-container">
+                            <label for="q45c">c. 462 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q45d" name="q45" value="d">
-                        <label for="q45d">d. 504</label>
+                        <div class="label-container">
+                            <label for="q45d">d. 504 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1529,28 +1889,36 @@
 
                     <div class="line">
                         <input type="radio" id="q46a" name="q46" value="a">
-                        <label for="q46a"> a. Rs. 3,100</label>
+                        <div class="label-container">
+                            <label for="q46a"> a. Rs. 3,100 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q46b" name="q46" value="b">
-                        <label for="q46b"> b. Rs. 6,240</label>
+                        <div class="label-container">
+                            <label for="q46b"> b. Rs. 6,240 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q46c" name="q46" value="c">
-                        <label for="q46c">c. Rs. 6,500</label>
+                        <div class="label-container">
+                            <label for="q46c">c. Rs. 6,500 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q46d" name="q46" value="d">
-                        <label for="q46d">d. Rs. 9,600</label>
+                        <div class="label-container">
+                            <label for="q46d">d. Rs. 9,600 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1562,28 +1930,36 @@
 
                     <div class="line">
                         <input type="radio" id="q47a" name="q47" value="a">
-                        <label for="q47a"> a. 4 years</label>
+                        <div class="label-container">
+                            <label for="q47a"> a. 4 years </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q47b" name="q47" value="b">
-                        <label for="q47b"> b. 8 years</label>
+                        <div class="label-container">
+                            <label for="q47b"> b. 8 years </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q47c" name="q47" value="c">
-                        <label for="q47c">c. 10 years</label>
+                        <div class="label-container">
+                            <label for="q47c">c. 10 years </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q47d" name="q47" value="d">
-                        <label for="q47d">d. None of these</label>
+                        <div class="label-container">
+                            <label for="q47d">d. None of these </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1595,28 +1971,36 @@
 
                     <div class="line">
                         <input type="radio" id="q48a" name="q48" value="a">
-                        <label for="q48a"> a. 144 degrees</label>
+                        <div class="label-container">
+                            <label for="q48a"> a. 144 degrees </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q48b" name="q48" value="b">
-                        <label for="q48b"> b. 150 degrees</label>
+                        <div class="label-container">
+                            <label for="q48b"> b. 150 degrees </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q48c" name="q48" value="c">
-                        <label for="q48c"> c. 168 degrees</label>
+                        <div class="label-container">
+                            <label for="q48c"> c. 168 degrees </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q48d" name="q48" value="d">
-                        <label for="q48d"> d. 180 degrees</label>
+                        <div class="label-container">
+                            <label for="q48d"> d. 180 degrees </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1628,28 +2012,36 @@
 
                     <div class="line">
                         <input type="radio" id="q49a" name="q49" value="a">
-                        <label for="q49a"> a. 9</label>
+                        <div class="label-container">
+                            <label for="q49a"> a. 9 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q49b" name="q49" value="b">
-                        <label for="q49b"> b. 10</label>
+                        <div class="label-container">
+                            <label for="q49b"> b. 10 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q49c" name="q49" value="c">
-                        <label for="q49c">c. 18</label>
+                        <div class="label-container">
+                            <label for="q49c">c. 18 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q49d" name="q49" value="d">
-                        <label for="q49d">d. 20</label>
+                        <div class="label-container">
+                            <label for="q49d">d. 20 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1661,28 +2053,36 @@
 
                     <div class="line">
                         <input type="radio" id="q50a" name="q50" value="a">
-                        <label for="q50a"> a. Rs. 2,600</label>
+                        <div class="label-container">
+                            <label for="q50a"> a. Rs. 2,600 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q50b" name="q50" value="b">
-                        <label for="q50b"> b. Rs. 2,700</label>
+                        <div class="label-container">
+                            <label for="q50b"> b. Rs. 2,700 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q50c" name="q50" value="c">
-                        <label for="q50c"> c. Rs. 2,800</label>
+                        <div class="label-container">
+                            <label for="q50c"> c. Rs. 2,800 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q50d" name="q50" value="d">
-                        <label for="q50d">d. Rs. 3,000</label>
+                        <div class="label-container">
+                            <label for="q50d">d. Rs. 3,000 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1700,28 +2100,36 @@
 
                     <div class="line">
                         <input type="radio" id="q51a" name="q51" value="a">
-                        <label for="q51a"> a. 1247</label>
+                        <div class="label-container">
+                            <label for="q51a"> a. 1247 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q51b" name="q51" value="b">
-                        <label for="q51b"> b. 4847</label>
+                        <div class="label-container">
+                            <label for="q51b"> b. 4847 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q51c" name="q51" value="c">
-                        <label for="q51c"> c. 5247</label>
+                        <div class="label-container">
+                            <label for="q51c"> c. 5247 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q51d" name="q51" value="d">
-                        <label for="q51d"> d. 2847</label>
+                        <div class="label-container">
+                            <label for="q51d"> d. 2847 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1730,28 +2138,36 @@
 
                     <div class="line">
                         <input type="radio" id="q52a" name="q52" value="a">
-                        <label for="q52a"> a. 5315714</label>
+                        <div class="label-container">
+                            <label for="q52a"> a. 5315714 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q52b" name="q52" value="b">
-                        <label for="q52b"> b. 35729310</label>
+                        <div class="label-container">
+                            <label for="q52b"> b. 35729310 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q52c" name="q52" value="c">
-                        <label for="q52c">c. 5313613</label>
+                        <div class="label-container">
+                            <label for="q52c">c. 5313613 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q52d" name="q52" value="d">
-                        <label for="q52d"> d. None of these</label>
+                        <div class="label-container">
+                            <label for="q52d"> d. None of these </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1763,28 +2179,36 @@
 
                     <div class="line">
                         <input type="radio" id="q53a" name="q53" value="a">
-                        <label for="q53a"> a. Uncle</label>
+                        <div class="label-container">
+                            <label for="q53a"> a. Uncle </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q53b" name="q53" value="b">
-                        <label for="q53b"> b. Nephew</label>
+                        <div class="label-container">
+                            <label for="q53b"> b. Nephew </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q53c" name="q53" value="c">
-                        <label for="q53c">c. Niece</label>
+                        <div class="label-container">
+                            <label for="q53c">c. Niece </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q53d" name="q53" value="d">
-                        <label for="q53d"> d. Aunt</label>
+                        <div class="label-container">
+                            <label for="q53d"> d. Aunt </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1800,28 +2224,36 @@
 
                     <div class="line">
                         <input type="radio" id="q54a" name="q54" value="a">
-                        <label for="q54a"> a. A</label>
+                        <div class="label-container">
+                            <label for="q54a"> a. A </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q54b" name="q54" value="b">
-                        <label for="q54b"> b. B</label>
+                        <div class="label-container">
+                            <label for="q54b"> b. B </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q54c" name="q54" value="c">
-                        <label for="q54c">c. C</label>
+                        <div class="label-container">
+                            <label for="q54c">c. C </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q54d" name="q54" value="d">
-                        <label for="q54d">d. D</label>
+                        <div class="label-container">
+                            <label for="q54d">d. D </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1833,28 +2265,36 @@
 
                     <div class="line">
                         <input type="radio" id="q55a" name="q55" value="a">
-                        <label for="q55a"> a. A and D</label>
+                        <div class="label-container">
+                            <label for="q55a"> a. A and D </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q55b" name="q55" value="b">
-                        <label for="q55b"> b. B only</label>
+                        <div class="label-container">
+                            <label for="q55b"> b. B only </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q55c" name="q55" value="c">
-                        <label for="q55c">c. E only</label>
+                        <div class="label-container">
+                            <label for="q55c">c. E only </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q55d" name="q55" value="d">
-                        <label for="q55d">d. C only</label>
+                        <div class="label-container">
+                            <label for="q55d">d. C only </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1869,28 +2309,36 @@
 
                     <div class="line">
                         <input type="radio" id="q56a" name="q56" value="a">
-                        <label for="q56a"> a. The inference is definitely true.</label>
+                        <div class="label-container">
+                            <label for="q56a"> a. The inference is definitely true. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q56b" name="q56" value="b">
-                        <label for="q56b"> b. The inference is definitely false</label>
+                        <div class="label-container">
+                            <label for="q56b"> b. The inference is definitely false </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q56c" name="q56" value="c">
-                        <label for="q56c">The inference is neither true nor false.</label>
+                        <div class="label-container">
+                            <label for="q56c">The inference is neither true nor false. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q56d" name="q56" value="d">
-                        <label for="q56d">d. Inference cannot be drawn.</label>
+                        <div class="label-container">
+                            <label for="q56d">d. Inference cannot be drawn. </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1901,28 +2349,36 @@
 
                     <div class="line">
                         <input type="radio" id="q57a" name="q57" value="a">
-                        <label for="q57a"> a. The inference is definitely true.</label>
+                        <div class="label-container">
+                            <label for="q57a"> a. The inference is definitely true. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q57b" name="q57" value="b">
-                        <label for="q57b"> b. The inference is definitely false</label>
+                        <div class="label-container">
+                            <label for="q57b"> b. The inference is definitely false </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q57c" name="q57" value="c">
-                        <label for="q57c">The inference is neither true nor false.</label>
+                        <div class="label-container">
+                            <label for="q57c">The inference is neither true nor false. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q57d" name="q57" value="d">
-                        <label for="q57d">d. Inference cannot be drawn.</label>
+                        <div class="label-container">
+                            <label for="q57d">d. Inference cannot be drawn. </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1933,28 +2389,36 @@
 
                     <div class="line">
                         <input type="radio" id="q58a" name="q58" value="a">
-                        <label for="q58a"> a. The inference is definitely true.</label>
+                        <div class="label-container">
+                            <label for="q58a"> a. The inference is definitely true. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q58b" name="q58" value="b">
-                        <label for="q58b"> b. The inference is definitely false</label>
+                        <div class="label-container">
+                            <label for="q58b"> b. The inference is definitely false </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q58c" name="q58" value="c">
-                        <label for="q58c"> c. The inference is neither true nor false.</label>
+                        <div class="label-container">
+                            <label for="q58c"> c. The inference is neither true nor false. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q58d" name="q58" value="d">
-                        <label for="q58d"> d. Inference cannot be drawn.</label>
+                        <div class="label-container">
+                            <label for="q58d"> d. Inference cannot be drawn. </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -1974,32 +2438,40 @@
 
                     <div class="line">
                         <input type="radio" id="q59a" name="q59" value="a">
-                        <label for="q59a"> a. During the winter months, the prices of single-family homes the
-                            lowest.</label>
+                        <div class="label-container">
+                            <label for="q59a"> a. During the winter months, the prices of single-family homes the
+                                lowest. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q59b" name="q59" value="b">
-                        <label for="q59b"> b. Warm winter weather is likely to affect the rate of home
-                            sales.</label>
+                        <div class="label-container">
+                            <label for="q59b"> b. Warm winter weather is likely to affect the rate of home
+                                sales. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q59c" name="q59" value="c">
-                        <label for="q59c">c. Consumer spending will be higher thirteen years from now than it is
-                            today</label>
+                        <div class="label-container">
+                            <label for="q59c">c. Consumer spending will be higher thirteen years from now than it is
+                                today </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q59d" name="q59" value="d">
-                        <label for="q59d">d. There were about 5 million homes for sale during the month of
-                            January.</label>
+                        <div class="label-container">
+                            <label for="q59d">d. There were about 5 million homes for sale during the month of
+                                January. </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2014,28 +2486,36 @@
 
                     <div class="line">
                         <input type="radio" id="q60a" name="q60" value="a">
-                        <label for="q60a"> a. Figures are sometimes used to deceive people.</label>
+                        <div class="label-container">
+                            <label for="q60a"> a. Figures are sometimes used to deceive people. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q60b" name="q60" value="b">
-                        <label for="q60b"> b. The study of mathematics is dangerous.</label>
+                        <div class="label-container">
+                            <label for="q60b"> b. The study of mathematics is dangerous. </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q60c" name="q60" value="c">
-                        <label for="q60c"> c.The power of numbers is that they cannot lie</label>
+                        <div class="label-container">
+                            <label for="q60c"> c.The power of numbers is that they cannot lie </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q60d" name="q60" value="d">
-                        <label for="q60d">d. Words are more truthful than figures.</label>
+                        <div class="label-container">
+                            <label for="q60d">d. Words are more truthful than figures. </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2045,28 +2525,36 @@
 
                     <div class="line">
                         <input type="radio" id="q61a" name="q61" value="a">
-                        <label for="q61a">a. Wood</label>
+                        <div class="label-container">
+                            <label for="q61a">a. Wood </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q61b" name="q61" value="b">
-                        <label for="q61b">b. Sword</label>
+                        <div class="label-container">
+                            <label for="q61b">b. Sword </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q61c" name="q61" value="c">
-                        <label for="q61c">c. Iron</label>
+                        <div class="label-container">
+                            <label for="q61c">c. Iron </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q61d" name="q61" value="d">
-                        <label for="q61d">d. Hammer</label>
+                        <div class="label-container">
+                            <label for="q61d">d. Hammer </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2075,28 +2563,36 @@
 
                     <div class="line">
                         <input type="radio" id="q62a" name="q62" value="a">
-                        <label for="q62a">a. Salt: pepper </label>
+                        <div class="label-container">
+                            <label for="q62a">a. Salt: pepper </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q62b" name="q62" value="b">
-                        <label for="q62b">b. Tire: bicycle</label>
+                        <div class="label-container">
+                            <label for="q62b">b. Tire: bicycle </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q62c" name="q62" value="c">
-                        <label for="q62c">c. Base: ball</label>
+                        <div class="label-container">
+                            <label for="q62c">c. Base: ball </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q62d" name="q62" value="d">
-                        <label for="q62d">d. Sandals: shoes</label>
+                        <div class="label-container">
+                            <label for="q62d">d. Sandals: shoes </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2105,28 +2601,36 @@
 
                     <div class="line">
                         <input type="radio" id="q63a" name="q63" value="a">
-                        <label for="q63a">a. Scale: weight</label>
+                        <div class="label-container">
+                            <label for="q63a">a. Scale: weight </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q63b" name="q63" value="b">
-                        <label for="q63">b. Length: width</label>
+                        <div class="label-container">
+                            <label for="q63">b. Length: width </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q63c" name="q63" value="c">
-                        <label for="q63c">c. Inch: foot</label>
+                        <div class="label-container">
+                            <label for="q63c">c. Inch: foot </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q63d" name="q63" value="d">
-                        <label for="q63d">d. Mileage: speed</label>
+                        <div class="label-container">
+                            <label for="q63d">d. Mileage: speed </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2135,28 +2639,36 @@
 
                     <div class="line">
                         <input type="radio" id="q64a" name="q64" value="a">
-                        <label for="q64a">a. Wolf: pack </label>
+                        <div class="label-container">
+                            <label for="q64a">a. Wolf: pack </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q64b" name="q64" value="b">
-                        <label for="q64b">b. Cow: farm</label>
+                        <div class="label-container">
+                            <label for="q64b">b. Cow: farm </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q64c" name="q64" value="c">
-                        <label for="q64c">c. Herd: peacock</label>
+                        <div class="label-container">
+                            <label for="q64c">c. Herd: peacock </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q64d" name="q64" value="d">
-                        <label for="q64d">d. Elephant: jungle</label>
+                        <div class="label-container">
+                            <label for="q64d">d. Elephant: jungle </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2165,28 +2677,36 @@
 
                     <div class="line">
                         <input type="radio" id="q65a" name="q65" value="a">
-                        <label for="q65a">a. Speech: oration</label>
+                        <div class="label-container">
+                            <label for="q65a">a. Speech: oration </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q65b" name="q65" value="b">
-                        <label for="q65b">b. Touch: massage</label>
+                        <div class="label-container">
+                            <label for="q65b">b. Touch: massage </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q65c" name="q65" value="c">
-                        <label for="q65c">c. Smell: stench</label>
+                        <div class="label-container">
+                            <label for="q65c">c. Smell: stench </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q65d" name="q65" value="d">
-                        <label for="q65d">d. Taste: style</label>
+                        <div class="label-container">
+                            <label for="q65d">d. Taste: style </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2201,28 +2721,36 @@
 
                     <div class="line">
                         <input type="radio" id="q66a" name="q66" value="a">
-                        <label for="q66a">a. I is strong</label>
+                        <div class="label-container">
+                            <label for="q66a">a. I is strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q66b" name="q66" value="b">
-                        <label for="q66b">b. Only argument II is strong</label>
+                        <div class="label-container">
+                            <label for="q66b">b. Only argument II is strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q66c" name="q66" value="c">
-                        <label for="q66c">c. Both arguments are strong</label>
+                        <div class="label-container">
+                            <label for="q66c">c. Both arguments are strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q66d" name="q66" value="d">
-                        <label for="q66d">d. Neither I nor II is strong</label>
+                        <div class="label-container">
+                            <label for="q66d">d. Neither I nor II is strong </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2234,28 +2762,36 @@
 
                     <div class="line">
                         <input type="radio" id="q67a" name="q67" value="a">
-                        <label for="q67a">a. I is strong</label>
+                        <div class="label-container">
+                            <label for="q67a">a. I is strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q67b" name="q67" value="b">
-                        <label for="q67b">b. only argument II IS strong</label>
+                        <div class="label-container">
+                            <label for="q67b">b. only argument II IS strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q67c" name="q67" value="c">
-                        <label for="q67c">c. both the arguments are strong</label>
+                        <div class="label-container">
+                            <label for="q67c">c. both the arguments are strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q67d" name="q67" value="d">
-                        <label for="q67d">d. neither I nor II IS strong</label>
+                        <div class="label-container">
+                            <label for="q67d">d. neither I nor II IS strong </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2269,28 +2805,36 @@
 
                     <div class="line">
                         <input type="radio" id="q68a" name="q68" value="a">
-                        <label for="q68a">a. I IS strong</label>
+                        <div class="label-container">
+                            <label for="q68a">a. I IS strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q68b" name="q68" value="b">
-                        <label for="q68b">b. only argument II IS strong</label>
+                        <div class="label-container">
+                            <label for="q68b">b. only argument II IS strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q68c" name="q68" value="c">
-                        <label for="q68c">c. both the arguments are strong</label>
+                        <div class="label-container">
+                            <label for="q68c">c. both the arguments are strong </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q68d" name="q68" value="d">
-                        <label for="q68d">d. neither I nor II IS strong</label>
+                        <div class="label-container">
+                            <label for="q68d">d. neither I nor II IS strong </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2301,28 +2845,36 @@
 
                     <div class="line">
                         <input type="radio" id="q69a" name="q69" value="a">
-                        <label for="q69a">a. Herb </label>
+                        <div class="label-container">
+                            <label for="q69a">a. Herb </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q69b" name="q69" value="b">
-                        <label for="q69b">b. Flower</label>
+                        <div class="label-container">
+                            <label for="q69b">b. Flower </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q69c" name="q69" value="c">
-                        <label for="q69c">c. Tree</label>
+                        <div class="label-container">
+                            <label for="q69c">c. Tree </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q69d" name="q69" value="d">
-                        <label for="q69d">d. Shrub</label>
+                        <div class="label-container">
+                            <label for="q69d">d. Shrub </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2332,28 +2884,36 @@
 
                     <div class="line">
                         <input type="radio" id="q70a" name="q70" value="a">
-                        <label for="q70a">a. Pen</label>
+                        <div class="label-container">
+                            <label for="q70a">a. Pen </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q70b" name="q70" value="b">
-                        <label for="q70b">b. Paper</label>
+                        <div class="label-container">
+                            <label for="q70b">b. Paper </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q70c" name="q70" value="c">
-                        <label for="q70c">c. Marker</label>
+                        <div class="label-container">
+                            <label for="q70c">c. Marker </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q70d" name="q70" value="d">
-                        <label for="q70d">d. Highlighter</label>
+                        <div class="label-container">
+                            <label for="q70d">d. Highlighter </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2365,28 +2925,36 @@
 
                     <div class="line">
                         <input type="radio" id="q71a" name="q71" value="a">
-                        <label for="q71a">a. 125</label>
+                        <div class="label-container">
+                            <label for="q71a">a. 125 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q71b" name="q71" value="b">
-                        <label for="q71b">b. 130</label>
+                        <div class="label-container">
+                            <label for="q71b">b. 130 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q71c" name="q71" value="c">
-                        <label for="q71c">c. 131</label>
+                        <div class="label-container">
+                            <label for="q71c">c. 131 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q71d" name="q71" value="d">
-                        <label for="q71d">d.138</label>
+                        <div class="label-container">
+                            <label for="q71d">d.138 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2396,28 +2964,36 @@
 
                     <div class="line">
                         <input type="radio" id="q72a" name="q72" value="a">
-                        <label for="q72a">a. Petrol-car</label>
+                        <div class="label-container">
+                            <label for="q72a">a. Petrol-car </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q72b" name="q72" value="b">
-                        <label for="q72b">b. Oil-lamp</label>
+                        <div class="label-container">
+                            <label for="q72b">b. Oil-lamp </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q72c" name="q72" value="c">
-                        <label for="q72c">c. Coal-engine</label>
+                        <div class="label-container">
+                            <label for="q72c">c. Coal-engine </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q72d" name="q72" value="d">
-                        <label for="q72d">d. Smoke-fire</label>
+                        <div class="label-container">
+                            <label for="q72d">d. Smoke-fire </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2433,28 +3009,36 @@
 
                     <div class="line">
                         <input type="radio" id="q73a" name="q73" value="a">
-                        <label for="q73a">a. Only I is true</label>
+                        <div class="label-container">
+                            <label for="q73a">a. Only I is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q73b" name="q73" value="b">
-                        <label for="q73b">b. Only II is true</label>
+                        <div class="label-container">
+                            <label for="q73b">b. Only II is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q73c" name="q73" value="c">
-                        <label for="q73c">c. Either I or II is true</label>
+                        <div class="label-container">
+                            <label for="q73c">c. Either I or II is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q73d" name="q73" value="d">
-                        <label for="q73d">d. Neither I nor II is true</label>
+                        <div class="label-container">
+                            <label for="q73d">d. Neither I nor II is true </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2465,28 +3049,36 @@
 
                     <div class="line">
                         <input type="radio" id="q74a" name="q74" value="a">
-                        <label for="q74a">a. Only I is true</label>
+                        <div class="label-container">
+                            <label for="q74a">a. Only I is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q74b" name="q74" value="b">
-                        <label for="q74b">b. Only II is true</label>
+                        <div class="label-container">
+                            <label for="q74b">b. Only II is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q74c" name="q74" value="c">
-                        <label for="q74c">c. Either I or II is true</label>
+                        <div class="label-container">
+                            <label for="q74c">c. Either I or II is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q74d" name="q74" value="d">
-                        <label for="q74d">d. Neither I nor II is true</label>
+                        <div class="label-container">
+                            <label for="q74d">d. Neither I nor II is true </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2497,28 +3089,36 @@
 
                     <div class="line">
                         <input type="radio" id="q75a" name="q75" value="a">
-                        <label for="q75a">a. Only I is true</label>
+                        <div class="label-container">
+                            <label for="q75a">a. Only I is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q75b" name="q75" value="b">
-                        <label for="q75b">b. Only II is true</label>
+                        <div class="label-container">
+                            <label for="q75b">b. Only II is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q75c" name="q75" value="c">
-                        <label for="q75c">c. Either I or II is true</label>
+                        <div class="label-container">
+                            <label for="q75c">c. Either I or II is true </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q75d" name="q75" value="d">
-                        <label for="q75d">d. Neither I nor II is true</label>
+                        <div class="label-container">
+                            <label for="q75d">d. Neither I nor II is true </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2533,28 +3133,36 @@
 
                     <div class="line">
                         <input type="radio" id="q76a" name="q76" value="a">
-                        <label for="q76a">a. Keyboard</label>
+                        <div class="label-container">
+                            <label for="q76a">a. Keyboard </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q76b" name="q76" value="b">
-                        <label for="q76b">b.Scanner</label>
+                        <div class="label-container">
+                            <label for="q76b">b.Scanner </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q76c" name="q76" value="c">
-                        <label for="q76c">c. OMR</label>
+                        <div class="label-container">
+                            <label for="q76c">c. OMR </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q76d" name="q76" value="d">
-                        <label for="q76d">d. None of these</label>
+                        <div class="label-container">
+                            <label for="q76d">d. None of these </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2564,28 +3172,36 @@
 
                     <div class="line">
                         <input type="radio" id="q77a" name="q77" value="a">
-                        <label for="q77a">a. John Von Neumann</label>
+                        <div class="label-container">
+                            <label for="q77a">a. John Von Neumann </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q77b" name="q77" value="b">
-                        <label for="q77b">b. Charles Babbage</label>
+                        <div class="label-container">
+                            <label for="q77b">b. Charles Babbage </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q77c" name="q77" value="c">
-                        <label for="q77c">c. Blaise Pascal</label>
+                        <div class="label-container">
+                            <label for="q77c">c. Blaise Pascal </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q77d" name="q77" value="d">
-                        <label for="q77d">d. Garden Moore </label>
+                        <div class="label-container">
+                            <label for="q77d">d. Garden Moore </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2597,28 +3213,36 @@
 
                     <div class="line">
                         <input type="radio" id="q78a" name="q78" value="a">
-                        <label for="q78a"> a. Tubby </label>
+                        <div class="label-container">
+                            <label for="q78a"> a. Tubby </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q78b" name="q78" value="b">
-                        <label for="q78b"> b. Stodge</label>
+                        <div class="label-container">
+                            <label for="q78b"> b. Stodge </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q78c" name="q78" value="c">
-                        <label for="q78c"> c. Helium Bat</label>
+                        <div class="label-container">
+                            <label for="q78c"> c. Helium Bat </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q78d" name="q78" value="d">
-                        <label for="q78d"> d. Stumpy</label>
+                        <div class="label-container">
+                            <label for="q78d"> d. Stumpy </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2628,28 +3252,36 @@
 
                     <div class="line">
                         <input type="radio" id="q79a" name="q79" value="a">
-                        <label for="q79a">a. 6</label>
+                        <div class="label-container">
+                            <label for="q79a">a. 6 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q79b" name="q79" value="b">
-                        <label for="q79b">b. 7</label>
+                        <div class="label-container">
+                            <label for="q79b">b. 7 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q79c" name="q79" value="c">
-                        <label for="q79c">c. 4</label>
+                        <div class="label-container">
+                            <label for="q79c">c. 4 </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q79d" name="q79" value="d">
-                        <label for="q79d">d. 5</label>
+                        <div class="label-container">
+                            <label for="q79d">d. 5 </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2658,28 +3290,36 @@
 
                     <div class="line">
                         <input type="radio" id="q80a" name="q80" value="a">
-                        <label for="q80a"> a. 15<sup>th</sup> April</label>
+                        <div class="label-container">
+                            <label for="q80a"> a. 15<sup>th</sup> April </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q80b" name="q80" value="b">
-                        <label for="q80b"> b. 12<sup>th</sup>December </label>
+                        <div class="label-container">
+                            <label for="q80b"> b. 12<sup>th</sup>December </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q80c" name="q80" value="c">
-                        <label for="q80c"> c. 1<sup>st</sup> May</label>
+                        <div class="label-container">
+                            <label for="q80c"> c. 1<sup>st</sup> May </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q80d" name="q80" value="d">
-                        <label for="q80d">d. 1<sup>st</sup> August</label>
+                        <div class="label-container">
+                            <label for="q80d">d. 1<sup>st</sup> August </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2688,28 +3328,36 @@
 
                     <div class="line">
                         <input type="radio" id="q81a" name="q81" value="a">
-                        <label for="q81a"> a. Thinking Day</label>
+                        <div class="label-container">
+                            <label for="q81a"> a. Thinking Day </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q81b" name="q81" value="b">
-                        <label for="q81b"> b. World Radio Day</label>
+                        <div class="label-container">
+                            <label for="q81b"> b. World Radio Day </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q81c" name="q81" value="c">
-                        <label for="q81c"> c. World Cancer Day</label>
+                        <div class="label-container">
+                            <label for="q81c"> c. World Cancer Day </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q81d" name="q81" value="d">
-                        <label for="q81d"> d. World Wild Life Day</label>
+                        <div class="label-container">
+                            <label for="q81d"> d. World Wild Life Day </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2718,28 +3366,36 @@
 
                     <div class="line">
                         <input type="radio" id="q82a" name="q82" value="a">
-                        <label for="q82a">a. Order of Significance</label>
+                        <div class="label-container">
+                            <label for="q82a">a. Order of Significance </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q82b" name="q82" value="b">
-                        <label for="q82b">b. Open Software</label>
+                        <div class="label-container">
+                            <label for="q82b">b. Open Software </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q82c" name="q82" value="c">
-                        <label for="q82c">c. Operating System</label>
+                        <div class="label-container">
+                            <label for="q82c">c. Operating System </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q82d" name="q82" value="d">
-                        <label for="q82d"> d. Optical Sensor</label>
+                        <div class="label-container">
+                            <label for="q82d"> d. Optical Sensor </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2748,28 +3404,36 @@
 
                     <div class="line">
                         <input type="radio" id="q83a" name="q83" value="a">
-                        <label for="q83a">a.The origin and history of technical and scientific terms </label>
+                        <div class="label-container">
+                            <label for="q83a">a.The origin and history of technical and scientific terms </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q83b" name="q83" value="b">
-                        <label for="q83b">b. Behavior of human beings</label>
+                        <div class="label-container">
+                            <label for="q83b">b. Behavior of human beings </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q83c" name="q83" value="c">
-                        <label for="q83c">c. Insects</label>
+                        <div class="label-container">
+                            <label for="q83c">c. Insects </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q83d" name="q83" value="d">
-                        <label for="q83d"> d. Formation of Rocks</label>
+                        <div class="label-container">
+                            <label for="q83d"> d. Formation of Rocks </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2778,37 +3442,45 @@
 
                     <div class="line">
                         <input type="radio" id="q84a" name="q84" value="a">
-                        <label for="q84a">a. A condition jn the International
-                            market where nations do not impose
-                            customs duty or other taxes on
-                            import of goods </label>
+                        <div class="label-container">
+                            <label for="q84a">a. A condition jn the International
+                                market where nations do not impose
+                                customs duty or other taxes on
+                                import of goods </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q84b" name="q84" value="b">
-                        <label for="q84b">b. Market where the price ot a
-                            commodity determined by free
-                            play of the forces of supply and
-                            demand</label>
+                        <div class="label-container">
+                            <label for="q84b">b. Market where the price ot a
+                                commodity determined by free
+                                play of the forces of supply and
+                                demand </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q84c" name="q84" value="c">
-                        <label for="q84c">c.Ports that are exempted from
-                            payment of customs duty on articles
-                            of commerce. pnmanly to encourage
-                            tourism </label>
+                        <div class="label-container">
+                            <label for="q84c">c.Ports that are exempted from
+                                payment of customs duty on articles
+                                of commerce. pnmanly to encourage
+                                tourism </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q84d" name="q84" value="d">
-                        <label for="q84d">d. None of these </label>
+                        <div class="label-container">
+                            <label for="q84d">d. None of these </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2819,28 +3491,36 @@
 
                     <div class="line">
                         <input type="radio" id="q85a" name="q85" value="a">
-                        <label for="q85a">a. Japan</label>
+                        <div class="label-container">
+                            <label for="q85a">a. Japan </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q85b" name="q85" value="b">
-                        <label for="q85b">b. South Korea</label>
+                        <div class="label-container">
+                            <label for="q85b">b. South Korea </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q85c" name="q85" value="c">
-                        <label for="q85c">c. North Korea</label>
+                        <div class="label-container">
+                            <label for="q85c">c. North Korea </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q85d" name="q85" value="d">
-                        <label for="q85d">d. China</label>
+                        <div class="label-container">
+                            <label for="q85d">d. China </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2853,28 +3533,36 @@
 
                     <div class="line">
                         <input type="radio" id="q86a" name="q86" value="a">
-                        <label for="q86a">a. Podsolosation </label>
+                        <div class="label-container">
+                            <label for="q86a">a. Podsolosation </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q86b" name="q86" value="b">
-                        <label for="q86b">b. Calcification</label>
+                        <div class="label-container">
+                            <label for="q86b">b. Calcification </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q86c" name="q86" value="c">
-                        <label for="q86c">c. Laterisation</label>
+                        <div class="label-container">
+                            <label for="q86c">c. Laterisation </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q86d" name="q86" value="d">
-                        <label for="q86d">d. Gleisation</label>
+                        <div class="label-container">
+                            <label for="q86d">d. Gleisation </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2885,28 +3573,36 @@
 
                     <div class="line">
                         <input type="radio" id="q87a" name="q87" value="a">
-                        <label for="q87a">a. ILO</label>
+                        <div class="label-container">
+                            <label for="q87a">a. ILO </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q87b" name="q87" value="b">
-                        <label for="q87b">b. WHO</label>
+                        <div class="label-container">
+                            <label for="q87b">b. WHO </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q87c" name="q87" value="c">
-                        <label for="q87c">c.ASEAN</label>
+                        <div class="label-container">
+                            <label for="q87c">c.ASEAN </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q87d" name="q87" value="d">
-                        <label for="q87d">d. All of the above</label>
+                        <div class="label-container">
+                            <label for="q87d">d. All of the above </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2918,28 +3614,36 @@
 
                     <div class="line">
                         <input type="radio" id="q88a" name="q88" value="a">
-                        <label for="q88a"> a. Tesla Coil</label>
+                        <div class="label-container">
+                            <label for="q88a"> a. Tesla Coil </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q88b" name="q88" value="b">
-                        <label for="q88b"> b. Fly back</label>
+                        <div class="label-container">
+                            <label for="q88b"> b. Fly back </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q88c" name="q88" value="c">
-                        <label for="q88c"> c. Yoke</label>
+                        <div class="label-container">
+                            <label for="q88c"> c. Yoke </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q88d" name="q88" value="d">
-                        <label for="q88d"> d. Van de Graaf </label>
+                        <div class="label-container">
+                            <label for="q88d"> d. Van de Graaf </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -2954,43 +3658,51 @@
 
                     <div class="line">
                         <input type="radio" id="q89a" name="q89" value="a">
-                        <label for="q89a">a.
-                            Dhaka
+                        <div class="label-container">
+                            <label for="q89a">a.
+                                Dhaka
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q89b" name="q89" value="b">
-                        <label for="q89b">b.
-                            Delhi
+                        <div class="label-container">
+                            <label for="q89b">b.
+                                Delhi
 
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q89c" name="q89" value="c">
-                        <label for="q89c">c.
-                            Colombo
+                        <div class="label-container">
+                            <label for="q89c">c.
+                                Colombo
 
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q89d" name="q89" value="d">
-                        <label for="q89d">d.
-                            Kathmandu
+                        <div class="label-container">
+                            <label for="q89d">d.
+                                Kathmandu
 
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3003,40 +3715,48 @@
 
                     <div class="line">
                         <input type="radio" id="q90a" name="q90" value="a">
-                        <label for="q90a"> a.
+                        <div class="label-container">
+                            <label for="q90a"> a.
 
-                            Parliamentary affairs
-                        </label>
+                                Parliamentary affairs
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q90b" name="q90" value="b">
-                        <label for="q90b"> b.
-                            Bullfights
+                        <div class="label-container">
+                            <label for="q90b"> b.
+                                Bullfights
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q90c" name="q90" value="c">
-                        <label for="q90c"> c.
+                        <div class="label-container">
+                            <label for="q90c"> c.
 
-                            Racing
-                        </label>
+                                Racing
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q90d" name="q90" value="d">
-                        <label for="q90d">d.
-                            Stock exchange
+                        <div class="label-container">
+                            <label for="q90d">d.
+                                Stock exchange
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3051,40 +3771,48 @@
 
                     <div class="line">
                         <input type="radio" id="q91a" name="q91" value="a">
-                        <label for="q91a"> a..
+                        <div class="label-container">
+                            <label for="q91a"> a..
 
-                            Biro brothers
-                        </label>
+                                Biro brothers
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q91b" name="q91" value="b">
-                        <label for="q91b"> b.
-                            Waterman brothers
+                        <div class="label-container">
+                            <label for="q91b"> b.
+                                Waterman brothers
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q91c" name="q91" value="c">
-                        <label for="q91c"> c.
-                            BICC brothers
+                        <div class="label-container">
+                            <label for="q91c"> c.
+                                BICC brothers
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q91d" name="q91" value="d">
-                        <label for="q91d"> d.
+                        <div class="label-container">
+                            <label for="q91d"> d.
 
-                            Write brothers
-                        </label>
+                                Write brothers
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3099,40 +3827,48 @@
 
                     <div class="line">
                         <input type="radio" id="q92a" name="q92" value="a">
-                        <label for="q92a">a.
-                            Bones
+                        <div class="label-container">
+                            <label for="q92a">a.
+                                Bones
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q92b" name="q92" value="b">
-                        <label for="q92b">b.
-                            Enamel
+                        <div class="label-container">
+                            <label for="q92b">b.
+                                Enamel
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q92c" name="q92" value="c">
-                        <label for="q92c">c.
-                            Nails
+                        <div class="label-container">
+                            <label for="q92c">c.
+                                Nails
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q92d" name="q92" value="d">
-                        <label for="q92d"> d.
-                            Head
+                        <div class="label-container">
+                            <label for="q92d"> d.
+                                Head
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3147,39 +3883,47 @@
 
                     <div class="line">
                         <input type="radio" id="q93a" name="q93" value="a">
-                        <label for="q93a">a.
-                            Jupiter
-                        </label>
+                        <div class="label-container">
+                            <label for="q93a">a.
+                                Jupiter
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q93b" name="q93" value="b">
-                        <label for="q93b">b.
-                            Mercury
+                        <div class="label-container">
+                            <label for="q93b">b.
+                                Mercury
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q93c" name="q93" value="c">
-                        <label for="q93c">c.
-                            Neptune
+                        <div class="label-container">
+                            <label for="q93c">c.
+                                Neptune
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q93d" name="q93" value="d">
-                        <label for="q93d"> d.
-                            Earth
+                        <div class="label-container">
+                            <label for="q93d"> d.
+                                Earth
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3193,40 +3937,48 @@
 
                     <div class="line">
                         <input type="radio" id="q94a" name="q94" value="a">
-                        <label for="q94a">a.
-                            Isaac Newton
+                        <div class="label-container">
+                            <label for="q94a">a.
+                                Isaac Newton
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q94b" name="q94" value="b">
-                        <label for="q94b">b.
-                            Albert Einstein
+                        <div class="label-container">
+                            <label for="q94b">b.
+                                Albert Einstein
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q94c" name="q94" value="c">
-                        <label for="q94c">c.
-                            Benjamjn Franklin
+                        <div class="label-container">
+                            <label for="q94c">c.
+                                Benjamjn Franklin
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q94d" name="q94" value="d">
-                        <label for="q94d">d.
+                        <div class="label-container">
+                            <label for="q94d">d.
 
-                            Marie Cune
-                        </label>
+                                Marie Cune
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3240,40 +3992,48 @@
 
                     <div class="line">
                         <input type="radio" id="q95a" name="q95" value="a">
-                        <label for="q95a">a.
+                        <div class="label-container">
+                            <label for="q95a">a.
 
-                            Mrs Vidya Bhandan
-                        </label>
+                                Mrs Vidya Bhandan
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q95b" name="q95" value="b">
-                        <label for="q95b">b.
-                            Ram Raja Prasad Singh
+                        <div class="label-container">
+                            <label for="q95b">b.
+                                Ram Raja Prasad Singh
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q95c" name="q95" value="c">
-                        <label for="q95c">c.
-                            Dr Rambaran Yadav
+                        <div class="label-container">
+                            <label for="q95c">c.
+                                Dr Rambaran Yadav
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q95d" name="q95" value="d">
-                        <label for="q95d">d.
+                        <div class="label-container">
+                            <label for="q95d">d.
 
-                            Ram Pritt Pawan
-                        </label>
+                                Ram Pritt Pawan
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3288,40 +4048,48 @@
 
                     <div class="line">
                         <input type="radio" id="q96a" name="q96" value="a">
-                        <label for="q96a">a.
-                            Washing soda
+                        <div class="label-container">
+                            <label for="q96a">a.
+                                Washing soda
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q96b" name="q96" value="b">
-                        <label for="q96b">b.
-                            Baking soda
+                        <div class="label-container">
+                            <label for="q96b">b.
+                                Baking soda
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q96c" name="q96" value="c">
-                        <label for="q96c">c.
-                            Salt used in kitchen
+                        <div class="label-container">
+                            <label for="q96c">c.
+                                Salt used in kitchen
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q96d" name="q96" value="d">
-                        <label for="q96d">d.
-                            Chilli powder used in the kitchen
+                        <div class="label-container">
+                            <label for="q96d">d.
+                                Chilli powder used in the kitchen
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3336,44 +4104,52 @@
 
                     <div class="line">
                         <input type="radio" id="q97a" name="q97" value="a">
-                        <label for="q97a">a.
-                            They behave more patiently With
-                            children
+                        <div class="label-container">
+                            <label for="q97a">a.
+                                They behave more patiently With
+                                children
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q97b" name="q97" value="b">
-                        <label for="q97b">b.
-                            They are ready to work With low
-                            salary
+                        <div class="label-container">
+                            <label for="q97b">b.
+                                They are ready to work With low
+                                salary
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q97c" name="q97" value="c">
-                        <label for="q97c">c.
-                            Higher qualifications not needed In
-                            this professton
+                        <div class="label-container">
+                            <label for="q97c">c.
+                                Higher qualifications not needed In
+                                this professton
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q97d" name="q97" value="d">
-                        <label for="q97d">d.
-                            They have less chances in other
-                            profession
+                        <div class="label-container">
+                            <label for="q97d">d.
+                                They have less chances in other
+                                profession
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3390,41 +4166,49 @@
 
                     <div class="line">
                         <input type="radio" id="q98a" name="q98" value="a">
-                        <label for="q98a"> a.
-                            Microwave oven
+                        <div class="label-container">
+                            <label for="q98a"> a.
+                                Microwave oven
 
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q98b" name="q98" value="b">
-                        <label for="q98b"> b.
+                        <div class="label-container">
+                            <label for="q98b"> b.
 
-                            Remote control
-                        </label>
+                                Remote control
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q98c" name="q98" value="c">
-                        <label for="q98c"> c.
-                            VCR
+                        <div class="label-container">
+                            <label for="q98c"> c.
+                                VCR
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q98d" name="q98" value="d">
-                        <label for="q98d"> d.
-                            Calculator
+                        <div class="label-container">
+                            <label for="q98d"> d.
+                                Calculator
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3438,40 +4222,48 @@
 
                     <div class="line">
                         <input type="radio" id="q99a" name="q99" value="a">
-                        <label for="q99a">a.
-                            ' Karnali
+                        <div class="label-container">
+                            <label for="q99a">a.
+                                ' Karnali
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q99b" name="q99" value="b">
-                        <label for="q99b">b.
-                            Koshi
+                        <div class="label-container">
+                            <label for="q99b">b.
+                                Koshi
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q99c" name="q99" value="c">
-                        <label for="q99c">c.
-                            Arun
+                        <div class="label-container">
+                            <label for="q99c">c.
+                                Arun
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q99d" name="q99" value="d">
-                        <label for="q99d">d.
-                            Trishuli
+                        <div class="label-container">
+                            <label for="q99d">d.
+                                Trishuli
 
-                        </label>
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
@@ -3483,45 +4275,57 @@
 
                     <div class="line">
                         <input type="radio" id="q100a" name="q100" value="a">
-                        <label for="q100a"> a.
-                            Grain
-                        </label>
+                        <div class="label-container">
+                            <label for="q100a"> a.
+                                Grain
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q100b" name="q100" value="b">
-                        <label for="q100b"> b.
-                            Animal
-                        </label>
+                        <div class="label-container">
+                            <label for="q100b"> b.
+                                Animal
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q100c" name="q100" value="c">
-                        <label for="q100c"> c.
-                            Game
-                        </label>
+                        <div class="label-container">
+                            <label for="q100c"> c.
+                                Game
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
 
                     <div class="line">
                         <input type="radio" id="q100d" name="q100" value="d">
-                        <label for="q100d">d.
-                            Fruit
-                        </label>
+                        <div class="label-container">
+                            <label for="q100d">d.
+                                Fruit
+                            </label>
+                        </div>
                         <hr>
                     </div>
 
-
+<div class="buttons">
+        <button type="button" onclick="submitQuiz()">Submit</button>
+        <button type="button" onclick="window.location.href = 'past-questions.html'">Restart</button>
+    </div>
                 </section>
                 <!-- Add the rest of the questions here -->
             </div>
         </div>
-        <button class="btn next"><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></button><!--Yaha class add xa   -->
+        <button class="btn next"><i class="fa fa-chevron-circle-right"
+                aria-hidden="true"></i></button><!--Yaha class add xa   -->
     </main>
     <div id="container" style="display: none;">
         <p id="instructions">
@@ -3531,9 +4335,7 @@
         </p>
         <p id="score"></p>
     </div>
-    <button type="button" onclick="submitQuiz()">Submit</button>
-    <button type="button" onclick="window.location.href = 'set1.html'">Restart</button>
-
+    
     <!-- </form> -->
 
 

@@ -5,24 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random-Questions</title>
-    <link rel="stylesheet" href="pjcodecss.css">
+    <link rel="stylesheet" href="nav.css">
+    <!-- <link rel="stylesheet" href="pjcodecss.css"> -->
+    <!-- <link rel="stylesheet" href="styles2.css"> -->
     <link rel="stylesheet" href="random-questions.css">
 
 </head>
 
 <body>
-    <header>
-        <nav id="top-nav">
-            <h1 id="cmat"> &nbsp;&nbsp;CMAT</h1>
-            <div class="navs">
-                <div> <a href="#home">Home</a></div>
-                <div> <a href="#about">About US</a></div>
-                <button id="random-generation">RANDOM </button>
-            </div>
+    <nav>
+    
+        <div class="nav-elements">
+            <img src="pictures/cmatPrep.webp" onclick="window.location.href='index.html'">
+        </div>
+        <div class="nav-elements"><a href="prospectus.html">Prospectus</a></div>
+        <div class="nav-elements"><a href="About_page.html">About Us</a></div>
+        <div class="nav-elements"><a href="contact.html">Contact</a></div>
 
-        </nav>
-    </header>
-<div class="result"></div>
+
+</nav>
+    <button id="random-generation">Loading Questions.....</button>
+    <div class="result"></div>
     <div class="big-container">
         <button class="btn prev">PREV</button>
         <div class="main-container2">
@@ -38,7 +41,7 @@
 
     <button id="submit-button" onclick="window.scrollTo(0, 0);" onclick="screen.scrollTo(0, 0);">SUBMIT</button>
 
-  
+
     <script src="random-verbal-questions.js"></script>
     <script src="random-quantitative-questions.js"></script>
     <script src="random-logical-questions.js"></script>
